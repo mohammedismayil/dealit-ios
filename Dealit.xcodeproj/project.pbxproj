@@ -18,6 +18,8 @@
 		39B68723278B1EEE001B12E4 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B68722278B1EEE001B12E4 /* UserStatus.swift */; };
 		39B68725278B261E001B12E4 /* LocalAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B68724278B261E001B12E4 /* LocalAppData.swift */; };
 		39B68727278B27A2001B12E4 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B68726278B27A2001B12E4 /* InitialVC.swift */; };
+		39B68729278B28F0001B12E4 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B68728278B28F0001B12E4 /* RegisterVC.swift */; };
+		39B6872B278B2A97001B12E4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B6872A278B2A97001B12E4 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		39B68722278B1EEE001B12E4 /* UserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatus.swift; sourceTree = "<group>"; };
 		39B68724278B261E001B12E4 /* LocalAppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAppData.swift; sourceTree = "<group>"; };
 		39B68726278B27A2001B12E4 /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
+		39B68728278B28F0001B12E4 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		39B6872A278B2A97001B12E4 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 				39B68722278B1EEE001B12E4 /* UserStatus.swift */,
 				39B68724278B261E001B12E4 /* LocalAppData.swift */,
 				39B686F5278B1EB0001B12E4 /* Main.storyboard */,
+				39B68728278B28F0001B12E4 /* RegisterVC.swift */,
+				39B6872A278B2A97001B12E4 /* HomeVC.swift */,
 				39B68726278B27A2001B12E4 /* InitialVC.swift */,
 				39B686FB278B1EB1001B12E4 /* Assets.xcassets */,
 				39B686FD278B1EB1001B12E4 /* LaunchScreen.storyboard */,
@@ -265,8 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				39B68727278B27A2001B12E4 /* InitialVC.swift in Sources */,
+				39B6872B278B2A97001B12E4 /* HomeVC.swift in Sources */,
 				39B68725278B261E001B12E4 /* LocalAppData.swift in Sources */,
 				39B68723278B1EEE001B12E4 /* UserStatus.swift in Sources */,
+				39B68729278B28F0001B12E4 /* RegisterVC.swift in Sources */,
 				39B686F0278B1EB0001B12E4 /* AppDelegate.swift in Sources */,
 				39B686FA278B1EB0001B12E4 /* Dealit.xcdatamodeld in Sources */,
 			);

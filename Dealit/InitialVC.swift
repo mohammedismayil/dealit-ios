@@ -17,7 +17,32 @@ class InitialVC: UIViewController {
         print("hello from initial vc")
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        moveToScreen()
+    }
+    
+    
+    
+    func moveToScreen(){
+        let status = LocalAppData.getUserStatus()
+        
+        switch status {
+        case .loggedIn:
+            let story = UIStoryboard(name: "Main", bundle:nil)
+            let vc = story.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
+           
+            
+            let app = UIApplication.shared.delegate as! AppDelegate
+            app.window?.rootViewController = vc
+            app.window?.makeKeyAndVisible()
+        case .notloggedIn:
+            let story = UIStoryboard(name: "Main", bundle:nil)
+            let vc = story.instantiateViewController(withIdentifier: "RegisterVC") as! RegisterVC
+            let app = UIApplication.shared.delegate as! AppDelegate
+            app.window?.rootViewController = vc
+            app.window?.makeKeyAndVisible()
+        }
+    }
     /*
     // MARK: - Navigation
 
