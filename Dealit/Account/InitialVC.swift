@@ -31,15 +31,18 @@ class InitialVC: UIViewController {
             let story = UIStoryboard(name: "Main", bundle:nil)
             let vc = story.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
            
-            
+            let navigationController = UINavigationController(rootViewController: vc)
+           
             let app = UIApplication.shared.delegate as! AppDelegate
-            app.window?.rootViewController = vc
+            app.window?.rootViewController = navigationController
             app.window?.makeKeyAndVisible()
         case .notloggedIn:
             let story = UIStoryboard(name: "Main", bundle:nil)
             let vc = story.instantiateViewController(withIdentifier: "RegisterVC") as! RegisterVC
+            let navigationController = UINavigationController(rootViewController: vc)
+           
             let app = UIApplication.shared.delegate as! AppDelegate
-            app.window?.rootViewController = vc
+            app.window?.rootViewController = navigationController
             app.window?.makeKeyAndVisible()
         }
     }

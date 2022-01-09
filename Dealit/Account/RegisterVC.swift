@@ -1,5 +1,5 @@
 //
-//  HomeVC.swift
+//  RegisterVC.swift
 //  Dealit
 //
 //  Created by Mohammed Ismayil on 09/01/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class RegisterVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,10 +15,7 @@ class HomeVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func logOutAction(_ sender: Any) {
-        logoutUser()
-    }
-    
+
     /*
     // MARK: - Navigation
 
@@ -28,16 +25,23 @@ class HomeVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    func logoutUser(){
-        LocalAppData.setUserStatus(status: .notloggedIn)
-            let story = UIStoryboard(name: "Main", bundle:nil)
-            let vc = story.instantiateViewController(withIdentifier: "RegisterVC") as! RegisterVC
+    @IBAction func loginAction(_ sender: Any) {
+        LocalAppData.setUserStatus(status: .loggedIn)
         
-        let app = UIApplication.shared.delegate as! AppDelegate
-        app.window?.rootViewController = vc
-        app.window?.makeKeyAndVisible()
+        
+        moveToHome()
         
     }
-
+    
+    
+    func moveToHome(){
+        let story = UIStoryboard(name: "Main", bundle:nil)
+        let vc = story.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
+        let navigationController = UINavigationController(rootViewController: vc)
+       
+        let app = UIApplication.shared.delegate as! AppDelegate
+        app.window?.rootViewController = navigationController
+        app.window?.makeKeyAndVisible()
+    }
+    
 }

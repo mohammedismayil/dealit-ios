@@ -87,16 +87,40 @@
                                     <action selector="logOutAction:" destination="7Wh-q6-pbb" eventType="touchUpInside" id="D6p-Bh-nyx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACg-OG-sQe">
+                                <rect key="frame" x="183.5" y="434.5" width="47" height="27"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvH-Ap-4Pn">
+                                <rect key="frame" x="339" y="55" width="80" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="ALE-Yy-nxV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <action selector="nextAction:" destination="7Wh-q6-pbb" eventType="touchUpInside" id="c0u-lp-HGw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="J23-Bc-UOG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kxw-ft-RSc" firstAttribute="top" secondItem="J23-Bc-UOG" secondAttribute="top" constant="11" id="5F1-Ae-4Gy"/>
+                            <constraint firstItem="ACg-OG-sQe" firstAttribute="centerY" secondItem="UHc-OK-P4F" secondAttribute="centerY" id="5dX-Nh-xY7"/>
+                            <constraint firstItem="lvH-Ap-4Pn" firstAttribute="trailing" secondItem="J23-Bc-UOG" secondAttribute="trailing" constant="5" id="EpE-hf-Rri"/>
+                            <constraint firstItem="ACg-OG-sQe" firstAttribute="centerX" secondItem="UHc-OK-P4F" secondAttribute="centerX" id="LhB-cw-7eM"/>
                             <constraint firstItem="TtP-Ah-7UM" firstAttribute="centerX" secondItem="UHc-OK-P4F" secondAttribute="centerX" id="Rm4-Sc-1LC"/>
                             <constraint firstItem="kxw-ft-RSc" firstAttribute="leading" secondItem="J23-Bc-UOG" secondAttribute="leading" id="cWC-65-5Sh"/>
                             <constraint firstItem="TtP-Ah-7UM" firstAttribute="top" secondItem="J23-Bc-UOG" secondAttribute="top" constant="50" id="hRQ-lj-xzt"/>
+                            <constraint firstItem="lvH-Ap-4Pn" firstAttribute="top" secondItem="J23-Bc-UOG" secondAttribute="top" constant="11" id="vWx-gY-DdV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="homeNameLbl" destination="ACg-OG-sQe" id="RAr-gW-lSV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QI7-kX-36g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

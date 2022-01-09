@@ -1,5 +1,5 @@
 //
-//  RegisterVC.swift
+//  VC1.swift
 //  Dealit
 //
 //  Created by Mohammed Ismayil on 09/01/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegisterVC: UIViewController {
+class VC1: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,21 +25,8 @@ class RegisterVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func loginAction(_ sender: Any) {
-        LocalAppData.setUserStatus(status: .loggedIn)
-        
-        
-        moveToHome()
-        
+    
+    @IBAction func nextAction(_ sender: Any) {
     }
-    
-    
-    func moveToHome(){
-        let story = UIStoryboard(name: "Main", bundle:nil)
-        let vc = story.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
-        let app = UIApplication.shared.delegate as! AppDelegate
-        app.window?.rootViewController = vc
-        app.window?.makeKeyAndVisible()
-    }
-    
+
 }
