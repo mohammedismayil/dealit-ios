@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		39B686F0278B1EB0001B12E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B686EF278B1EB0001B12E4 /* AppDelegate.swift */; };
-		39B686F2278B1EB0001B12E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B686F1278B1EB0001B12E4 /* SceneDelegate.swift */; };
-		39B686F4278B1EB0001B12E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B686F3278B1EB0001B12E4 /* ViewController.swift */; };
 		39B686F7278B1EB0001B12E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B686F5278B1EB0001B12E4 /* Main.storyboard */; };
 		39B686FA278B1EB0001B12E4 /* Dealit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39B686F8278B1EB0001B12E4 /* Dealit.xcdatamodeld */; };
 		39B686FC278B1EB1001B12E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39B686FB278B1EB1001B12E4 /* Assets.xcassets */; };
@@ -17,6 +15,9 @@
 		39B6870A278B1EB1001B12E4 /* DealitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B68709278B1EB1001B12E4 /* DealitTests.swift */; };
 		39B68714278B1EB1001B12E4 /* DealitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B68713278B1EB1001B12E4 /* DealitUITests.swift */; };
 		39B68716278B1EB1001B12E4 /* DealitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B68715278B1EB1001B12E4 /* DealitUITestsLaunchTests.swift */; };
+		39B68723278B1EEE001B12E4 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B68722278B1EEE001B12E4 /* UserStatus.swift */; };
+		39B68725278B261E001B12E4 /* LocalAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B68724278B261E001B12E4 /* LocalAppData.swift */; };
+		39B68727278B27A2001B12E4 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B68726278B27A2001B12E4 /* InitialVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 /* Begin PBXFileReference section */
 		39B686EC278B1EB0001B12E4 /* Dealit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dealit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B686EF278B1EB0001B12E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		39B686F1278B1EB0001B12E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		39B686F3278B1EB0001B12E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		39B686F6278B1EB0001B12E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39B686F9278B1EB0001B12E4 /* Dealit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dealit.xcdatamodel; sourceTree = "<group>"; };
 		39B686FB278B1EB1001B12E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +50,9 @@
 		39B6870F278B1EB1001B12E4 /* DealitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DealitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B68713278B1EB1001B12E4 /* DealitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealitUITests.swift; sourceTree = "<group>"; };
 		39B68715278B1EB1001B12E4 /* DealitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		39B68722278B1EEE001B12E4 /* UserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatus.swift; sourceTree = "<group>"; };
+		39B68724278B261E001B12E4 /* LocalAppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAppData.swift; sourceTree = "<group>"; };
+		39B68726278B27A2001B12E4 /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				39B686EF278B1EB0001B12E4 /* AppDelegate.swift */,
-				39B686F1278B1EB0001B12E4 /* SceneDelegate.swift */,
-				39B686F3278B1EB0001B12E4 /* ViewController.swift */,
+				39B68722278B1EEE001B12E4 /* UserStatus.swift */,
+				39B68724278B261E001B12E4 /* LocalAppData.swift */,
 				39B686F5278B1EB0001B12E4 /* Main.storyboard */,
+				39B68726278B27A2001B12E4 /* InitialVC.swift */,
 				39B686FB278B1EB1001B12E4 /* Assets.xcassets */,
 				39B686FD278B1EB1001B12E4 /* LaunchScreen.storyboard */,
 				39B68700278B1EB1001B12E4 /* Info.plist */,
@@ -261,10 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39B686F4278B1EB0001B12E4 /* ViewController.swift in Sources */,
+				39B68727278B27A2001B12E4 /* InitialVC.swift in Sources */,
+				39B68725278B261E001B12E4 /* LocalAppData.swift in Sources */,
+				39B68723278B1EEE001B12E4 /* UserStatus.swift in Sources */,
 				39B686F0278B1EB0001B12E4 /* AppDelegate.swift in Sources */,
 				39B686FA278B1EB0001B12E4 /* Dealit.xcdatamodeld in Sources */,
-				39B686F2278B1EB0001B12E4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
