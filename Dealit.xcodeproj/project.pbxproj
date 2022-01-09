@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39B686F0278B1EB0001B12E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B686EF278B1EB0001B12E4 /* AppDelegate.swift */; };
+		39B686F2278B1EB0001B12E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B686F1278B1EB0001B12E4 /* SceneDelegate.swift */; };
+		39B686F4278B1EB0001B12E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B686F3278B1EB0001B12E4 /* ViewController.swift */; };
+		39B686F7278B1EB0001B12E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B686F5278B1EB0001B12E4 /* Main.storyboard */; };
+		39B686FA278B1EB0001B12E4 /* Dealit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39B686F8278B1EB0001B12E4 /* Dealit.xcdatamodeld */; };
+		39B686FC278B1EB1001B12E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39B686FB278B1EB1001B12E4 /* Assets.xcassets */; };
+		39B686FF278B1EB1001B12E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B686FD278B1EB1001B12E4 /* LaunchScreen.storyboard */; };
+		39B6870A278B1EB1001B12E4 /* DealitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B68709278B1EB1001B12E4 /* DealitTests.swift */; };
+		39B68714278B1EB1001B12E4 /* DealitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B68713278B1EB1001B12E4 /* DealitUITests.swift */; };
+		39B68716278B1EB1001B12E4 /* DealitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B68715278B1EB1001B12E4 /* DealitUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39B68706278B1EB1001B12E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39B686E4278B1EAF001B12E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39B686EB278B1EB0001B12E4;
+			remoteInfo = Dealit;
+		};
+		39B68710278B1EB1001B12E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39B686E4278B1EAF001B12E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39B686EB278B1EB0001B12E4;
+			remoteInfo = Dealit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39B686EC278B1EB0001B12E4 /* Dealit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dealit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B686EF278B1EB0001B12E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39B686F1278B1EB0001B12E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		39B686F3278B1EB0001B12E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39B686F6278B1EB0001B12E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39B686F9278B1EB0001B12E4 /* Dealit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dealit.xcdatamodel; sourceTree = "<group>"; };
+		39B686FB278B1EB1001B12E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39B686FE278B1EB1001B12E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39B68700278B1EB1001B12E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39B68705278B1EB1001B12E4 /* DealitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DealitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B68709278B1EB1001B12E4 /* DealitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealitTests.swift; sourceTree = "<group>"; };
+		39B6870F278B1EB1001B12E4 /* DealitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DealitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B68713278B1EB1001B12E4 /* DealitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealitUITests.swift; sourceTree = "<group>"; };
+		39B68715278B1EB1001B12E4 /* DealitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39B686E9278B1EB0001B12E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39B68702278B1EB1001B12E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39B6870C278B1EB1001B12E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39B686E3278B1EAF001B12E4 = {
+			isa = PBXGroup;
+			children = (
+				39B686EE278B1EB0001B12E4 /* Dealit */,
+				39B68708278B1EB1001B12E4 /* DealitTests */,
+				39B68712278B1EB1001B12E4 /* DealitUITests */,
+				39B686ED278B1EB0001B12E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39B686ED278B1EB0001B12E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39B686EC278B1EB0001B12E4 /* Dealit.app */,
+				39B68705278B1EB1001B12E4 /* DealitTests.xctest */,
+				39B6870F278B1EB1001B12E4 /* DealitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39B686EE278B1EB0001B12E4 /* Dealit */ = {
+			isa = PBXGroup;
+			children = (
+				39B686EF278B1EB0001B12E4 /* AppDelegate.swift */,
+				39B686F1278B1EB0001B12E4 /* SceneDelegate.swift */,
+				39B686F3278B1EB0001B12E4 /* ViewController.swift */,
+				39B686F5278B1EB0001B12E4 /* Main.storyboard */,
+				39B686FB278B1EB1001B12E4 /* Assets.xcassets */,
+				39B686FD278B1EB1001B12E4 /* LaunchScreen.storyboard */,
+				39B68700278B1EB1001B12E4 /* Info.plist */,
+				39B686F8278B1EB0001B12E4 /* Dealit.xcdatamodeld */,
+			);
+			path = Dealit;
+			sourceTree = "<group>";
+		};
+		39B68708278B1EB1001B12E4 /* DealitTests */ = {
+			isa = PBXGroup;
+			children = (
+				39B68709278B1EB1001B12E4 /* DealitTests.swift */,
+			);
+			path = DealitTests;
+			sourceTree = "<group>";
+		};
+		39B68712278B1EB1001B12E4 /* DealitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				39B68713278B1EB1001B12E4 /* DealitUITests.swift */,
+				39B68715278B1EB1001B12E4 /* DealitUITestsLaunchTests.swift */,
+			);
+			path = DealitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39B686EB278B1EB0001B12E4 /* Dealit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39B68719278B1EB1001B12E4 /* Build configuration list for PBXNativeTarget "Dealit" */;
+			buildPhases = (
+				39B686E8278B1EB0001B12E4 /* Sources */,
+				39B686E9278B1EB0001B12E4 /* Frameworks */,
+				39B686EA278B1EB0001B12E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dealit;
+			productName = Dealit;
+			productReference = 39B686EC278B1EB0001B12E4 /* Dealit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39B68704278B1EB1001B12E4 /* DealitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39B6871C278B1EB1001B12E4 /* Build configuration list for PBXNativeTarget "DealitTests" */;
+			buildPhases = (
+				39B68701278B1EB1001B12E4 /* Sources */,
+				39B68702278B1EB1001B12E4 /* Frameworks */,
+				39B68703278B1EB1001B12E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39B68707278B1EB1001B12E4 /* PBXTargetDependency */,
+			);
+			name = DealitTests;
+			productName = DealitTests;
+			productReference = 39B68705278B1EB1001B12E4 /* DealitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		39B6870E278B1EB1001B12E4 /* DealitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39B6871F278B1EB1001B12E4 /* Build configuration list for PBXNativeTarget "DealitUITests" */;
+			buildPhases = (
+				39B6870B278B1EB1001B12E4 /* Sources */,
+				39B6870C278B1EB1001B12E4 /* Frameworks */,
+				39B6870D278B1EB1001B12E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39B68711278B1EB1001B12E4 /* PBXTargetDependency */,
+			);
+			name = DealitUITests;
+			productName = DealitUITests;
+			productReference = 39B6870F278B1EB1001B12E4 /* DealitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39B686E4278B1EAF001B12E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					39B686EB278B1EB0001B12E4 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					39B68704278B1EB1001B12E4 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 39B686EB278B1EB0001B12E4;
+					};
+					39B6870E278B1EB1001B12E4 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 39B686EB278B1EB0001B12E4;
+					};
+				};
+			};
+			buildConfigurationList = 39B686E7278B1EAF001B12E4 /* Build configuration list for PBXProject "Dealit" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39B686E3278B1EAF001B12E4;
+			productRefGroup = 39B686ED278B1EB0001B12E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39B686EB278B1EB0001B12E4 /* Dealit */,
+				39B68704278B1EB1001B12E4 /* DealitTests */,
+				39B6870E278B1EB1001B12E4 /* DealitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39B686EA278B1EB0001B12E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B686FF278B1EB1001B12E4 /* LaunchScreen.storyboard in Resources */,
+				39B686FC278B1EB1001B12E4 /* Assets.xcassets in Resources */,
+				39B686F7278B1EB0001B12E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39B68703278B1EB1001B12E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39B6870D278B1EB1001B12E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39B686E8278B1EB0001B12E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B686F4278B1EB0001B12E4 /* ViewController.swift in Sources */,
+				39B686F0278B1EB0001B12E4 /* AppDelegate.swift in Sources */,
+				39B686FA278B1EB0001B12E4 /* Dealit.xcdatamodeld in Sources */,
+				39B686F2278B1EB0001B12E4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39B68701278B1EB1001B12E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B6870A278B1EB1001B12E4 /* DealitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39B6870B278B1EB1001B12E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B68714278B1EB1001B12E4 /* DealitUITests.swift in Sources */,
+				39B68716278B1EB1001B12E4 /* DealitUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39B68707278B1EB1001B12E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39B686EB278B1EB0001B12E4 /* Dealit */;
+			targetProxy = 39B68706278B1EB1001B12E4 /* PBXContainerItemProxy */;
+		};
+		39B68711278B1EB1001B12E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39B686EB278B1EB0001B12E4 /* Dealit */;
+			targetProxy = 39B68710278B1EB1001B12E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39B686F5278B1EB0001B12E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39B686F6278B1EB0001B12E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39B686FD278B1EB1001B12E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39B686FE278B1EB1001B12E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39B68717278B1EB1001B12E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39B68718278B1EB1001B12E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39B6871A278B1EB1001B12E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9YNGR22U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dealit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ismayil.products.Dealit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39B6871B278B1EB1001B12E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9YNGR22U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dealit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ismayil.products.Dealit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		39B6871D278B1EB1001B12E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9YNGR22U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ismayil.products.DealitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dealit.app/Dealit";
+			};
+			name = Debug;
+		};
+		39B6871E278B1EB1001B12E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9YNGR22U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ismayil.products.DealitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dealit.app/Dealit";
+			};
+			name = Release;
+		};
+		39B68720278B1EB1001B12E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9YNGR22U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ismayil.products.DealitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dealit;
+			};
+			name = Debug;
+		};
+		39B68721278B1EB1001B12E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9YNGR22U4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ismayil.products.DealitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dealit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39B686E7278B1EAF001B12E4 /* Build configuration list for PBXProject "Dealit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B68717278B1EB1001B12E4 /* Debug */,
+				39B68718278B1EB1001B12E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39B68719278B1EB1001B12E4 /* Build configuration list for PBXNativeTarget "Dealit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B6871A278B1EB1001B12E4 /* Debug */,
+				39B6871B278B1EB1001B12E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39B6871C278B1EB1001B12E4 /* Build configuration list for PBXNativeTarget "DealitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B6871D278B1EB1001B12E4 /* Debug */,
+				39B6871E278B1EB1001B12E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39B6871F278B1EB1001B12E4 /* Build configuration list for PBXNativeTarget "DealitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39B68720278B1EB1001B12E4 /* Debug */,
+				39B68721278B1EB1001B12E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		39B686F8278B1EB0001B12E4 /* Dealit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				39B686F9278B1EB0001B12E4 /* Dealit.xcdatamodel */,
+			);
+			currentVersion = 39B686F9278B1EB0001B12E4 /* Dealit.xcdatamodel */;
+			path = Dealit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 39B686E4278B1EAF001B12E4 /* Project object */;
+}
