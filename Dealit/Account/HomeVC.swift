@@ -16,6 +16,8 @@ class HomeVC: UIViewController {
         // Do any additional setup after loading the view.
         
         NotificationCenter.default.addObserver(self, selector: #selector(notificationTriggered), name:  Notification.Name("UserLoggedIn"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationTriggered), name:  Notification.Name("UserLoggedIn"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationTriggered), name:  Notification.Name("UserLoggedIn"), object: nil)
     }
     
     @IBAction func logOutAction(_ sender: Any) {
@@ -39,6 +41,7 @@ class HomeVC: UIViewController {
     @objc func notificationTriggered(notif:Notification){
         
         if let dict = notif.object as? String {
+            print("i am triggered from HomeVC \(dict)")
             self.homeNameLbl.text = dict
             }
         

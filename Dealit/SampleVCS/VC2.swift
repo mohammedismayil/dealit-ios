@@ -13,6 +13,7 @@ class VC2: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationTriggered), name:  Notification.Name("UserLoggedIn"), object: nil)
     }
     
 
@@ -32,6 +33,13 @@ class VC2: UIViewController {
     }
     
     
+    @objc func notificationTriggered(notif:Notification){
+        
+        if let dict = notif.object as? String {
+           print("i am triggered from vc2 \(dict)")
+            }
+        
+    }
     func moveToNextVC() {
         let story = UIStoryboard(name: "SampleVCS", bundle:nil)
         let vc = story.instantiateViewController(withIdentifier: "VC3") as! VC3
