@@ -9,15 +9,24 @@ import UIKit
 import NotificationCenter
 class HomeVC: UIViewController {
 
+    @IBOutlet weak var homeTbl: UITableView!
     @IBOutlet weak var homeNameLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        NotificationCenter.default.addObserver(self, selector: #selector(notificationTriggered), name:  Notification.Name("UserLoggedIn"), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(notificationTriggered), name:  Notification.Name("UserLoggedIn"), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(notificationTriggered), name:  Notification.Name("UserLoggedIn"), object: nil)
+        homeTbl.register(UINib(nibName: "HomeTVC", bundle: nil), forCellReuseIdentifier: "HomeTVC")
+        homeTbl.delegate = self
+        homeTbl.dataSource = self
+        homeTbl.reloadData()
+//        NotificationCenter.default.addObserver(self, selector: #selector(notificationTriggered), name:  Notification.Name("UserLoggedIn"), object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(notificationTriggered), name:  Notification.Name("UserLoggedIn"), object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(notificationTriggered), name:  Notification.Name("UserLoggedIn"), object: nil)
+        
+        NetworkManager.getData { (model) in
+            print(model.users)
+        }
     }
     
     @IBAction func logOutAction(_ sender: Any) {
@@ -64,4 +73,17 @@ class HomeVC: UIViewController {
         
     }
 
+}
+extension HomeVC: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = homeTbl.dequeueReusableCell(withIdentifier: "HomeTVC", for: indexPath) as? HomeTVC else { return UITableViewCell() }
+        
+        return cell
+    }
+    
+    
 }

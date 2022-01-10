@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		234EB4CBE5E96FD1CC01A96E /* Pods_DealitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEB482CADDA592C15133916 /* Pods_DealitTests.framework */; };
+		396D847A278C9CA3006F87BD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396D8479278C9CA3006F87BD /* NetworkManager.swift */; };
+		396D847C278CA291006F87BD /* HomeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396D847B278CA291006F87BD /* HomeTVC.xib */; };
+		396D847E278CA67C006F87BD /* HomeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396D847D278CA67C006F87BD /* HomeTVC.swift */; };
+		396D8480278CADF3006F87BD /* HomePageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396D847F278CADF3006F87BD /* HomePageModels.swift */; };
 		39B686F0278B1EB0001B12E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B686EF278B1EB0001B12E4 /* AppDelegate.swift */; };
 		39B686F7278B1EB0001B12E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B686F5278B1EB0001B12E4 /* Main.storyboard */; };
 		39B686FA278B1EB0001B12E4 /* Dealit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39B686F8278B1EB0001B12E4 /* Dealit.xcdatamodeld */; };
@@ -24,6 +29,8 @@
 		39B68730278B3494001B12E4 /* VC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B6872F278B3494001B12E4 /* VC1.swift */; };
 		39B68733278B3540001B12E4 /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B68732278B3540001B12E4 /* VC2.swift */; };
 		39B68735278B354D001B12E4 /* VC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B68734278B354D001B12E4 /* VC3.swift */; };
+		51BB11800612E0EA67B3D770 /* Pods_Dealit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220307275B42F48AA0D6F596 /* Pods_Dealit.framework */; };
+		B3A426E44CAD6951AEDC0FC1 /* Pods_Dealit_DealitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C46CBACEE898D597A267E7 /* Pods_Dealit_DealitUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D61F8275B1BCE2FEC9314D8 /* Pods-Dealit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dealit.release.xcconfig"; path = "Target Support Files/Pods-Dealit/Pods-Dealit.release.xcconfig"; sourceTree = "<group>"; };
+		1D0384A03BFDD8D8999F8B9D /* Pods-Dealit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dealit.debug.xcconfig"; path = "Target Support Files/Pods-Dealit/Pods-Dealit.debug.xcconfig"; sourceTree = "<group>"; };
+		1D17374DB4E06521859C16A5 /* Pods-DealitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DealitTests.debug.xcconfig"; path = "Target Support Files/Pods-DealitTests/Pods-DealitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		220307275B42F48AA0D6F596 /* Pods_Dealit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dealit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		396D8479278C9CA3006F87BD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		396D847B278CA291006F87BD /* HomeTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTVC.xib; sourceTree = "<group>"; };
+		396D847D278CA67C006F87BD /* HomeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVC.swift; sourceTree = "<group>"; };
+		396D847F278CADF3006F87BD /* HomePageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModels.swift; sourceTree = "<group>"; };
 		39B686EC278B1EB0001B12E4 /* Dealit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dealit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B686EF278B1EB0001B12E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39B686F6278B1EB0001B12E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +80,11 @@
 		39B6872F278B3494001B12E4 /* VC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC1.swift; sourceTree = "<group>"; };
 		39B68732278B3540001B12E4 /* VC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
 		39B68734278B354D001B12E4 /* VC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC3.swift; sourceTree = "<group>"; };
+		4CDB7BBB5710518B1575D11A /* Pods-Dealit-DealitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dealit-DealitUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5CEB482CADDA592C15133916 /* Pods_DealitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DealitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C46CBACEE898D597A267E7 /* Pods_Dealit_DealitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dealit_DealitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CFD8381E0BEB51E3C119821 /* Pods-DealitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DealitTests.release.xcconfig"; path = "Target Support Files/Pods-DealitTests/Pods-DealitTests.release.xcconfig"; sourceTree = "<group>"; };
+		C0469D771B830509772CBED8 /* Pods-Dealit-DealitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dealit-DealitUITests.release.xcconfig"; path = "Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51BB11800612E0EA67B3D770 /* Pods_Dealit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234EB4CBE5E96FD1CC01A96E /* Pods_DealitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3A426E44CAD6951AEDC0FC1 /* Pods_Dealit_DealitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +122,8 @@
 				39B68708278B1EB1001B12E4 /* DealitTests */,
 				39B68712278B1EB1001B12E4 /* DealitUITests */,
 				39B686ED278B1EB0001B12E4 /* Products */,
+				DA6B440615053A3B6158A9F5 /* Pods */,
+				459F1F80D6B5DAD852B742C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +143,8 @@
 				39B686EF278B1EB0001B12E4 /* AppDelegate.swift */,
 				39B68731278B349C001B12E4 /* SampleVCS */,
 				39B686F5278B1EB0001B12E4 /* Main.storyboard */,
+				396D847B278CA291006F87BD /* HomeTVC.xib */,
+				396D847D278CA67C006F87BD /* HomeTVC.swift */,
 				39B6872E278B3458001B12E4 /* Account */,
 				39B686FB278B1EB1001B12E4 /* Assets.xcassets */,
 				39B686FD278B1EB1001B12E4 /* LaunchScreen.storyboard */,
@@ -152,6 +179,8 @@
 				39B68724278B261E001B12E4 /* LocalAppData.swift */,
 				39B68726278B27A2001B12E4 /* InitialVC.swift */,
 				39B6872A278B2A97001B12E4 /* HomeVC.swift */,
+				396D847F278CADF3006F87BD /* HomePageModels.swift */,
+				396D8479278C9CA3006F87BD /* NetworkManager.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -167,6 +196,29 @@
 			path = SampleVCS;
 			sourceTree = "<group>";
 		};
+		459F1F80D6B5DAD852B742C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				220307275B42F48AA0D6F596 /* Pods_Dealit.framework */,
+				64C46CBACEE898D597A267E7 /* Pods_Dealit_DealitUITests.framework */,
+				5CEB482CADDA592C15133916 /* Pods_DealitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA6B440615053A3B6158A9F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D0384A03BFDD8D8999F8B9D /* Pods-Dealit.debug.xcconfig */,
+				0D61F8275B1BCE2FEC9314D8 /* Pods-Dealit.release.xcconfig */,
+				4CDB7BBB5710518B1575D11A /* Pods-Dealit-DealitUITests.debug.xcconfig */,
+				C0469D771B830509772CBED8 /* Pods-Dealit-DealitUITests.release.xcconfig */,
+				1D17374DB4E06521859C16A5 /* Pods-DealitTests.debug.xcconfig */,
+				7CFD8381E0BEB51E3C119821 /* Pods-DealitTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39B68719278B1EB1001B12E4 /* Build configuration list for PBXNativeTarget "Dealit" */;
 			buildPhases = (
+				4EDBA8EB3BEB63337B162F32 /* [CP] Check Pods Manifest.lock */,
 				39B686E8278B1EB0001B12E4 /* Sources */,
 				39B686E9278B1EB0001B12E4 /* Frameworks */,
 				39B686EA278B1EB0001B12E4 /* Resources */,
+				9E439D230F0F6D6BEF0BFC25 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39B6871C278B1EB1001B12E4 /* Build configuration list for PBXNativeTarget "DealitTests" */;
 			buildPhases = (
+				39132BB89E9C30BED804829B /* [CP] Check Pods Manifest.lock */,
 				39B68701278B1EB1001B12E4 /* Sources */,
 				39B68702278B1EB1001B12E4 /* Frameworks */,
 				39B68703278B1EB1001B12E4 /* Resources */,
@@ -209,9 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39B6871F278B1EB1001B12E4 /* Build configuration list for PBXNativeTarget "DealitUITests" */;
 			buildPhases = (
+				3678FBEB7CE41B9E60D19E90 /* [CP] Check Pods Manifest.lock */,
 				39B6870B278B1EB1001B12E4 /* Sources */,
 				39B6870C278B1EB1001B12E4 /* Frameworks */,
 				39B6870D278B1EB1001B12E4 /* Resources */,
+				9CC7A13A0DA1806C91BBE8DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,6 +332,7 @@
 				39B6872D278B344C001B12E4 /* SampleVCS.storyboard in Resources */,
 				39B686FC278B1EB1001B12E4 /* Assets.xcassets in Resources */,
 				39B686F7278B1EB0001B12E4 /* Main.storyboard in Resources */,
+				396D847C278CA291006F87BD /* HomeTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,16 +352,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3678FBEB7CE41B9E60D19E90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dealit-DealitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39132BB89E9C30BED804829B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DealitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EDBA8EB3BEB63337B162F32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dealit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CC7A13A0DA1806C91BBE8DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E439D230F0F6D6BEF0BFC25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dealit/Pods-Dealit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dealit/Pods-Dealit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dealit/Pods-Dealit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		39B686E8278B1EB0001B12E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				39B68733278B3540001B12E4 /* VC2.swift in Sources */,
+				396D8480278CADF3006F87BD /* HomePageModels.swift in Sources */,
 				39B68727278B27A2001B12E4 /* InitialVC.swift in Sources */,
 				39B68735278B354D001B12E4 /* VC3.swift in Sources */,
 				39B6872B278B2A97001B12E4 /* HomeVC.swift in Sources */,
+				396D847A278C9CA3006F87BD /* NetworkManager.swift in Sources */,
 				39B68725278B261E001B12E4 /* LocalAppData.swift in Sources */,
+				396D847E278CA67C006F87BD /* HomeTVC.swift in Sources */,
 				39B68723278B1EEE001B12E4 /* UserStatus.swift in Sources */,
 				39B68729278B28F0001B12E4 /* RegisterVC.swift in Sources */,
 				39B686F0278B1EB0001B12E4 /* AppDelegate.swift in Sources */,
@@ -482,6 +646,7 @@
 		};
 		39B6871A278B1EB1001B12E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D0384A03BFDD8D8999F8B9D /* Pods-Dealit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -510,6 +675,7 @@
 		};
 		39B6871B278B1EB1001B12E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D61F8275B1BCE2FEC9314D8 /* Pods-Dealit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -538,6 +704,7 @@
 		};
 		39B6871D278B1EB1001B12E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D17374DB4E06521859C16A5 /* Pods-DealitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -558,6 +725,7 @@
 		};
 		39B6871E278B1EB1001B12E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CFD8381E0BEB51E3C119821 /* Pods-DealitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -578,6 +746,7 @@
 		};
 		39B68720278B1EB1001B12E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CDB7BBB5710518B1575D11A /* Pods-Dealit-DealitUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -596,6 +765,7 @@
 		};
 		39B68721278B1EB1001B12E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0469D771B830509772CBED8 /* Pods-Dealit-DealitUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

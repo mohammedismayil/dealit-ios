@@ -1,0 +1,6 @@
+framework module Pods_Dealit_DealitUITests {
+  umbrella header "Pods-Dealit-DealitUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

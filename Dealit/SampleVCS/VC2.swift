@@ -13,7 +13,7 @@ class VC2: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        NotificationCenter.default.addObserver(self, selector: #selector(notificationTriggered), name:  Notification.Name("UserLoggedIn"), object: nil)
+     
     }
     
 
@@ -26,7 +26,10 @@ class VC2: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    override func viewWillAppear(_ animated: Bool) {
+        print("VC2 will appear called")
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationTriggered), name:  Notification.Name("UserLoggedIn"), object: nil)
+    }
     @IBAction func nextAction(_ sender: Any) {
         
         moveToNextVC()
