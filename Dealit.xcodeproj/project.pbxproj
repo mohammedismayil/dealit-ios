@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		234EB4CBE5E96FD1CC01A96E /* Pods_DealitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEB482CADDA592C15133916 /* Pods_DealitTests.framework */; };
+		393868A2278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 393868A0278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld */; };
 		393F1156278D1B8C00542B3B /* UIImageView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393F1155278D1B8C00542B3B /* UIImageView_Extensions.swift */; };
 		396D847A278C9CA3006F87BD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396D8479278C9CA3006F87BD /* NetworkManager.swift */; };
 		396D847C278CA291006F87BD /* HomeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396D847B278CA291006F87BD /* HomeTVC.xib */; };
@@ -56,6 +57,7 @@
 		1D0384A03BFDD8D8999F8B9D /* Pods-Dealit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dealit.debug.xcconfig"; path = "Target Support Files/Pods-Dealit/Pods-Dealit.debug.xcconfig"; sourceTree = "<group>"; };
 		1D17374DB4E06521859C16A5 /* Pods-DealitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DealitTests.debug.xcconfig"; path = "Target Support Files/Pods-DealitTests/Pods-DealitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		220307275B42F48AA0D6F596 /* Pods_Dealit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dealit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		393868A1278DF73B00FDDBB2 /* HomePageUsers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomePageUsers.xcdatamodel; sourceTree = "<group>"; };
 		393F1155278D1B8C00542B3B /* UIImageView_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView_Extensions.swift; sourceTree = "<group>"; };
 		396D8479278C9CA3006F87BD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		396D847B278CA291006F87BD /* HomeTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTVC.xib; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				39B68700278B1EB1001B12E4 /* Info.plist */,
 				393F1157278D1B9F00542B3B /* UIHelpers */,
 				39B686F8278B1EB0001B12E4 /* Dealit.xcdatamodeld */,
+				393868A0278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld */,
 			);
 			path = Dealit;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				39B68733278B3540001B12E4 /* VC2.swift in Sources */,
 				396D8480278CADF3006F87BD /* HomePageModels.swift in Sources */,
 				39B68727278B27A2001B12E4 /* InitialVC.swift in Sources */,
+				393868A2278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld in Sources */,
 				39B68735278B354D001B12E4 /* VC3.swift in Sources */,
 				39B6872B278B2A97001B12E4 /* HomeVC.swift in Sources */,
 				396D847A278C9CA3006F87BD /* NetworkManager.swift in Sources */,
@@ -836,6 +840,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		393868A0278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				393868A1278DF73B00FDDBB2 /* HomePageUsers.xcdatamodel */,
+			);
+			currentVersion = 393868A1278DF73B00FDDBB2 /* HomePageUsers.xcdatamodel */;
+			path = HomePageUsers.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		39B686F8278B1EB0001B12E4 /* Dealit.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
