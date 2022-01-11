@@ -22,5 +22,12 @@ class HomeTVC: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
+    func setCellData(data:HomeUserProfileModel){
+        self.nameLbl.text = data.name
+        self.profileLbl.text = data.desc
+        self.profileImg.load(url: URL(string: data.image) ?? URL(fileURLWithPath: ""))
+    }
 
 }

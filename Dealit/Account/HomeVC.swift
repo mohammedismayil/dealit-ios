@@ -11,6 +11,8 @@ class HomeVC: UIViewController {
 
     @IBOutlet weak var homeTbl: UITableView!
     @IBOutlet weak var homeNameLbl: UILabel!
+    
+    var homeUsers = [HomeUserProfileModel]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,13 +21,15 @@ class HomeVC: UIViewController {
         homeTbl.register(UINib(nibName: "HomeTVC", bundle: nil), forCellReuseIdentifier: "HomeTVC")
         homeTbl.delegate = self
         homeTbl.dataSource = self
-        homeTbl.reloadData()
+      
 //        NotificationCenter.default.addObserver(self, selector: #selector(notificationTriggered), name:  Notification.Name("UserLoggedIn"), object: nil)
 //        NotificationCenter.default.addObserver(self, selector: #selector(notificationTriggered), name:  Notification.Name("UserLoggedIn"), object: nil)
 //        NotificationCenter.default.addObserver(self, selector: #selector(notificationTriggered), name:  Notification.Name("UserLoggedIn"), object: nil)
         
         NetworkManager.getData { (model) in
             print(model.users)
+            self.homeUsers = model.users
+            self.homeTbl.reloadData()
         }
     }
     
@@ -76,14 +80,16 @@ class HomeVC: UIViewController {
 }
 extension HomeVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return homeUsers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = homeTbl.dequeueReusableCell(withIdentifier: "HomeTVC", for: indexPath) as? HomeTVC else { return UITableViewCell() }
-        
+        cell.setCellData(data: homeUsers[indexPath.row])
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
 }
