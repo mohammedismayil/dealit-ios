@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 class HomePageModel:Codable{
     var users:[HomeUserProfileModel]
@@ -20,4 +21,9 @@ class HomeUserProfileModel:Codable{
         self.name = name
         self.image = image
     }
+}
+class HomeUserProfileCacheModel:NSManagedObject{
+    @NSManaged  var name:String?
+    @NSManaged  var desc:String?
+    @NSManaged var image:String?
 }

@@ -28,39 +28,15 @@ class HomeVC: UIViewController {
 //        NotificationCenter.default.addObserver(self, selector: #selector(notificationTriggered), name:  Notification.Name("UserLoggedIn"), object: nil)
         
     
-               guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-               
-               //We need to create a context from this container
-               let managedContext = appDelegate.persistentContainer.viewContext
-               
-               //Prepare the request of type NSFetchRequest  for the entity
-               let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "HomePageUsers")
-               
-               do {
-                   let result = try managedContext.fetch(fetchRequest)
-                   
-                   if result.count > 0 {
-                       self.homeUsers.removeAll()
-                       for data in result as! [NSManagedObject] {
-                                      print(data.value(forKey: "name") as! String)
-                           self.homeUsers.append(HomeUserProfileModel.init(desc: data.value(forKey: "desc") as! String, name: data.value(forKey: "name")  as! String, image: data.value(forKey: "image")  as! String ))
-                                  }
-                   }else{
-                       NetworkManager.getData { (model) in
-                           print(model.users)
-                           self.homeUsers = model.users
-                           self.homeTbl.reloadData()
-                           self.createData()
-                       }
-                   }
-               } catch {
-                   
-                   print("Failed")
-               }
+             
         
         
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.fetchUsersData()
+    }
     @IBAction func logOutAction(_ sender: Any) {
         logoutUser()
     }
@@ -104,37 +80,48 @@ class HomeVC: UIViewController {
         app.window?.makeKeyAndVisible()
         
     }
-    func createData(){
+   
+    
+    func fetchUsersData(){
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        
+        //We need to create a context from this container
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        //Prepare the request of type NSFetchRequest  for the entity
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "HomePageUsers")
+        
+        do {
+            let result = try managedContext.fetch(fetchRequest)
             
-            //As we know that container is set up in the AppDelegates so we need to refer that container.
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-            
-            //We need to create a context from this container
-            let managedContext = appDelegate.persistentContainer.viewContext
-            
-            //Now let’s create an entity and new user records.
-            let userEntity = NSEntityDescription.entity(forEntityName: "HomePageUsers", in: managedContext)!
-            
-            //final, we need to add some data to our newly created record for each keys using
-            //here adding 5 data with loop
-            
-        for i in 0..<homeUsers.count {
-                
-                let user = NSManagedObject(entity: userEntity, insertInto: managedContext)
-            user.setValue(homeUsers[i].name, forKeyPath: "name")
-                user.setValue(homeUsers[i].desc, forKey: "desc")
-                user.setValue(homeUsers[i].image, forKey: "image")
+            if result.count > 0 {
+                self.homeUsers.removeAll()
+                for data in result as! [NSManagedObject] {
+                               print(data.value(forKey: "name") as! String)
+                    self.homeUsers.append(HomeUserProfileModel.init(desc: data.value(forKey: "desc") as! String, name: data.value(forKey: "name")  as! String, image: data.value(forKey: "image")  as! String ))
+                           }
+            }else{
+                NetworkManager.getData { (model) in
+                    print(model.users)
+                    
+                  
+                    let core = CoreDataHandler.shared
+                    
+                    let datas = core.createUsers(users: model.users)
+                    
+                    self.homeUsers.removeAll()
+                    for data in datas {
+                                   print(data.value(forKey: "name") as! String)
+                        self.homeUsers.append(HomeUserProfileModel.init(desc: data.value(forKey: "desc") as! String, name: data.value(forKey: "name")  as! String, image: data.value(forKey: "image")  as! String ))
+                               }
+                    self.homeTbl.reloadData()
+                }
             }
-
-            //Now we have set all the values. The next step is to save them inside the Core Data
+        } catch {
             
-            do {
-                try managedContext.save()
-               
-            } catch let error as NSError {
-                print("Could not save. \(error), \(error.userInfo)")
-            }
+            print("Failed")
         }
+    }
     
     func saveUserData(){
             
