@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="HomePageUsers" representedClassName="HomePageUsers" syncable="YES" codeGenerationType="class">
-        <attribute name="desc" optional="YES" attributeType="String"/>
-        <attribute name="image" optional="YES" attributeType="String"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
-    </entity>
     <entity name="UserDetail" representedClassName="UserDetail" syncable="YES" codeGenerationType="class">
         <attribute name="age" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="sex" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="UserList" representedClassName="UserList" syncable="YES" codeGenerationType="class">
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
     <elements>
-        <element name="HomePageUsers" positionX="-54" positionY="-9" width="128" height="74"/>
+        <element name="UserList" positionX="-54" positionY="-9" width="128" height="74"/>
         <element name="UserDetail" positionX="-36" positionY="36" width="128" height="74"/>
     </elements>
 </model>

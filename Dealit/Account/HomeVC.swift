@@ -89,31 +89,32 @@ class HomeVC: UIViewController {
         let managedContext = appDelegate.persistentContainer.viewContext
         
         //Prepare the request of type NSFetchRequest  for the entity
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "HomePageUsers")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "UserList")
         
         do {
             let result = try managedContext.fetch(fetchRequest)
             
             if result.count > 0 {
                 self.homeUsers.removeAll()
-                for data in result as! [NSManagedObject] {
-                               print(data.value(forKey: "name") as! String)
-                    self.homeUsers.append(HomeUserProfileModel.init(desc: data.value(forKey: "desc") as! String, name: data.value(forKey: "name")  as! String, image: data.value(forKey: "image")  as! String ))
-                           }
+                let core = CoreDataHandler.shared
+                let data = core.getUserList()
+                
+                self.homeUsers = data
+                self.homeTbl.reloadData()
             }else{
                 NetworkManager.getData { (model) in
-                    print(model.users)
+//                    print(model.users)
                     
                   
                     let core = CoreDataHandler.shared
-                    
-                    let datas = core.createUsers(users: model.users)
-                    
                     self.homeUsers.removeAll()
-                    for data in datas {
-                                   print(data.value(forKey: "name") as! String)
-                        self.homeUsers.append(HomeUserProfileModel.init(desc: data.value(forKey: "desc") as! String, name: data.value(forKey: "name")  as! String, image: data.value(forKey: "image")  as! String ))
-                               }
+                    let datas = core.createUsers(users: model.users)
+                    self.homeUsers = core.getUserList()
+//                    self.homeUsers.removeAll()
+//                    for data in datas {
+//                                   print(data.value(forKey: "name") as! String)
+//                        self.homeUsers.append(HomeUserProfileModel.init(desc: data.value(forKey: "desc") as! String, name: data.value(forKey: "name")  as! String, image: data.value(forKey: "image")  as! String ))
+//                               }
                     self.homeTbl.reloadData()
                 }
             }

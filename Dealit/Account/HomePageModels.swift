@@ -22,8 +22,10 @@ class HomeUserProfileModel:Codable{
         self.image = image
     }
 }
+
+@objc(HomeUserProfileCacheModel)
 class HomeUserProfileCacheModel:NSManagedObject{
     @NSManaged  var name:String?
     @NSManaged  var desc:String?
-    @NSManaged var image:String?
+    @NSManaged  var image:String?
 }
