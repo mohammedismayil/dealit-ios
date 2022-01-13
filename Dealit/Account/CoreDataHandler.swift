@@ -27,15 +27,16 @@ class CoreDataHandler{
         //final, we need to add some data to our newly created record for each keys using
         //here adding 5 data with loop
         var user = [NSManagedObject(entity: userEntity, insertInto: managedContext)]
+        user.removeAll()
         for i in 0..<users.count {
             let  curr = NSManagedObject(entity: userEntity, insertInto: managedContext)
-            curr.setValue(users[i].desc, forKey: "desc")
+//            curr.setValue(users[i].desc, forKey: "desc")
+//            
+//            curr.setValue(users[i].name, forKey: "name")
+//            curr.setValue(users[i].image, forKey: "image")
             
-            curr.setValue(users[i].name, forKey: "name")
-            curr.setValue(users[i].image, forKey: "image")
-            
-            
-            user.append(curr)
+            print(users[i].name)
+//            user.append(curr)
             
         }
         
@@ -66,8 +67,8 @@ class CoreDataHandler{
         do {
             let result = try managedContext.fetch(fetchRequest)
             for data in result as! [NSManagedObject] {
-                print(data.value(forKey: "name") as! String)
-//                temp.append(HomeUserProfileModel.init(desc: data.value(forKey: "desc") as! String, name: data.value(forKey: "name") as! String, image: data.value(forKey: "image") as! String))
+                print(data.value(forKey: "name") as? String)
+                temp.append(HomeUserProfileModel.init(desc: data.value(forKey: "desc") as? String ?? "", name: data.value(forKey: "name") as? String ?? "", image: data.value(forKey: "image") as? String ?? ""))
             }
             return temp
             
@@ -75,6 +76,6 @@ class CoreDataHandler{
             
             print("Failed")
         }
-        return [HomeUserProfileModel.init(desc: "", name: "", image: "")]
+        return temp
     }
 }

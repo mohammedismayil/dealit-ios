@@ -115,7 +115,11 @@ class HomeVC: UIViewController {
 //                                   print(data.value(forKey: "name") as! String)
 //                        self.homeUsers.append(HomeUserProfileModel.init(desc: data.value(forKey: "desc") as! String, name: data.value(forKey: "name")  as! String, image: data.value(forKey: "image")  as! String ))
 //                               }
-                    self.homeTbl.reloadData()
+                    
+                    if self.homeUsers.count > 0 {
+                        self.homeTbl.reloadData()
+                    }
+                   
                 }
             }
         } catch {
