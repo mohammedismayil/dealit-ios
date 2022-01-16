@@ -109,7 +109,7 @@ class HomeVC: UIViewController {
                     let core = CoreDataHandler.shared
                     self.homeUsers.removeAll()
                     let datas = core.createUsers(users: model.users)
-                    self.homeUsers = core.getUserList()
+//                    self.homeUsers = core.getUserList()
 //                    self.homeUsers.removeAll()
 //                    for data in datas {
 //                                   print(data.value(forKey: "name") as! String)

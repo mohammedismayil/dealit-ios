@@ -29,3 +29,13 @@ class HomeUserProfileCacheModel:NSManagedObject{
     @NSManaged  var desc:String?
     @NSManaged  var image:String?
 }
+
+//{
+//"users": [
+//{
+//"name": "mahela",
+//"desc": "Cool AF",
+//"image": "https://randomuser.me/api/portraits/women/79.jpg"
+//}
+//]
+//}
