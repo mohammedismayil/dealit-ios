@@ -96,10 +96,10 @@ class HomeVC: UIViewController {
             
             if result.count > 0 {
                 self.homeUsers.removeAll()
-                let core = CoreDataHandler.shared
+                let core = UserlistCoreDataHandler.shared
                 let data = core.getUserList()
                 
-                self.homeUsers = data
+//                self.homeUsers = data
                 self.homeTbl.reloadData()
             }else{
                 NetworkManager.getData { (model) in

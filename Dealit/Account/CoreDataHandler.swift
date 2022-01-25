@@ -9,6 +9,11 @@ import Foundation
 import UIKit
 import CoreData
 
+
+enum CoreDataEntityEnum:String{
+    case UserList
+    case UserDetails
+}
 class CoreDataHandler{
     
     static let shared = CoreDataHandler()
@@ -53,35 +58,51 @@ class CoreDataHandler{
     }
     
     
-    func getUserList()->[HomeUserProfileModel]{
-        //As we know that container is set up in the AppDelegates so we need to refer that container.
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return [HomeUserProfileModel.init(desc: "", name: "", image: "")]}
+    func getData(for entity:CoreDataEntityEnum)->[[String: Any]] {
+        
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return [] }
         
         //We need to create a context from this container
         let managedContext = appDelegate.persistentContainer.viewContext
         
         //Prepare the request of type NSFetchRequest  for the entity
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "UserList")
-        var temp = [HomeUserProfileModel.init(desc: "", name: "", image: "")]
-        temp.removeAll()
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entity.rawValue)
+        
         do {
             let result = try managedContext.fetch(fetchRequest)
            
-            for data in result as! [NSManagedObject] {
-                print(data.value(forKey: "name") as? String)
-                print(data.value(forKey: "desc") as? String)
-                print(data.value(forKey: "image") as? String)
-                if data.value(forKey: "name") as? String != nil {
-                    temp.append(HomeUserProfileModel.init(desc: data.value(forKey: "desc") as? String ?? "", name: data.value(forKey: "name") as? String ?? "", image: data.value(forKey: "image") as? String ?? ""))
-                }
-               
-            }
-            return temp
             
+            
+            
+           
+           
+           let objs = result as! [NSManagedObject]
+                var jsonArray: [[String: Any]] = []
+                   for item in objs {
+                       var dict: [String: Any] = [:]
+                       for attribute in item.entity.attributesByName {
+                           //check if value is present, then add key to dictionary so as to avoid the nil value crash
+                           if let value = item.value(forKey: attribute.key) {
+                               dict[attribute.key] = value
+                           }
+                       }
+                       jsonArray.append(dict)
+                   }
+                   return jsonArray
+                
+               
+           
+           return [[String: Any]]()
+         
         } catch {
             
             print("Failed")
         }
-        return temp
+        
+        return []
     }
+    
+    
+
 }

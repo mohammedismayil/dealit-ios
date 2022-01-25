@@ -10,6 +10,7 @@
 		234EB4CBE5E96FD1CC01A96E /* Pods_DealitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEB482CADDA592C15133916 /* Pods_DealitTests.framework */; };
 		393868A2278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 393868A0278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld */; };
 		393F1156278D1B8C00542B3B /* UIImageView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393F1155278D1B8C00542B3B /* UIImageView_Extensions.swift */; };
+		39478C1027A0663D009652CB /* UserListCoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */; };
 		396D847A278C9CA3006F87BD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396D8479278C9CA3006F87BD /* NetworkManager.swift */; };
 		396D847C278CA291006F87BD /* HomeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396D847B278CA291006F87BD /* HomeTVC.xib */; };
 		396D847E278CA67C006F87BD /* HomeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396D847D278CA67C006F87BD /* HomeTVC.swift */; };
@@ -60,6 +61,7 @@
 		220307275B42F48AA0D6F596 /* Pods_Dealit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dealit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		393868A1278DF73B00FDDBB2 /* HomePageUsers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomePageUsers.xcdatamodel; sourceTree = "<group>"; };
 		393F1155278D1B8C00542B3B /* UIImageView_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView_Extensions.swift; sourceTree = "<group>"; };
+		39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCoreDataHandler.swift; sourceTree = "<group>"; };
 		396D8479278C9CA3006F87BD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		396D847B278CA291006F87BD /* HomeTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTVC.xib; sourceTree = "<group>"; };
 		396D847D278CA67C006F87BD /* HomeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVC.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				396D847F278CADF3006F87BD /* HomePageModels.swift */,
 				396D8479278C9CA3006F87BD /* NetworkManager.swift */,
 				397CDC41278E840F005CA5F2 /* CoreDataHandler.swift */,
+				39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				39B68729278B28F0001B12E4 /* RegisterVC.swift in Sources */,
 				39B686F0278B1EB0001B12E4 /* AppDelegate.swift in Sources */,
 				39B68730278B3494001B12E4 /* VC1.swift in Sources */,
+				39478C1027A0663D009652CB /* UserListCoreDataHandler.swift in Sources */,
 				39B686FA278B1EB0001B12E4 /* Dealit.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
