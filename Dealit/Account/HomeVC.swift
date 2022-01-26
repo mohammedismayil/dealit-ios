@@ -109,7 +109,8 @@ class HomeVC: UIViewController {
                     let core = CoreDataHandler.shared
                     self.homeUsers.removeAll()
                     let datas = core.createUsers(users: model.users)
-//                    self.homeUsers = core.getUserList()
+                    self.homeUsers.removeAll()
+                    self.homeUsers = UserlistCoreDataHandler.shared.getUserList()
 //                    self.homeUsers.removeAll()
 //                    for data in datas {
 //                                   print(data.value(forKey: "name") as! String)
@@ -163,6 +164,8 @@ class HomeVC: UIViewController {
 }
 extension HomeVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        print("total array count \(homeUsers.count)")
         return homeUsers.count
     }
     

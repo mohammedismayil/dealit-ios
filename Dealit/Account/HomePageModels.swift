@@ -21,6 +21,12 @@ class HomeUserProfileModel:Codable{
         self.name = name
         self.image = image
     }
+    
+    init(json:JSON){
+        self.desc = json["desc"] as? String ?? ""
+        self.name = json["name"] as? String ?? ""
+        self.image = json["image"] as? String ?? ""
+    }
 }
 
 @objc(HomeUserProfileCacheModel)

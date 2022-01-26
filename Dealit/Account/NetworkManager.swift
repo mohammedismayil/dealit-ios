@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 
 typealias Closure  = () -> ()
+typealias JSON = [String:Any]
 class NetworkManager: NSObject{
     static func getData(returnHandler:@escaping (HomePageModel) -> Void ){
        

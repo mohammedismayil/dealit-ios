@@ -12,7 +12,7 @@ class UserlistCoreDataHandler{
     
     static let shared = UserlistCoreDataHandler()
     
-    func getUserList()->[[String:Any]]{
+    func getUserList()->[HomeUserProfileModel]{
         
         
         let handler = CoreDataHandler.shared
@@ -20,6 +20,17 @@ class UserlistCoreDataHandler{
         let list = handler.getData(for: .UserList )
         
         
-        return list
+        var userlist = [HomeUserProfileModel(desc: "", name: "", image: "")]
+        userlist.removeAll()
+        for list in list {
+            
+            if !list.isEmpty{
+                userlist.append(HomeUserProfileModel(json: list))
+            }
+            
+        }
+        
+        
+        return userlist
     }
 }

@@ -33,16 +33,20 @@ class CoreDataHandler{
         //here adding 5 data with loop
         var user = [NSManagedObject(entity: userEntity, insertInto: managedContext)]
         user.removeAll()
-        for i in 0..<users.count {
-            let  curr = NSManagedObject(entity: userEntity, insertInto: managedContext)
-            curr.setValue(users[i].name, forKey: "name")
-//            
-            curr.setValue(users[i].desc, forKey: "desc")
-            curr.setValue(users[i].image, forKey: "image")
-            print("here")
-            print(users[i].name)
-            user.append(curr)
-            
+//        for _ in 0..<100{
+//        for _ in 0..<1000{
+            for i in 0..<users.count {
+                let  curr = NSManagedObject(entity: userEntity, insertInto: managedContext)
+                curr.setValue(users[i].name, forKey: "name")
+    //
+                curr.setValue(users[i].desc, forKey: "desc")
+                curr.setValue(users[i].image, forKey: "image")
+                print("here")
+                print(users[i].name)
+                user.append(curr)
+                
+//            }
+//        }
         }
         
         //Now we have set all the values. The next step is to save them inside the Core Data
@@ -58,7 +62,7 @@ class CoreDataHandler{
     }
     
     
-    func getData(for entity:CoreDataEntityEnum)->[[String: Any]] {
+    func getData(for entity:CoreDataEntityEnum)->[JSON] {
         
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return [] }
@@ -78,22 +82,26 @@ class CoreDataHandler{
            
            
            let objs = result as! [NSManagedObject]
-                var jsonArray: [[String: Any]] = []
-                   for item in objs {
-                       var dict: [String: Any] = [:]
-                       for attribute in item.entity.attributesByName {
-                           //check if value is present, then add key to dictionary so as to avoid the nil value crash
-                           if let value = item.value(forKey: attribute.key) {
-                               dict[attribute.key] = value
-                           }
-                       }
-                       jsonArray.append(dict)
-                   }
-                   return jsonArray
+                var jsonArray: [JSON] = []
+            var dict: [String: Any] = [:]
+          
+                for item in objs {
+                   
+                    for attribute in item.entity.attributesByName {
+                        //check if value is present, then add key to dictionary so as to avoid the nil value crash
+                        if let value = item.value(forKey: attribute.key) {
+                            dict[attribute.key] = value
+                        }
+                    }
+                    jsonArray.append(dict)
+                }
+                return jsonArray
+           
+                  
                 
                
            
-           return [[String: Any]]()
+           return [JSON]()
          
         } catch {
             
