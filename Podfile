@@ -7,6 +7,8 @@ target 'Dealit' do
 
   # Pods for Dealit
  pod 'Alamofire', '~> 5.5'
+ 
+ pod 'TrustWalletCore'
   target 'DealitTests' do
     inherit! :search_paths
     # Pods for testing
