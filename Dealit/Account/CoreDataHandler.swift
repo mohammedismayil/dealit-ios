@@ -13,6 +13,7 @@ import CoreData
 enum CoreDataEntityEnum:String{
     case UserList
     case UserDetails
+    case Products
 }
 class CoreDataHandler{
     
