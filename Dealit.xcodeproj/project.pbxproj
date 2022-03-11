@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		234EB4CBE5E96FD1CC01A96E /* Pods_DealitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEB482CADDA592C15133916 /* Pods_DealitTests.framework */; };
+		3913609F27DA723400D3B29B /* TrustWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913609E27DA723400D3B29B /* TrustWalletVC.swift */; };
 		393868A2278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 393868A0278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld */; };
 		393F1156278D1B8C00542B3B /* UIImageView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393F1155278D1B8C00542B3B /* UIImageView_Extensions.swift */; };
 		39478C1027A0663D009652CB /* UserListCoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */; };
@@ -61,6 +62,7 @@
 		1D0384A03BFDD8D8999F8B9D /* Pods-Dealit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dealit.debug.xcconfig"; path = "Target Support Files/Pods-Dealit/Pods-Dealit.debug.xcconfig"; sourceTree = "<group>"; };
 		1D17374DB4E06521859C16A5 /* Pods-DealitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DealitTests.debug.xcconfig"; path = "Target Support Files/Pods-DealitTests/Pods-DealitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		220307275B42F48AA0D6F596 /* Pods_Dealit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dealit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3913609E27DA723400D3B29B /* TrustWalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustWalletVC.swift; sourceTree = "<group>"; };
 		393868A1278DF73B00FDDBB2 /* HomePageUsers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomePageUsers.xcdatamodel; sourceTree = "<group>"; };
 		393F1155278D1B8C00542B3B /* UIImageView_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView_Extensions.swift; sourceTree = "<group>"; };
 		39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCoreDataHandler.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				39B68728278B28F0001B12E4 /* RegisterVC.swift */,
+				3913609E27DA723400D3B29B /* TrustWalletVC.swift */,
 				39B68722278B1EEE001B12E4 /* UserStatus.swift */,
 				39B68724278B261E001B12E4 /* LocalAppData.swift */,
 				39B68726278B27A2001B12E4 /* InitialVC.swift */,
@@ -496,6 +499,7 @@
 				39B6872B278B2A97001B12E4 /* HomeVC.swift in Sources */,
 				396D847A278C9CA3006F87BD /* NetworkManager.swift in Sources */,
 				39B68725278B261E001B12E4 /* LocalAppData.swift in Sources */,
+				3913609F27DA723400D3B29B /* TrustWalletVC.swift in Sources */,
 				396D847E278CA67C006F87BD /* HomeTVC.swift in Sources */,
 				393F1156278D1B8C00542B3B /* UIImageView_Extensions.swift in Sources */,
 				39B68723278B1EEE001B12E4 /* UserStatus.swift in Sources */,
