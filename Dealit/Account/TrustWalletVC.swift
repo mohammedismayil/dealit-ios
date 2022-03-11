@@ -28,6 +28,12 @@ class TrustWalletVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func createHDWallet(_ sender: Any){
+        
+        
+        createdemoWallet()
+    }
     @IBAction func createAction(_ sender: Any) {
        
         
@@ -64,6 +70,17 @@ class TrustWalletVC: UIViewController {
         }
         
         
+    }
+    
+    func createdemoWallet(){
+        
+        
+        
+        let wallet = HDWallet(strength: 128, passphrase: "")
+        
+        print(wallet?.mnemonic)
+        print(wallet?.getAddressForCoin(coin: .ethereum))
+//        print(wallet?.key)
     }
     
     
