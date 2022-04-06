@@ -35,39 +35,41 @@ class TrustWalletVC: UIViewController {
         createdemoWallet()
     }
     @IBAction func createAction(_ sender: Any) {
-       
+//        testBTC()
+        sendBTC()
         
-        if let keyDirectory = try? KeyStore.init(keyDirectory: URL.createFolder(folderName: "wallet") ?? URL(fileURLWithPath: "wallet")) {
-            
-            
-            
-            if let keyPri = try? keyDirectory.import(privateKey: PrivateKey(data: Data(hexString: privateKey ) ?? Data()) ?? PrivateKey(), name: "", password: "", coin: .ethereum) {
-                
-                
-                let signerInput = EthereumSigningInput.with {
-                    $0.nonce = Data(hexString: "07")!
-                    $0.chainID = Data(hexString: "04")!
-                    $0.gasPrice = Data(hexString: "D693A400")!// decimal 3600000000
-                    $0.gasLimit = Data(hexString: "6978")! // decimal 21000
-                    $0.toAddress = "0xC37054b3b48C3317082E7ba872d7753D13da4986"
-                    $0.maxFeePerGas = Data(hexString: "9502F900")! // 2500000000
-                    $0.transaction = EthereumTransaction.with {
-                       $0.transfer = EthereumTransaction.Transfer.with {
-                           $0.amount = Data(hexString: "0.004189374BC6A7EF9DB2") ?? Data()
-                       }
-                    }
-                    
-                    if let privky = try? keyDirectory.wallets[0].privateKey(password: "", coin: .ethereum).data {
-                        $0.privateKey = privky
-                    }
-                    
-                }
-                let output: EthereumSigningOutput = AnySigner.sign(input: signerInput, coin: .ethereum)
-                print(" data:   ", output.encoded.hexString)
-                print(output.data.hexString)
-            }
-          
-        }
+      
+//        if let keyDirectory = try? KeyStore.init(keyDirectory: URL.createFolder(folderName: "wallet") ?? URL(fileURLWithPath: "wallet")) {
+//
+//
+//
+//            if let keyPri = try? keyDirectory.import(privateKey: PrivateKey(data: Data(hexString: privateKey ) ?? Data()) ?? PrivateKey(), name: "", password: "", coin: .ethereum) {
+//
+//
+//                let signerInput = EthereumSigningInput.with {
+//                    $0.nonce = Data(hexString: "07")!
+//                    $0.chainID = Data(hexString: "04")!
+//                    $0.gasPrice = Data(hexString: "D693A400")!// decimal 3600000000
+//                    $0.gasLimit = Data(hexString: "6978")! // decimal 21000
+//                    $0.toAddress = "0xC37054b3b48C3317082E7ba872d7753D13da4986"
+//                    $0.maxFeePerGas = Data(hexString: "9502F900")! // 2500000000
+//                    $0.transaction = EthereumTransaction.with {
+//                       $0.transfer = EthereumTransaction.Transfer.with {
+//                           $0.amount = Data(hexString: "0.004189374BC6A7EF9DB2") ?? Data()
+//                       }
+//                    }
+//
+//                    if let privky = try? keyDirectory.wallets[0].privateKey(password: "", coin: .ethereum).data {
+//                        $0.privateKey = privky
+//                    }
+//
+//                }
+//                let output: EthereumSigningOutput = AnySigner.sign(input: signerInput, coin: .ethereum)
+//                print(" data:   ", output.encoded.hexString)
+//                print(output.data.hexString)
+//            }
+//
+//        }
         
         
     }
@@ -79,8 +81,100 @@ class TrustWalletVC: UIViewController {
         let wallet = HDWallet(strength: 128, passphrase: "")
         
         print(wallet?.mnemonic)
-        print(wallet?.getAddressForCoin(coin: .ethereum))
-//        print(wallet?.key)
+        print(wallet?.getAddressForCoin(coin: .litecoin))
+        print(wallet?.getKey(coin: .litecoin
+                             , derivationPath: "").data.hexString)
+    }
+    
+    
+    func testBTC(){
+        
+//        020000000001017b6824cd189e863c6ff5f1104a366a3503fe3a2d217830c8d970016cdcba2cb60100000000ffffffff01e81c0000000000001600146487ea38f326589ce819ea5ddf08eabadca723b70247304402200c95270728a4814fb13bb02f0cd743ef903574636abf5c530c39748b7c30445702201bde73da9e31a167ed09e275da52812b4310f5b4d030f5e5ceac6d1cc10ae27801210312c8b566a5cba16bbca13b09b1c99896dbbf4bb6caba68f02634c3b48725ecda00000000
+        let utxoTxId = Data(hexString: "b62cbadc6c0170d9c83078212d3afe03356a364a10f1f56f3c869e18cd24687b")! // latest utxo for sender, "txid" field from blockbook utxo api: https://github.com/trezor/blockbook/blob/master/docs/api.md#get-utxo
+        
+        let wif = "cStCTxG1cZUMitKkFxyiQQDJNiMKgHp5zmhWNgbhNvCySatqft6w"
+               let decoded = Base58.decode(string: wif)!
+               let privateKey = PrivateKey(data: decoded[1 ..< 33])!
+       
+        let address = CoinType.bitcoin.deriveAddress(privateKey: privateKey)
+
+        let utxo = BitcoinUnspentTransaction.with {
+            $0.outPoint.hash = Data(utxoTxId.reversed()) // reverse of UTXO tx id, Bitcoin internal expects network byte order
+            $0.outPoint.index = 1                        // outpoint index of this this UTXO, "vout" field from blockbook utxo api
+            $0.outPoint.sequence = UINT32_MAX
+            $0.amount = 74000                             // value of this UTXO, "value" field from blockbook utxo api
+            $0.script = BitcoinScript.lockScriptForAddress(address: address, coin: .bitcoin).data // Build lock script from address or public key hash
+        }
+//        let utxo2 = BitcoinUnspentTransaction.with {
+//            $0.outPoint.hash = Data(utxoTxId.reversed()) // reverse of UTXO tx id, Bitcoin internal expects network byte order
+//            $0.outPoint.index = 1                        // outpoint index of this this UTXO, "vout" field from blockbook utxo api
+//            $0.outPoint.sequence = UINT32_MAX
+//            $0.amount = 1                             // value of this UTXO, "value" field from blockbook utxo api
+//            $0.script = BitcoinScript.lockScriptForAddress(address: address, coin: .bitcoin).data // Build lock script from address or public key hash
+//        }
+        let input = BitcoinSigningInput.with {
+            $0.hashType = BitcoinSigHashType.all.rawValue | BitcoinSigHashType.fork.rawValue
+            $0.amount = 7400
+            $0.byteFee = 1
+            $0.toAddress = "tb1qvjr75w8nyevfe6qeafwa7z82htw2wgahemdu0m"
+            $0.changeAddress = "tb1qx42tcdxqsdgl32jzuwt4p67y7lp2mf89zw380e" // can be same sender address
+            $0.utxo = [utxo]
+            $0.privateKey = [privateKey.data]
+        }
+       
+
+        let output: BitcoinSigningOutput = AnySigner.sign(input: input, coin: .bitcoinCash)
+        
+        // encoded transaction to broadcast
+        print(output.encoded.hexString)
+    }
+    func sendBTC(){
+      
+        let address = "tb1qx42tcdxqsdgl32jzuwt4p67y7lp2mf89zw380e"
+               let script = BitcoinScript.lockScriptForAddress(address: address, coin: .bitcoin)
+               let key = PrivateKey(data: Data(hexString: "9E302234BD295F203A92BA180B7C0E846F0E900B7076F12C15DFFD2A6A2B561E")!)!
+               let pubkey = key.getPublicKeySecp256k1(compressed: true)
+       
+        
+
+               
+
+        
+        
+                let utxos = [
+                    BitcoinUnspentTransaction.with {
+                        $0.outPoint.hash = Data.reverse(hexString: "b62cbadc6c0170d9c83078212d3afe03356a364a10f1f56f3c869e18cd24687b")
+                        $0.outPoint.index = 1
+                        $0.outPoint.sequence = UINT32_MAX
+                        $0.script = script.data
+                        $0.amount = 74000
+                    }
+                ]
+
+                let plan = BitcoinTransactionPlan.with {
+                    $0.amount = 100
+                    $0.fee = 10720
+                    $0.change = 0
+                    $0.utxos = utxos
+                }
+
+                // redeem p2wpkh nested in p2sh
+                let scriptHash = script.matchPayToWitnessPublicKeyHash()!
+                let input = BitcoinSigningInput.with {
+                    $0.toAddress = "tb1qvjr75w8nyevfe6qeafwa7z82htw2wgahemdu0m"
+                    $0.hashType = BitcoinScript.hashTypeForCoin(coinType: .bitcoin)
+                    $0.coinType = CoinType.bitcoin.rawValue
+                    $0.scripts = [
+                        scriptHash.hexString: BitcoinScript.buildPayToWitnessPubkeyHash(hash: pubkey.bitcoinKeyHash).data
+                    ]
+                    $0.privateKey = [key.data]
+                    $0.plan = plan
+                }
+                let output: BitcoinSigningOutput = AnySigner.sign(input: input, coin: .bitcoin)
+        
+        print(output.encoded.hexString)
+
+
     }
     
     
