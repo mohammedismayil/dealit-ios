@@ -9,6 +9,7 @@ target 'Dealit' do
  pod 'Alamofire', '~> 5.5'
  
  pod 'TrustWalletCore'
+ pod 'WalletConnectSwift'
   target 'DealitTests' do
     inherit! :search_paths
     # Pods for testing

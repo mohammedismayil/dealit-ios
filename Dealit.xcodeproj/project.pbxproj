@@ -17,6 +17,8 @@
 		396D847E278CA67C006F87BD /* HomeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396D847D278CA67C006F87BD /* HomeTVC.swift */; };
 		396D8480278CADF3006F87BD /* HomePageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396D847F278CADF3006F87BD /* HomePageModels.swift */; };
 		397CDC42278E840F005CA5F2 /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397CDC41278E840F005CA5F2 /* CoreDataHandler.swift */; };
+		39841AB728051EE200D10FA9 /* WalletConnectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39841AB628051EE200D10FA9 /* WalletConnectVC.swift */; };
+		39841ABA28052E0C00D10FA9 /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 39841AB928052E0C00D10FA9 /* Web3 */; };
 		39B686F0278B1EB0001B12E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B686EF278B1EB0001B12E4 /* AppDelegate.swift */; };
 		39B686F7278B1EB0001B12E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B686F5278B1EB0001B12E4 /* Main.storyboard */; };
 		39B686FA278B1EB0001B12E4 /* Dealit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39B686F8278B1EB0001B12E4 /* Dealit.xcdatamodeld */; };
@@ -71,6 +73,7 @@
 		396D847D278CA67C006F87BD /* HomeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVC.swift; sourceTree = "<group>"; };
 		396D847F278CADF3006F87BD /* HomePageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModels.swift; sourceTree = "<group>"; };
 		397CDC41278E840F005CA5F2 /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
+		39841AB628051EE200D10FA9 /* WalletConnectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectVC.swift; sourceTree = "<group>"; };
 		39B686EC278B1EB0001B12E4 /* Dealit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dealit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B686EF278B1EB0001B12E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39B686F6278B1EB0001B12E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +110,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51BB11800612E0EA67B3D770 /* Pods_Dealit.framework in Frameworks */,
+				39841ABA28052E0C00D10FA9 /* Web3 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +205,7 @@
 				39B68728278B28F0001B12E4 /* RegisterVC.swift */,
 				3913609E27DA723400D3B29B /* TrustWalletVC.swift */,
 				39B68722278B1EEE001B12E4 /* UserStatus.swift */,
+				39841AB628051EE200D10FA9 /* WalletConnectVC.swift */,
 				39B68724278B261E001B12E4 /* LocalAppData.swift */,
 				39B68726278B27A2001B12E4 /* InitialVC.swift */,
 				39B6872A278B2A97001B12E4 /* HomeVC.swift */,
@@ -266,6 +271,9 @@
 			dependencies = (
 			);
 			name = Dealit;
+			packageProductDependencies = (
+				39841AB928052E0C00D10FA9 /* Web3 */,
+			);
 			productName = Dealit;
 			productReference = 39B686EC278B1EB0001B12E4 /* Dealit.app */;
 			productType = "com.apple.product-type.application";
@@ -341,6 +349,9 @@
 				Base,
 			);
 			mainGroup = 39B686E3278B1EAF001B12E4;
+			packageReferences = (
+				39841AB828052E0C00D10FA9 /* XCRemoteSwiftPackageReference "Web3.swift" */,
+			);
 			productRefGroup = 39B686ED278B1EB0001B12E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -496,6 +507,7 @@
 				39B68727278B27A2001B12E4 /* InitialVC.swift in Sources */,
 				393868A2278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld in Sources */,
 				39B68735278B354D001B12E4 /* VC3.swift in Sources */,
+				39841AB728051EE200D10FA9 /* WalletConnectVC.swift in Sources */,
 				39B6872B278B2A97001B12E4 /* HomeVC.swift in Sources */,
 				396D847A278C9CA3006F87BD /* NetworkManager.swift in Sources */,
 				39B68725278B261E001B12E4 /* LocalAppData.swift in Sources */,
@@ -858,6 +870,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39841AB828052E0C00D10FA9 /* XCRemoteSwiftPackageReference "Web3.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Boilertalk/Web3.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39841AB928052E0C00D10FA9 /* Web3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39841AB828052E0C00D10FA9 /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		393868A0278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld */ = {

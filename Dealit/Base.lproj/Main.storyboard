@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BFB-4t-4FP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -134,6 +134,142 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QI7-kX-36g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1652.1739130434785" y="82.366071428571431"/>
+        </scene>
+        <!--Trust WalletVC-->
+        <scene sceneID="ikf-1o-3lP">
+            <objects>
+                <viewController storyboardIdentifier="TrustWalletVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BFB-4t-4FP" customClass="TrustWalletVC" customModule="Dealit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="35I-Ay-89G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trustwallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VP-Im-xQA">
+                                <rect key="frame" x="157" y="74" width="100" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t81-jT-TYe">
+                                <rect key="frame" x="141" y="432.5" width="132" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Transaction"/>
+                                <connections>
+                                    <action selector="createAction:" destination="BFB-4t-4FP" eventType="touchUpInside" id="Iba-nC-0bF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kK3-g4-VK6">
+                                <rect key="frame" x="142" y="493.5" width="130.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Create HDWallet"/>
+                                <connections>
+                                    <action selector="createHDWallet:" destination="BFB-4t-4FP" eventType="touchUpInside" id="aPU-hc-fJt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2rw-qb-4aZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kK3-g4-VK6" firstAttribute="centerX" secondItem="t81-jT-TYe" secondAttribute="centerX" id="VTf-w2-nOp"/>
+                            <constraint firstItem="t81-jT-TYe" firstAttribute="centerY" secondItem="35I-Ay-89G" secondAttribute="centerY" id="YWZ-yT-Ujc"/>
+                            <constraint firstItem="t81-jT-TYe" firstAttribute="centerX" secondItem="35I-Ay-89G" secondAttribute="centerX" id="k4m-SM-Mt1"/>
+                            <constraint firstItem="kK3-g4-VK6" firstAttribute="top" secondItem="t81-jT-TYe" secondAttribute="bottom" constant="30" id="obo-cG-9QN"/>
+                            <constraint firstItem="2VP-Im-xQA" firstAttribute="centerX" secondItem="35I-Ay-89G" secondAttribute="centerX" id="qgn-vY-pgJ"/>
+                            <constraint firstItem="2VP-Im-xQA" firstAttribute="top" secondItem="2rw-qb-4aZ" secondAttribute="top" constant="30" id="sMs-bE-3he"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sVt-H9-RqS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130" y="-577"/>
+        </scene>
+        <!--Wallet ConnectVC-->
+        <scene sceneID="bZy-da-jEB">
+            <objects>
+                <viewController storyboardIdentifier="WalletConnectVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sEq-1W-Q9R" customClass="WalletConnectVC" customModule="Dealit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R3v-is-oCc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0kS-Kh-8SC">
+                                <rect key="frame" x="20" y="74" width="374" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtY-YZ-hY9">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0x728cafe9fB8CC2218Fb12a9A2D9335193caa07e0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjx-cy-Vb7">
+                                        <rect key="frame" x="0.0" y="18.5" width="374" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dl-Co-05D">
+                                        <rect key="frame" x="0.0" y="39.5" width="374" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disconnected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBt-fm-SJo">
+                                        <rect key="frame" x="0.0" y="58" width="374" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1No-lZ-xHm">
+                                <rect key="frame" x="157" y="433" width="100" height="30"/>
+                                <state key="normal" title="Scan QR Code"/>
+                                <connections>
+                                    <action selector="scan:" destination="sEq-1W-Q9R" eventType="touchUpInside" id="oso-cX-udA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5Q-wg-fsq">
+                                <rect key="frame" x="168" y="792" width="78" height="30"/>
+                                <state key="normal" title="Disconnect"/>
+                                <connections>
+                                    <action selector="disconnect:" destination="sEq-1W-Q9R" eventType="touchUpInside" id="LFo-N4-eA2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efe-Nu-wqK">
+                                <rect key="frame" x="167.5" y="334" width="79" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="6id-WN-vxS"/>
+                                    <constraint firstAttribute="width" constant="79" id="vSH-ya-4kd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Connect"/>
+                                <connections>
+                                    <action selector="connectAction:" destination="sEq-1W-Q9R" eventType="touchUpInside" id="pci-OY-8iA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yad-ly-N7J"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A5Q-wg-fsq" firstAttribute="centerX" secondItem="R3v-is-oCc" secondAttribute="centerX" id="0bI-VM-Bx4"/>
+                            <constraint firstItem="1No-lZ-xHm" firstAttribute="centerY" secondItem="R3v-is-oCc" secondAttribute="centerY" id="1AY-t6-HyT"/>
+                            <constraint firstItem="1No-lZ-xHm" firstAttribute="top" secondItem="Efe-Nu-wqK" secondAttribute="bottom" constant="68" id="88n-T7-lES"/>
+                            <constraint firstItem="yad-ly-N7J" firstAttribute="trailing" secondItem="0kS-Kh-8SC" secondAttribute="trailing" constant="20" id="AYg-T5-fMQ"/>
+                            <constraint firstItem="0kS-Kh-8SC" firstAttribute="leading" secondItem="yad-ly-N7J" secondAttribute="leading" constant="20" id="CEo-ak-dyN"/>
+                            <constraint firstItem="0kS-Kh-8SC" firstAttribute="top" secondItem="yad-ly-N7J" secondAttribute="top" constant="30" id="IBg-vH-V08"/>
+                            <constraint firstItem="1No-lZ-xHm" firstAttribute="centerX" secondItem="R3v-is-oCc" secondAttribute="centerX" id="QKL-Ja-wnf"/>
+                            <constraint firstItem="A5Q-wg-fsq" firstAttribute="bottom" secondItem="yad-ly-N7J" secondAttribute="bottom" constant="-40" id="rR3-3l-hkO"/>
+                            <constraint firstItem="Efe-Nu-wqK" firstAttribute="centerX" secondItem="R3v-is-oCc" secondAttribute="centerX" id="rqE-Dd-oFu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="disconnectButton" destination="A5Q-wg-fsq" id="riA-rq-aJa"/>
+                        <outlet property="scanQRCodeButton" destination="1No-lZ-xHm" id="3gg-e9-Q4l"/>
+                        <outlet property="statusLabel" destination="hBt-fm-SJo" id="to8-L3-jbZ"/>
+                        <outlet property="walletAddressLabel" destination="gjx-cy-Vb7" id="qvQ-qV-MX8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fT4-g3-irz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64" y="21"/>
         </scene>
     </scenes>
     <resources>

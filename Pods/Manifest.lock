@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (5.5.0)
+  - CryptoSwift (1.4.3)
+  - Starscream (3.1.1)
   - SwiftProtobuf (1.18.0)
   - TrustWalletCore (2.7.1):
     - TrustWalletCore/Core (= 2.7.1)
@@ -7,22 +9,32 @@ PODS:
     - TrustWalletCore/Types
   - TrustWalletCore/Types (2.7.1):
     - SwiftProtobuf
+  - WalletConnectSwift (1.6.0):
+    - CryptoSwift (~> 1.4)
+    - Starscream (~> 3.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.5)
   - TrustWalletCore
+  - WalletConnectSwift
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - CryptoSwift
+    - Starscream
     - SwiftProtobuf
     - TrustWalletCore
+    - WalletConnectSwift
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  CryptoSwift: a0799ee936271bd2253a006f1e4523df21845000
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   SwiftProtobuf: c3c12645230d9b09c72267e0de89468c5543bd86
   TrustWalletCore: 525314696297efc4c218b3d47aba43f216717970
+  WalletConnectSwift: 1fbff8f5315bd8d41596773ca1b384aa873b6824
 
-PODFILE CHECKSUM: 251039466aaa2c768ccfadd08a130e5b1387c662
+PODFILE CHECKSUM: 8581a8f6e5d00f4cab31db1cd0def0e1fe311979
 
 COCOAPODS: 1.11.2
