@@ -32,13 +32,14 @@ class TrustWalletVC: UIViewController {
     @IBAction func createHDWallet(_ sender: Any){
         
         
-        createdemoWallet()
+//        createdemoWallet()
+        p2wsh()
     }
     @IBAction func createAction(_ sender: Any) {
 //        testBTC()
         sendBTC()
         
-      
+//        010000000001014cb79371b7c0938d31300b143acc3fb5e6005739576880331845113be895b6c30100000000ffffffff0128230000000000001600146487ea38f326589ce819ea5ddf08eabadca723b702483045022100a0669d305ba61c43d9283b8643875f0720e4d27923c64f574ecd336f29e38af702201a1d0029674736a0e0cba306338ce08ab820fa209a2ba28f9e26ff7bc997813f01210312c8b566a5cba16bbca13b09b1c99896dbbf4bb6caba68f02634c3b48725ecda00000000
 //        if let keyDirectory = try? KeyStore.init(keyDirectory: URL.createFolder(folderName: "wallet") ?? URL(fileURLWithPath: "wallet")) {
 //
 //
@@ -130,6 +131,8 @@ class TrustWalletVC: UIViewController {
     }
     func sendBTC(){
       
+        
+//        010000000001014efe0d9f03ecfc92a18ba10ca0c6274a8f7c248ff52390b92fa73d674a2e9ceb0000000000ffffffff0128230000000000001600146487ea38f326589ce819ea5ddf08eabadca723b7024730440220028a64ebff5c533be88f313b4e6eb31e8ca04287868ff650358d727b23d59c1402204145f7fa2b0d3b7826548274fa92a6c942274e5ede84c7a9505c53fae94383e101210312c8b566a5cba16bbca13b09b1c99896dbbf4bb6caba68f02634c3b48725ecda00000000
         let address = "tb1qx42tcdxqsdgl32jzuwt4p67y7lp2mf89zw380e"
                let script = BitcoinScript.lockScriptForAddress(address: address, coin: .bitcoin)
                let key = PrivateKey(data: Data(hexString: "9E302234BD295F203A92BA180B7C0E846F0E900B7076F12C15DFFD2A6A2B561E")!)!
@@ -143,18 +146,20 @@ class TrustWalletVC: UIViewController {
         
                 let utxos = [
                     BitcoinUnspentTransaction.with {
-                        $0.outPoint.hash = Data.reverse(hexString: "b62cbadc6c0170d9c83078212d3afe03356a364a10f1f56f3c869e18cd24687b")
-                        $0.outPoint.index = 1
+                        $0.outPoint.hash = Data.reverse(hexString: "eb9c2e4a673da72fb99023f58f247c8f4a27c6a00ca18ba192fcec039f0dfe4e")
+                        $0.outPoint.index = 0
                         $0.outPoint.sequence = UINT32_MAX
                         $0.script = script.data
-                        $0.amount = 74000
+                        $0.amount = 10000
+                        
+                    
                     }
                 ]
 
                 let plan = BitcoinTransactionPlan.with {
-                    $0.amount = 100
-                    $0.fee = 10720
-                    $0.change = 0
+                    $0.amount = 8000
+                    $0.fee = 1000
+//                    $0.change = 1000
                     $0.utxos = utxos
                 }
 
@@ -162,6 +167,7 @@ class TrustWalletVC: UIViewController {
                 let scriptHash = script.matchPayToWitnessPublicKeyHash()!
                 let input = BitcoinSigningInput.with {
                     $0.toAddress = "tb1qvjr75w8nyevfe6qeafwa7z82htw2wgahemdu0m"
+//                    $0.useMaxAmount = true
                     $0.hashType = BitcoinScript.hashTypeForCoin(coinType: .bitcoin)
                     $0.coinType = CoinType.bitcoin.rawValue
                     $0.scripts = [
@@ -169,12 +175,79 @@ class TrustWalletVC: UIViewController {
                     ]
                     $0.privateKey = [key.data]
                     $0.plan = plan
+                    
+//                    $0.amount = 7000
+//
+//                    $0.utxo = utxos
+                    
                 }
                 let output: BitcoinSigningOutput = AnySigner.sign(input: input, coin: .bitcoin)
         
         print(output.encoded.hexString)
 
 
+    }
+    
+    func p2wsh(){
+        // set up input
+        let address = "tb1qx42tcdxqsdgl32jzuwt4p67y7lp2mf89zw380e"
+               let script = BitcoinScript.lockScriptForAddress(address: address, coin: .bitcoin)
+               let key = PrivateKey(data: Data(hexString: "9E302234BD295F203A92BA180B7C0E846F0E900B7076F12C15DFFD2A6A2B561E")!)!
+               let pubkey = key.getPublicKeySecp256k1(compressed: true)
+        let scriptHash = script.matchPayToWitnessPublicKeyHash()!
+               var input = BitcoinSigningInput.with {
+                   $0.hashType = BitcoinScript.hashTypeForCoin(coinType: .bitcoin)
+                   $0.amount = 5000
+                   
+                   $0.byteFee = 1
+                   $0.toAddress = "tb1qvjr75w8nyevfe6qeafwa7z82htw2wgahemdu0m"
+//                   $0.changeAddress =
+                   $0.changeAddress = "tb1qx42tcdxqsdgl32jzuwt4p67y7lp2mf89zw380e"
+               }
+
+        
+      
+     
+               let utxo0 = BitcoinUnspentTransaction.with {
+                   $0.script = BitcoinScript.buildPayToWitnessPubkeyHash(hash: pubkey.bitcoinKeyHash).data
+                   $0.amount = 10000
+                   $0.outPoint.hash = Data.reverse(hexString: "3af68a63dc119d3ded689b6766ec8a183c75445ba81c8e2c0bad6a645d63a2c5")
+                   $0.outPoint.index = 0
+                   $0.outPoint.sequence = UInt32.max
+               }
+               input.utxo.append(utxo0)
+
+               // Plan
+               let plan: BitcoinTransactionPlan = AnySigner.plan(input: input, coin: .bitcoin)
+
+        
+        input.plan = plan
+        input.scripts[scriptHash.hexString] = BitcoinScript.buildPayToWitnessPubkeyHash(hash: pubkey.bitcoinKeyHash).data
+               
+        input.privateKey = [key.data]
+        
+               print(plan.amount)
+        print(plan.fee)
+        print(plan.change)
+
+               // Extend input with private key
+//               input.privateKey.append(Data(hexString: "9E302234BD295F203A92BA180B7C0E846F0E900B7076F12C15DFFD2A6A2B561E")!)
+//               input.privateKey.append(Data(hexString: "619c335025c7f4012e556c2a58b2506e30b8511b53ade95ea316fd8c3286feb9")!)
+
+               // Sign
+               let output: BitcoinSigningOutput = AnySigner.sign(input: input, coin: .bitcoin)
+        print(output.error, TW_Common_Proto_SigningError.ok)
+
+//               let signedTx = output.transaction
+//        print(signedTx.version, 1)
+//
+//               let txId = output.transactionID
+//        print(txId)
+
+
+               let encoded = output.encoded
+               
+        print(encoded.hexString)
     }
     
     
