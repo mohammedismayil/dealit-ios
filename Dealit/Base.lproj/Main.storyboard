@@ -180,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVt-H9-RqS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130" y="-577"/>
+            <point key="canvasLocation" x="-500" y="-651"/>
         </scene>
         <!--Wallet ConnectVC-->
         <scene sceneID="bZy-da-jEB">
@@ -269,7 +269,105 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fT4-g3-irz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="64" y="21"/>
+            <point key="canvasLocation" x="429" y="-750"/>
+        </scene>
+        <!--Wallet Connect ClientVC-->
+        <scene sceneID="ebw-5w-18u">
+            <objects>
+                <viewController storyboardIdentifier="WalletConnectClientVC" id="TlF-lB-0G5" customClass="WalletConnectClientVC" customModule="Dealit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KHP-40-3t9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mm-Ag-Giz">
+                                <rect key="frame" x="173.5" y="432.5" width="67" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="04i-9h-4Zw"/>
+                                    <constraint firstAttribute="height" constant="31" id="BX6-5Y-9ed"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Connect"/>
+                                <connections>
+                                    <action selector="connect:" destination="TlF-lB-0G5" eventType="touchUpInside" id="b5O-aY-oy3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c5z-on-Tld"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Mm-Ag-Giz" firstAttribute="centerX" secondItem="KHP-40-3t9" secondAttribute="centerX" id="CP6-gX-ZAL"/>
+                            <constraint firstItem="5Mm-Ag-Giz" firstAttribute="centerY" secondItem="KHP-40-3t9" secondAttribute="centerY" id="JtU-Xw-SUu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SOg-nH-QbW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="-724"/>
+        </scene>
+        <!--Actions View Controller-->
+        <scene sceneID="QOU-Eu-6Ni">
+            <objects>
+                <viewController storyboardIdentifier="ActionsViewController" id="PCE-We-mWZ" customClass="ActionsViewController" customModule="Dealit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rW8-Cr-H9M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZH-is-fUN">
+                                <rect key="frame" x="173.5" y="432.5" width="67" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="ZEJ-NM-Roa"/>
+                                    <constraint firstAttribute="height" constant="31" id="u4Q-Cm-FvK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="eth_sendTransaction:" destination="PCE-We-mWZ" eventType="touchUpInside" id="Lik-y4-mYe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gdq-tw-3bl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YZH-is-fUN" firstAttribute="centerX" secondItem="rW8-Cr-H9M" secondAttribute="centerX" id="kBf-Pe-HrN"/>
+                            <constraint firstItem="YZH-is-fUN" firstAttribute="centerY" secondItem="rW8-Cr-H9M" secondAttribute="centerY" id="qLe-Tg-E9H"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rsN-sj-NKA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2754" y="-701"/>
+        </scene>
+        <!--Handshake View Controller-->
+        <scene sceneID="WJJ-E8-1N1">
+            <objects>
+                <viewController restorationIdentifier="HandshakeViewController" storyboardIdentifier="HandshakeViewController" id="ePI-eY-f5R" customClass="HandshakeViewController" customModule="Dealit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yb6-EV-LQ3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E1T-Ax-34g">
+                                <rect key="frame" x="47.5" y="275" width="319" height="346"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="319" id="E5J-Lt-h1w"/>
+                                    <constraint firstAttribute="height" constant="346" id="Gbv-sd-ntG"/>
+                                    <constraint firstAttribute="width" secondItem="E1T-Ax-34g" secondAttribute="height" multiplier="319:346" id="pTO-2d-H7C"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0EF-hZ-OJA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="E1T-Ax-34g" firstAttribute="centerY" secondItem="Yb6-EV-LQ3" secondAttribute="centerY" id="Tw4-tq-pwz"/>
+                            <constraint firstItem="E1T-Ax-34g" firstAttribute="centerX" secondItem="Yb6-EV-LQ3" secondAttribute="centerX" id="V5n-me-2Ha"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="qrCodeImageView" destination="E1T-Ax-34g" id="hVm-te-7cu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXQ-6k-BQM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394.20289855072468" y="-1325.2232142857142"/>
         </scene>
     </scenes>
     <resources>

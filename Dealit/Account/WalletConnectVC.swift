@@ -8,6 +8,7 @@
 import UIKit
 import Web3
 import WalletConnectSwift
+import WatchConnectivity
 
 class WalletConnectVC: UIViewController {
     @IBOutlet weak var walletAddressLabel: UILabel!
@@ -48,6 +49,9 @@ class WalletConnectVC: UIViewController {
             let session = try? JSONDecoder().decode(Session.self, from: oldSessionObject) {
             try? server.reconnect(to: session)
         }
+        
+      
+
     }
 
     func onMainThread(_ closure: @escaping () -> Void) {
@@ -64,7 +68,7 @@ class WalletConnectVC: UIViewController {
         
         
         
-        guard let url = WCURL("wc:23aab196-8d87-4681-87b5-a9040c0c3911@1?bridge=https%3A%2F%2Fy.bridge.walletconnect.org&key=d67fb6e92a5cb6eee97e65afa52e7b16bdc5f2d67b18f8fc4f7b7e9705ed3cb3") else { return }
+        guard let url = WCURL("wc:a2573afe-48e4-4086-9b94-0f4b6072d417@1?bridge=https%3A%2F%2Fr.bridge.walletconnect.org&key=5ab59a3a25135905177cba0d7c87614adfcd6f2300ff1e0ea990e5986e3abaef") else { return }
        
         do {
             try self.server.connect(to: url)

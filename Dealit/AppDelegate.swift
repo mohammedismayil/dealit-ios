@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let story = UIStoryboard(name: "Main", bundle:nil)
-        let vc = story.instantiateViewController(withIdentifier: "TrustWalletVC") as! TrustWalletVC
+        let vc = story.instantiateViewController(withIdentifier: "WalletConnectClientVC") as! WalletConnectClientVC
          window?.rootViewController = vc
          window?.makeKeyAndVisible()
         // Override point for customization after application launch.

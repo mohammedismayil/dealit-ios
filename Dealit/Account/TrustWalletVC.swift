@@ -32,8 +32,8 @@ class TrustWalletVC: UIViewController {
     @IBAction func createHDWallet(_ sender: Any){
         
         
-//        createdemoWallet()
-        p2wshWithInputWIF()
+        createdemoWallet()
+//        p2wshWithInputWIF()
     }
     @IBAction func createAction(_ sender: Any) {
 
@@ -49,9 +49,19 @@ class TrustWalletVC: UIViewController {
         let wallet = HDWallet(strength: 128, passphrase: "")
         
         print(wallet?.mnemonic)
-        print(wallet?.getAddressForCoin(coin: .litecoin))
-        print(wallet?.getKey(coin: .litecoin
-                             , derivationPath: "").data.hexString)
+        print(wallet?.getAddressForCoin(coin: .bitcoin))
+        
+//        wallet?.getExtendedPublicKey(purpose: .bip84, coin: .bitcoin, version: .dgpv)
+        
+        print(wallet?.getKey(coin: .bitcoin, derivationPath: "m/84'/1'/0'/0/0").data.hexString)
+        
+        
+        let address = CoinType.bitcoin.deriveAddress(privateKey: wallet!.getKey(coin: .bitcoin, derivationPath: "m/84'/1'/0'/0/0"))
+        
+        
+        print(address)
+//        print(wallet?.getKey(coin: .litecoin
+//                             , derivationPath: "").data.hexString)
     }
     
     
