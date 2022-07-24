@@ -337,6 +337,21 @@
             </objects>
             <point key="canvasLocation" x="2754" y="-701"/>
         </scene>
+        <!--Cpp IntegratedVC-->
+        <scene sceneID="BOM-51-XtJ">
+            <objects>
+                <viewController storyboardIdentifier="CppIntegratedVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aKF-rO-aB5" customClass="CppIntegratedVC" customModule="Dealit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lp7-iN-MiQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="o56-wU-mHn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UvX-e0-mNL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4010" y="-648"/>
+        </scene>
         <!--Handshake View Controller-->
         <scene sceneID="WJJ-E8-1N1">
             <objects>

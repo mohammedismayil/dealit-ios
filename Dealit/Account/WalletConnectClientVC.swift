@@ -12,6 +12,9 @@ class WalletConnectClientVC: UIViewController {
     var handshakeController: HandshakeViewController!
     var actionsController: ActionsViewController!
     var walletConnect: WalletConnect!
+    
+    
+    
 
     @IBAction func connect(_ sender: Any) {
         let connectionUrl = walletConnect.connect()
@@ -34,6 +37,8 @@ class WalletConnectClientVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
         walletConnect = WalletConnect(delegate: self)
         walletConnect.reconnectIfNeeded()
     }

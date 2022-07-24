@@ -218,7 +218,7 @@ fileprivate enum Stub {
     /// https://docs.walletconnect.org/json-rpc-api-methods/ethereum#example-parameters-1
     static func transaction(from address: String, nonce: String) -> Client.Transaction {
         return Client.Transaction(from: address,
-                                  to: "0xd46e8dd67c5d32be8058bb8eb970870f07244567",
+                                  to: "0xD565A55B83fD384894F1165A69B649fd9372Fc65",
                                   data: "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675",
                                   gas: "0x76c0", // 30400
                                   gasPrice: "0x9184e72a000", // 10000000000000

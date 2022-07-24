@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		17C9AB260739506641DC700F /* Pods_Dealit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A8DF0A1B87764EF61A7B54 /* Pods_Dealit.framework */; };
 		3913609F27DA723400D3B29B /* TrustWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913609E27DA723400D3B29B /* TrustWalletVC.swift */; };
+		391C8D7B288DC49B007188EA /* HelloCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 391C8D7A288DC49B007188EA /* HelloCpp.mm */; };
+		391C8D7E288DC812007188EA /* CppIntegratedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391C8D7D288DC812007188EA /* CppIntegratedVC.swift */; };
 		393868A2278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 393868A0278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld */; };
 		393F1156278D1B8C00542B3B /* UIImageView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393F1155278D1B8C00542B3B /* UIImageView_Extensions.swift */; };
 		39478C1027A0663D009652CB /* UserListCoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */; };
@@ -66,6 +68,10 @@
 /* Begin PBXFileReference section */
 		23EF89329C7AC4EA629F4833 /* Pods-Dealit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dealit.release.xcconfig"; path = "Target Support Files/Pods-Dealit/Pods-Dealit.release.xcconfig"; sourceTree = "<group>"; };
 		3913609E27DA723400D3B29B /* TrustWalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustWalletVC.swift; sourceTree = "<group>"; };
+		391C8D76288DC2CA007188EA /* Dealit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dealit-Bridging-Header.h"; sourceTree = "<group>"; };
+		391C8D7A288DC49B007188EA /* HelloCpp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloCpp.mm; sourceTree = "<group>"; };
+		391C8D7C288DC66A007188EA /* HelloCpp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloCpp.hpp; sourceTree = "<group>"; };
+		391C8D7D288DC812007188EA /* CppIntegratedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CppIntegratedVC.swift; sourceTree = "<group>"; };
 		393868A1278DF73B00FDDBB2 /* HomePageUsers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomePageUsers.xcdatamodel; sourceTree = "<group>"; };
 		393F1155278D1B8C00542B3B /* UIImageView_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView_Extensions.swift; sourceTree = "<group>"; };
 		39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCoreDataHandler.swift; sourceTree = "<group>"; };
@@ -216,6 +222,9 @@
 				39841AB628051EE200D10FA9 /* WalletConnectVC.swift */,
 				395A431028829CB400FB8F6F /* Walletconnect.swift */,
 				395A430C28829C4900FB8F6F /* WalletConnectClientVC.swift */,
+				391C8D7C288DC66A007188EA /* HelloCpp.hpp */,
+				391C8D7D288DC812007188EA /* CppIntegratedVC.swift */,
+				391C8D7A288DC49B007188EA /* HelloCpp.mm */,
 				395A431228829E5000FB8F6F /* ActionsVC.swift */,
 				395A430E28829C7F00FB8F6F /* HandShakeVC.swift */,
 				39B68724278B261E001B12E4 /* LocalAppData.swift */,
@@ -227,6 +236,7 @@
 				397CDC41278E840F005CA5F2 /* CoreDataHandler.swift */,
 				39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */,
 				39DD3FFA27BEB08C00BC2F8E /* ProductsCoreDataHandler.swift */,
+				391C8D76288DC2CA007188EA /* Dealit-Bridging-Header.h */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -341,6 +351,7 @@
 				TargetAttributes = {
 					39B686EB278B1EB0001B12E4 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					39B68704278B1EB1001B12E4 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -516,6 +527,7 @@
 				39B68733278B3540001B12E4 /* VC2.swift in Sources */,
 				397CDC42278E840F005CA5F2 /* CoreDataHandler.swift in Sources */,
 				396D8480278CADF3006F87BD /* HomePageModels.swift in Sources */,
+				391C8D7B288DC49B007188EA /* HelloCpp.mm in Sources */,
 				39B68727278B27A2001B12E4 /* InitialVC.swift in Sources */,
 				395A430D28829C4900FB8F6F /* WalletConnectClientVC.swift in Sources */,
 				393868A2278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld in Sources */,
@@ -526,6 +538,7 @@
 				396D847A278C9CA3006F87BD /* NetworkManager.swift in Sources */,
 				39B68725278B261E001B12E4 /* LocalAppData.swift in Sources */,
 				3913609F27DA723400D3B29B /* TrustWalletVC.swift in Sources */,
+				391C8D7E288DC812007188EA /* CppIntegratedVC.swift in Sources */,
 				396D847E278CA67C006F87BD /* HomeTVC.swift in Sources */,
 				393F1156278D1B8C00542B3B /* UIImageView_Extensions.swift in Sources */,
 				39B68723278B1EEE001B12E4 /* UserStatus.swift in Sources */,
@@ -714,6 +727,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T9YNGR22U4;
@@ -732,6 +746,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ismayil.products.Dealit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Dealit/Account/Dealit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -743,6 +759,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T9YNGR22U4;
@@ -761,6 +778,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ismayil.products.Dealit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Dealit/Account/Dealit-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
