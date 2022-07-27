@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let story = UIStoryboard(name: "Main", bundle:nil)
-        let vc = story.instantiateViewController(withIdentifier: "CppIntegratedVC") as! CppIntegratedVC
+        let vc = story.instantiateViewController(withIdentifier: "WeakReferenceExampleVC") as! WeakReferenceExampleVC
          window?.rootViewController = vc
          window?.makeKeyAndVisible()
         // Override point for customization after application launch.

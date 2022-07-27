@@ -25,6 +25,7 @@
 		397CDC42278E840F005CA5F2 /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397CDC41278E840F005CA5F2 /* CoreDataHandler.swift */; };
 		39841AB728051EE200D10FA9 /* WalletConnectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39841AB628051EE200D10FA9 /* WalletConnectVC.swift */; };
 		39841ABA28052E0C00D10FA9 /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 39841AB928052E0C00D10FA9 /* Web3 */; };
+		3986487B2891AC5400A48C6D /* WeakReferenceExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3986487A2891AC5400A48C6D /* WeakReferenceExampleVC.swift */; };
 		39B686F0278B1EB0001B12E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B686EF278B1EB0001B12E4 /* AppDelegate.swift */; };
 		39B686F7278B1EB0001B12E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B686F5278B1EB0001B12E4 /* Main.storyboard */; };
 		39B686FA278B1EB0001B12E4 /* Dealit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39B686F8278B1EB0001B12E4 /* Dealit.xcdatamodeld */; };
@@ -85,6 +86,7 @@
 		396D847F278CADF3006F87BD /* HomePageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModels.swift; sourceTree = "<group>"; };
 		397CDC41278E840F005CA5F2 /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
 		39841AB628051EE200D10FA9 /* WalletConnectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectVC.swift; sourceTree = "<group>"; };
+		3986487A2891AC5400A48C6D /* WeakReferenceExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakReferenceExampleVC.swift; sourceTree = "<group>"; };
 		39B686EC278B1EB0001B12E4 /* Dealit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dealit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B686EF278B1EB0001B12E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39B686F6278B1EB0001B12E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				395A430C28829C4900FB8F6F /* WalletConnectClientVC.swift */,
 				391C8D7C288DC66A007188EA /* HelloCpp.hpp */,
 				391C8D7D288DC812007188EA /* CppIntegratedVC.swift */,
+				3986487A2891AC5400A48C6D /* WeakReferenceExampleVC.swift */,
 				391C8D7A288DC49B007188EA /* HelloCpp.mm */,
 				395A431228829E5000FB8F6F /* ActionsVC.swift */,
 				395A430E28829C7F00FB8F6F /* HandShakeVC.swift */,
@@ -534,6 +537,7 @@
 				39B68735278B354D001B12E4 /* VC3.swift in Sources */,
 				39841AB728051EE200D10FA9 /* WalletConnectVC.swift in Sources */,
 				395A431328829E5000FB8F6F /* ActionsVC.swift in Sources */,
+				3986487B2891AC5400A48C6D /* WeakReferenceExampleVC.swift in Sources */,
 				39B6872B278B2A97001B12E4 /* HomeVC.swift in Sources */,
 				396D847A278C9CA3006F87BD /* NetworkManager.swift in Sources */,
 				39B68725278B261E001B12E4 /* LocalAppData.swift in Sources */,

@@ -135,6 +135,21 @@
             </objects>
             <point key="canvasLocation" x="1652.1739130434785" y="82.366071428571431"/>
         </scene>
+        <!--Weak Reference ExampleVC-->
+        <scene sceneID="yLL-Nw-7PC">
+            <objects>
+                <viewController storyboardIdentifier="WeakReferenceExampleVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mbv-E6-z0n" customClass="WeakReferenceExampleVC" customModule="Dealit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n6n-gn-5AF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GsC-Zp-ufK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HIn-yC-Ciq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2943" y="84"/>
+        </scene>
         <!--Trust WalletVC-->
         <scene sceneID="ikf-1o-3lP">
             <objects>
