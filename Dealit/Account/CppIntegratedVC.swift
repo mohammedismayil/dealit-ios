@@ -21,6 +21,10 @@ class CppIntegratedVC: UIViewController {
         
         cppobj.sayHelloToThisDamnWorld()
         cppobj.checkEveryThingisFine()
+        
+        callThisWork(authenticator: { (message) in
+            print(message)
+        }, givenCommission: 20)
         // Do any additional setup after loading the view.
     }
     
@@ -34,5 +38,35 @@ class CppIntegratedVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    
+    func callThisWork(authenticator:@escaping (String) ->Void,givenCommission:Int){
+        
+        
+        print("Calling everyone")
+        
+        
+        if givenCommission > 10{
+            
+            callNearByAgent(commissionForAgent: 3) { (message) in
+                authenticator("approved")
+            }
+           
+//            print("printing \(con)")
+        }
+        
+    }
+    
+    func callNearByAgent(commissionForAgent:Int,agentAuthenticator:@escaping (String)->Void){
+     
+        
+        
+        if commissionForAgent > 2{
+            agentAuthenticator("approved")
+        }else{
+            agentAuthenticator("rejected")
+        }
+    }
 
 }
