@@ -15,13 +15,15 @@ class WeakReferenceExampleVC: UIViewController {
     
     
     var studentPeter:PrimaryStudent?
+    
+    var studentSymonds:SecondaryStudent?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        weakReference()
+        unownedReference()
       
     }
     
@@ -73,6 +75,23 @@ class WeakReferenceExampleVC: UIViewController {
         studentPeter = nil
         markList = nil
     }
+    func unownedReference(){
+        studentSymonds = SecondaryStudent(name: "Symonds", age: 35, mark: Marklist(tamil: 72))
+        
+        markList = Marklist(tamil: 75)
+        
+        
+        studentSymonds?.markList = Marklist(tamil: 35)
+        studentSymonds?.markList = Marklist(tamil: 36)
+
+//        markList?.secondayStudent = studentSymonds
+
+
+        studentSymonds?.markList = markList
+        
+        studentSymonds = nil
+        markList = nil
+    }
 }
 
 
@@ -111,12 +130,33 @@ class PrimaryStudent{
         print("Student \(name ?? "") De-initiated")
     }
 }
+
+class SecondaryStudent{
+    var name:String?
+    var age:Int?
+     var markList:Marklist?
+    init(name:String,age:Int,mark:Marklist){
+        self.age = age
+        self.name = name
+        
+        self.markList = mark
+        
+        print("Student \(name) initiated")
+    }
+    
+    deinit{
+        print("Student \(name ?? "") De-initiated")
+    }
+}
 class Marklist{
     var tamil:Int?
     
     var student:Student?
     
     weak var primaryStudent:PrimaryStudent?
+    
+    
+    unowned var secondayStudent:SecondaryStudent?
     
     
     init(tamil:Int){
