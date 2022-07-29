@@ -23,7 +23,7 @@ class WeakReferenceExampleVC: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        unownedReference()
+        weakReference()
       
     }
     
@@ -42,13 +42,13 @@ class WeakReferenceExampleVC: UIViewController {
 
     
     func strongReference(){
-        studentJohn = Student(name: "John", age: 20, mark: Marklist(tamil: 90))
+        studentJohn = Student(name: "John", age: 20, mark: Marklist(tamil: 90, secondayStudent: SecondaryStudent(name: "Kiwi", age: 22)))
         
-        markList = Marklist(tamil: 75)
+        markList = Marklist(tamil: 75, secondayStudent: SecondaryStudent(name: "Kiwir", age: 24))
         
         
-        studentJohn?.markList = Marklist(tamil: 35)
-        studentJohn?.markList = Marklist(tamil: 36)
+//        studentJohn?.markList = Marklist(tamil: 35,secondayStudent:SecondaryStudent(name: "Kiwi", age: 62))
+//        studentJohn?.markList = Marklist(tamil: 36,secondayStudent:SecondaryStudent(name: "Kiwi", age: 42))
 
         markList?.student = studentJohn
 
@@ -59,13 +59,15 @@ class WeakReferenceExampleVC: UIViewController {
         markList = nil
     }
     func weakReference(){
-        studentPeter = PrimaryStudent(name: "Peter", age: 22, mark: Marklist(tamil: 63))
+        studentPeter = PrimaryStudent(name: "Peter", age: 22, mark: Marklist(tamil: 63,secondayStudent:SecondaryStudent(name: "AKiwi", age: 42)))
         
-        markList = Marklist(tamil: 75)
+        markList = Marklist(tamil: 75,secondayStudent:SecondaryStudent(name: "AOiwi", age: 42))
         
         
-        studentPeter?.markList = Marklist(tamil: 35)
-        studentPeter?.markList = Marklist(tamil: 36)
+//        studentPeter?.markList = Marklist(tamil: 35,secondayStudent:SecondaryStudent(name: "Aliwi", age: 42))
+//        studentPeter?.markList = Marklist(tamil: 36,secondayStudent:SecondaryStudent(name: "wKiwi", age: 42))
+        
+        markList?.student = Student(name: "lkg", age: 5, mark: markList!)
 
         markList?.primaryStudent = studentPeter
 
@@ -73,24 +75,34 @@ class WeakReferenceExampleVC: UIViewController {
         studentPeter?.markList = markList
         
         studentPeter = nil
-        markList = nil
+//        markList = nil
+        
+        
+        print(markList?.primaryStudent)
+        print(markList?.primaryStudent?.name)
+        print(markList?.student?.name)
     }
     func unownedReference(){
-        studentSymonds = SecondaryStudent(name: "Symonds", age: 35, mark: Marklist(tamil: 72))
         
-        markList = Marklist(tamil: 75)
+        studentSymonds = SecondaryStudent(name: "Symonds", age: 35)
+       
         
         
-        studentSymonds?.markList = Marklist(tamil: 35)
-        studentSymonds?.markList = Marklist(tamil: 36)
+//        studentSymonds?.markList = Marklist(tamil: 35)
+//        studentSymonds?.markList = Marklist(tamil: 36)
+        
 
-//        markList?.secondayStudent = studentSymonds
-
+       
+markList = Marklist(tamil: 75,secondayStudent:studentSymonds!)
 
         studentSymonds?.markList = markList
         
         studentSymonds = nil
-        markList = nil
+        
+        print(markList?.secondayStudent)
+        
+        
+//        markList = nil
     }
 }
 
@@ -135,17 +147,17 @@ class SecondaryStudent{
     var name:String?
     var age:Int?
      var markList:Marklist?
-    init(name:String,age:Int,mark:Marklist){
+    init(name:String,age:Int){
         self.age = age
         self.name = name
         
-        self.markList = mark
+       
         
-        print("Student \(name) initiated")
+        print("Secondary Student  \(name) initiated")
     }
     
     deinit{
-        print("Student \(name ?? "") De-initiated")
+        print("Secondary Student \(name ?? "") De-initiated")
     }
 }
 class Marklist{
@@ -159,8 +171,10 @@ class Marklist{
     unowned var secondayStudent:SecondaryStudent?
     
     
-    init(tamil:Int){
+    init(tamil:Int,secondayStudent:SecondaryStudent){
         self.tamil = tamil
+        
+        self.secondayStudent = secondayStudent
         print("Marklist \(tamil) initiated")
     }
     
