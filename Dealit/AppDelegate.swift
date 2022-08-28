@@ -15,13 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window:UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        
+
         self.window = UIWindow(frame: UIScreen.main.bounds)
+         // Create a MainViewController
         let story = UIStoryboard(name: "Main", bundle:nil)
-        let vc = story.instantiateViewController(withIdentifier: "WeakReferenceExampleVC") as! WeakReferenceExampleVC
-         window?.rootViewController = vc
-         window?.makeKeyAndVisible()
-        // Override point for customization after application launch.
+               let vc = story.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
+         // Create a UINavigationController and set the mainView as rootViewController
+         let navController = UINavigationController(rootViewController: vc)
+         // Set navController as the rootViewController for window
+         self.window?.rootViewController = navController
+         self.window?.makeKeyAndVisible()
         return true
     }
 

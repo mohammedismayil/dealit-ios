@@ -64,9 +64,14 @@ class HomeVC: UIViewController {
         
     }
     func moveToNextVC() {
-        let story = UIStoryboard(name: "SampleVCS", bundle:nil)
-        let vc = story.instantiateViewController(withIdentifier: "VC2") as! VC2
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let story = UIStoryboard(name: "SampleVCS", bundle:nil)
+//        let vc = story.instantiateViewController(withIdentifier: "VC2") as! VC2
+//        self.navigationController?.pushViewController(vc, animated: true)
+        
+        let story = UIStoryboard(name: "Common", bundle:nil)
+        let vc = story.instantiateViewController(withIdentifier: "CustomBottomSheetListVC") as! CustomBottomSheetListVC
+        vc.modalPresentationStyle = .overCurrentContext
+        self.present(vc, animated: true)
     }
     func logoutUser(){
         LocalAppData.setUserStatus(status: .notloggedIn)

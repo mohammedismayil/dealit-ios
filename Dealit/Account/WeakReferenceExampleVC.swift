@@ -39,7 +39,20 @@ class WeakReferenceExampleVC: UIViewController {
     */
     
     
-
+    @IBAction func nextBtnAction(_ sender: Any) {
+        
+        
+//        let storyBoard = UIStoryboard(name: "Common", bundle: nil)
+//        
+//        let vc = storyBoard.instantiateViewController(withIdentifier: "CustomBottomSheetListVC") as! CustomBottomSheetListVC
+//        
+//        self.navigationController?.pushViewController(vc, animated: true)
+        
+        let story = UIStoryboard(name: "Common", bundle:nil)
+        let vc = story.instantiateViewController(withIdentifier: "CustomBottomSheetListVC") as! CustomBottomSheetListVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
     func strongReference(){
         studentJohn = Student(name: "John", age: 20, mark: Marklist(tamil: 90, secondayStudent: SecondaryStudent(name: "Kiwi", age: 22)))
