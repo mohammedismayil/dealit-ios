@@ -1,3 +1,7 @@
 /Users/mohammedismayil/ismayildemo/Dealit_ios/Pods/
 /Users/mohammedismayil/ismayildemo/Dealit_ios/Pods/TrustWalletCore/
 /Users/mohammedismayil/ismayildemo/Dealit_ios/Pods/TrustWalletCore/WalletCoreCommon.xcframework 
+*.xcuserdata
+xcuserdata/
+build/
+DerivedData/

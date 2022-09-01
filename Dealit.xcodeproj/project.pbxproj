@@ -18,6 +18,8 @@
 		395A430F28829C7F00FB8F6F /* HandShakeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395A430E28829C7F00FB8F6F /* HandShakeVC.swift */; };
 		395A431128829CB400FB8F6F /* Walletconnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395A431028829CB400FB8F6F /* Walletconnect.swift */; };
 		395A431328829E5000FB8F6F /* ActionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395A431228829E5000FB8F6F /* ActionsVC.swift */; };
+		395AA79128BB24C8007371D9 /* Common.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395AA79028BB24C8007371D9 /* Common.storyboard */; };
+		395AA79328BB2533007371D9 /* CustomBottomSheetListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395AA79228BB2533007371D9 /* CustomBottomSheetListVC.swift */; };
 		396D847A278C9CA3006F87BD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396D8479278C9CA3006F87BD /* NetworkManager.swift */; };
 		396D847C278CA291006F87BD /* HomeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396D847B278CA291006F87BD /* HomeTVC.xib */; };
 		396D847E278CA67C006F87BD /* HomeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396D847D278CA67C006F87BD /* HomeTVC.swift */; };
@@ -80,6 +82,8 @@
 		395A430E28829C7F00FB8F6F /* HandShakeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeVC.swift; sourceTree = "<group>"; };
 		395A431028829CB400FB8F6F /* Walletconnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walletconnect.swift; sourceTree = "<group>"; };
 		395A431228829E5000FB8F6F /* ActionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsVC.swift; sourceTree = "<group>"; };
+		395AA79028BB24C8007371D9 /* Common.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Common.storyboard; sourceTree = "<group>"; };
+		395AA79228BB2533007371D9 /* CustomBottomSheetListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBottomSheetListVC.swift; sourceTree = "<group>"; };
 		396D8479278C9CA3006F87BD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		396D847B278CA291006F87BD /* HomeTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTVC.xib; sourceTree = "<group>"; };
 		396D847D278CA67C006F87BD /* HomeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVC.swift; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 				39B686EF278B1EB0001B12E4 /* AppDelegate.swift */,
 				39B68731278B349C001B12E4 /* SampleVCS */,
 				39B686F5278B1EB0001B12E4 /* Main.storyboard */,
+				395AA79028BB24C8007371D9 /* Common.storyboard */,
+				395AA79228BB2533007371D9 /* CustomBottomSheetListVC.swift */,
 				396D847B278CA291006F87BD /* HomeTVC.xib */,
 				396D847D278CA67C006F87BD /* HomeTVC.swift */,
 				39B6872E278B3458001B12E4 /* Account */,
@@ -397,6 +403,7 @@
 				39B686FF278B1EB1001B12E4 /* LaunchScreen.storyboard in Resources */,
 				39B6872D278B344C001B12E4 /* SampleVCS.storyboard in Resources */,
 				39B686FC278B1EB1001B12E4 /* Assets.xcassets in Resources */,
+				395AA79128BB24C8007371D9 /* Common.storyboard in Resources */,
 				39B686F7278B1EB0001B12E4 /* Main.storyboard in Resources */,
 				396D847C278CA291006F87BD /* HomeTVC.xib in Resources */,
 			);
@@ -529,6 +536,7 @@
 				39DD3FFB27BEB08C00BC2F8E /* ProductsCoreDataHandler.swift in Sources */,
 				39B68733278B3540001B12E4 /* VC2.swift in Sources */,
 				397CDC42278E840F005CA5F2 /* CoreDataHandler.swift in Sources */,
+				395AA79328BB2533007371D9 /* CustomBottomSheetListVC.swift in Sources */,
 				396D8480278CADF3006F87BD /* HomePageModels.swift in Sources */,
 				391C8D7B288DC49B007188EA /* HelloCpp.mm in Sources */,
 				39B68727278B27A2001B12E4 /* InitialVC.swift in Sources */,

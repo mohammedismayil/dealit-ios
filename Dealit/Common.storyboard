@@ -1,25 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Custom Bottom Sheet ListVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                <viewController storyboardIdentifier="CustomBottomSheetListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="CustomBottomSheetListVC" customModule="Dealit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.65000000000000002" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ubY-sb-SlS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfl-EK-XCt">
+                                        <rect key="frame" x="0.0" y="255.5" width="414" height="596.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bfl-EK-XCt" secondAttribute="trailing" id="eAN-lz-X62"/>
+                                    <constraint firstAttribute="bottom" secondItem="bfl-EK-XCt" secondAttribute="bottom" id="gAa-Kt-nfI"/>
+                                    <constraint firstItem="bfl-EK-XCt" firstAttribute="height" secondItem="ubY-sb-SlS" secondAttribute="height" multiplier="0.7" id="ktY-7r-IcW"/>
+                                    <constraint firstItem="bfl-EK-XCt" firstAttribute="leading" secondItem="ubY-sb-SlS" secondAttribute="leading" id="rB4-3t-cxP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ubY-sb-SlS" secondAttribute="trailing" id="4U5-A1-wvU"/>
+                            <constraint firstAttribute="bottom" secondItem="ubY-sb-SlS" secondAttribute="bottom" id="CKQ-Y3-TcW"/>
+                            <constraint firstItem="ubY-sb-SlS" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Osc-ge-sbY"/>
+                            <constraint firstItem="ubY-sb-SlS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="gat-Uo-cfm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgView" destination="ubY-sb-SlS" id="Mf1-d3-KbV"/>
+                        <outlet property="sheetView" destination="bfl-EK-XCt" id="4wq-gp-FII"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="96"/>
         </scene>
     </scenes>
     <resources>
