@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
          // Create a MainViewController
         let story = UIStoryboard(name: "Main", bundle:nil)
-               let vc = story.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
+               let vc = story.instantiateViewController(withIdentifier: "PropertyObserverVC") as! PropertyObserverVC
          // Create a UINavigationController and set the mainView as rootViewController
          let navController = UINavigationController(rootViewController: vc)
          // Set navController as the rootViewController for window

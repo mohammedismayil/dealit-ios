@@ -11,6 +11,7 @@
 		3913609F27DA723400D3B29B /* TrustWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913609E27DA723400D3B29B /* TrustWalletVC.swift */; };
 		391C8D7B288DC49B007188EA /* HelloCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 391C8D7A288DC49B007188EA /* HelloCpp.mm */; };
 		391C8D7E288DC812007188EA /* CppIntegratedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391C8D7D288DC812007188EA /* CppIntegratedVC.swift */; };
+		39379B0C28C126260032D885 /* PropertyObserverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39379B0B28C126260032D885 /* PropertyObserverVC.swift */; };
 		393868A2278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 393868A0278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld */; };
 		393F1156278D1B8C00542B3B /* UIImageView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393F1155278D1B8C00542B3B /* UIImageView_Extensions.swift */; };
 		39478C1027A0663D009652CB /* UserListCoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */; };
@@ -75,6 +76,7 @@
 		391C8D7A288DC49B007188EA /* HelloCpp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloCpp.mm; sourceTree = "<group>"; };
 		391C8D7C288DC66A007188EA /* HelloCpp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloCpp.hpp; sourceTree = "<group>"; };
 		391C8D7D288DC812007188EA /* CppIntegratedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CppIntegratedVC.swift; sourceTree = "<group>"; };
+		39379B0B28C126260032D885 /* PropertyObserverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyObserverVC.swift; sourceTree = "<group>"; };
 		393868A1278DF73B00FDDBB2 /* HomePageUsers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomePageUsers.xcdatamodel; sourceTree = "<group>"; };
 		393F1155278D1B8C00542B3B /* UIImageView_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView_Extensions.swift; sourceTree = "<group>"; };
 		39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCoreDataHandler.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				395AA79228BB2533007371D9 /* CustomBottomSheetListVC.swift */,
 				396D847B278CA291006F87BD /* HomeTVC.xib */,
 				396D847D278CA67C006F87BD /* HomeTVC.swift */,
+				39379B0B28C126260032D885 /* PropertyObserverVC.swift */,
 				39B6872E278B3458001B12E4 /* Account */,
 				39B686FB278B1EB1001B12E4 /* Assets.xcassets */,
 				39B686FD278B1EB1001B12E4 /* LaunchScreen.storyboard */,
@@ -538,6 +541,7 @@
 				397CDC42278E840F005CA5F2 /* CoreDataHandler.swift in Sources */,
 				395AA79328BB2533007371D9 /* CustomBottomSheetListVC.swift in Sources */,
 				396D8480278CADF3006F87BD /* HomePageModels.swift in Sources */,
+				39379B0C28C126260032D885 /* PropertyObserverVC.swift in Sources */,
 				391C8D7B288DC49B007188EA /* HelloCpp.mm in Sources */,
 				39B68727278B27A2001B12E4 /* InitialVC.swift in Sources */,
 				395A430D28829C4900FB8F6F /* WalletConnectClientVC.swift in Sources */,
