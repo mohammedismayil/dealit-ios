@@ -25,6 +25,13 @@ class PropertyObserverVC: UIViewController {
             self.propertyObserverTbl.reloadData()
         }
     }
+    
+    
+    let constUsers = [User](){
+//        didSet{
+//            self.propertyObserverTbl.reloadData()
+//        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -71,6 +78,7 @@ class PropertyObserverVC: UIViewController {
                 self.navigationController?.pushViewController(vc, animated: true)
                 
     }
+   
 }
 extension PropertyObserverVC : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -83,6 +91,8 @@ extension PropertyObserverVC : UITableViewDelegate,UITableViewDataSource{
         
         return cell
     }
+    
+   
     
     
 }
