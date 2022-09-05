@@ -15,6 +15,12 @@ enum CoreDataEntityEnum:String{
     case UserDetails
     case Products
 }
+
+enum APIName:String{
+    case users
+    case posts
+    case comments
+}
 class CoreDataHandler{
     
     static let shared = CoreDataHandler()
@@ -112,6 +118,78 @@ class CoreDataHandler{
         return []
     }
     
+    
+    func saveRawResponse(API:APIName,response:String){
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return }
+        
+        
+        //We need to create a context from this container
+        let managedContext = appDelegate.secondpersistentContainer.viewContext
+        
+        
+        //Now let’s create an entity and new user records.
+        let userEntity = NSEntityDescription.entity(forEntityName: "Response", in: managedContext)!
+        
+        let user = NSManagedObject(entity: userEntity, insertInto: managedContext)
+        
+        user.setValue(API.rawValue, forKey: "api")
+        user.setValue(response, forKey: "json")
+        
+        do {
+            try managedContext.save()
+            
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+        
+    }
+    func getRawResponse(API:APIName)->JSON{
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return JSON()}
+        
+        
+        //We need to create a context from this container
+        let managedContext = appDelegate.secondpersistentContainer.viewContext
+        
+    
+        //Prepare the request of type NSFetchRequest  for the entity
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Response")
+        
+        do {
+            let result = try managedContext.fetch(fetchRequest)
+           
+            
+            
+            
+           
+           
+            
+            let objs = result as! [NSManagedObject]
+                 var jsonArray = JSON()
+             var dict: [String: Any] = [:]
+           
+                 for item in objs {
+                    
+                     for attribute in item.entity.attributesByName {
+                         //check if value is present, then add key to dictionary so as to avoid the nil value crash
+                         if let value = item.value(forKey: attribute.key) {
+                             dict[attribute.key] = value
+                             jsonArray[attribute.key] = value
+                         }
+                     }
+                    
+                 }
+                 return jsonArray
+                
+           
+                  
+          
+         
+        } catch {
+            
+            print("Failed")
+        }
+        return JSON()
+    }
     
 
 }

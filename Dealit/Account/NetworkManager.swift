@@ -21,4 +21,16 @@ class NetworkManager: NSObject{
              returnHandler(films)
         }
     }
+    
+    static func getRequestAPI<T:Codable>(callBack:@escaping(T)->Void,model:T.Type,url:String){
+
+
+        AF.request(url)
+            
+            .responseDecodable(of: model) { response in
+//            debugPrint(response)
+            guard let films = response.value else { return }
+            callBack(films)
+        }
+    }
 }

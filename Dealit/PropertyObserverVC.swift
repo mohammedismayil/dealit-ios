@@ -27,11 +27,11 @@ class PropertyObserverVC: UIViewController {
     }
     
     
-    let constUsers = [User](){
+//    let constUsers = [User](){
 //        didSet{
 //            self.propertyObserverTbl.reloadData()
 //        }
-    }
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,6 +43,7 @@ class PropertyObserverVC: UIViewController {
         self.propertyObserverTbl.delegate = self
         
         self.users = [User(name: "Johan", age: 19),User(name: "Johan", age: 25)]
+        self.getUsers()
     
     }
     
@@ -77,6 +78,30 @@ class PropertyObserverVC: UIViewController {
                 let vc = story.instantiateViewController(withIdentifier: "VC2") as! VC2
                 self.navigationController?.pushViewController(vc, animated: true)
                 
+    }
+    
+    
+    func getUsers(){
+        
+        let cacheData = CoreDataHandler.shared.getRawResponse(API: .users)
+        NetworkManager.getRequestAPI(callBack: { (decoded) in
+//            print(decoded)
+            
+            
+            let respModel:HomeUsersResponse!
+
+            respModel = decoded
+
+            print(respModel.map({$0.name}))
+          let encoder = JSONEncoder()
+            encoder.outputFormatting = .prettyPrinted
+            let data = try! encoder.encode(respModel)
+            print(String(data: data, encoding: .utf8)!)
+            let jsonr = String(data: data, encoding: .utf8)!
+
+            
+            CoreDataHandler.shared.saveRawResponse(API: .users, response: jsonr)
+        }, model: HomeUsersResponse.self, url: "https://jsonplaceholder.typicode.com/users")
     }
    
 }

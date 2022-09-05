@@ -48,6 +48,8 @@
 		39B68735278B354D001B12E4 /* VC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B68734278B354D001B12E4 /* VC3.swift */; };
 		39DD3FF927BEAEAE00BC2F8E /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DD3FF827BEAEAE00BC2F8E /* ProductModel.swift */; };
 		39DD3FFB27BEB08C00BC2F8E /* ProductsCoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DD3FFA27BEB08C00BC2F8E /* ProductsCoreDataHandler.swift */; };
+		39E0458428C6589E004FB779 /* HomeUsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0458328C6589E004FB779 /* HomeUsersModel.swift */; };
+		39E0458728C65CCD004FB779 /* RawResponse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39E0458528C65CCD004FB779 /* RawResponse.xcdatamodeld */; };
 		800FE41F1292D78DDAF0753B /* Pods_DealitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B15D81923589ECF7ABC9318 /* Pods_DealitTests.framework */; };
 		AAE5A23D3765CC29F1297E9B /* Pods_Dealit_DealitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8788E65559868434A164CCFE /* Pods_Dealit_DealitUITests.framework */; };
 /* End PBXBuildFile section */
@@ -116,6 +118,8 @@
 		39B68734278B354D001B12E4 /* VC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC3.swift; sourceTree = "<group>"; };
 		39DD3FF827BEAEAE00BC2F8E /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		39DD3FFA27BEB08C00BC2F8E /* ProductsCoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCoreDataHandler.swift; sourceTree = "<group>"; };
+		39E0458328C6589E004FB779 /* HomeUsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUsersModel.swift; sourceTree = "<group>"; };
+		39E0458628C65CCD004FB779 /* RawResponse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RawResponse.xcdatamodel; sourceTree = "<group>"; };
 		7B15D81923589ECF7ABC9318 /* Pods_DealitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DealitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8788E65559868434A164CCFE /* Pods_Dealit_DealitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dealit_DealitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57D3310E28DADA4F1F808B6 /* Pods-Dealit-DealitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dealit-DealitUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 				393F1157278D1B9F00542B3B /* UIHelpers */,
 				39B686F8278B1EB0001B12E4 /* Dealit.xcdatamodeld */,
 				393868A0278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld */,
+				39E0458528C65CCD004FB779 /* RawResponse.xcdatamodeld */,
 			);
 			path = Dealit;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 				396D8479278C9CA3006F87BD /* NetworkManager.swift */,
 				397CDC41278E840F005CA5F2 /* CoreDataHandler.swift */,
 				39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */,
+				39E0458328C6589E004FB779 /* HomeUsersModel.swift */,
 				39DD3FFA27BEB08C00BC2F8E /* ProductsCoreDataHandler.swift */,
 				391C8D76288DC2CA007188EA /* Dealit-Bridging-Header.h */,
 			);
@@ -545,7 +551,9 @@
 				391C8D7B288DC49B007188EA /* HelloCpp.mm in Sources */,
 				39B68727278B27A2001B12E4 /* InitialVC.swift in Sources */,
 				395A430D28829C4900FB8F6F /* WalletConnectClientVC.swift in Sources */,
+				39E0458728C65CCD004FB779 /* RawResponse.xcdatamodeld in Sources */,
 				393868A2278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld in Sources */,
+				39E0458428C6589E004FB779 /* HomeUsersModel.swift in Sources */,
 				39B68735278B354D001B12E4 /* VC3.swift in Sources */,
 				39841AB728051EE200D10FA9 /* WalletConnectVC.swift in Sources */,
 				395A431328829E5000FB8F6F /* ActionsVC.swift in Sources */,
@@ -958,6 +966,16 @@
 			);
 			currentVersion = 39B686F9278B1EB0001B12E4 /* Dealit.xcdatamodel */;
 			path = Dealit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		39E0458528C65CCD004FB779 /* RawResponse.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				39E0458628C65CCD004FB779 /* RawResponse.xcdatamodel */,
+			);
+			currentVersion = 39E0458628C65CCD004FB779 /* RawResponse.xcdatamodel */;
+			path = RawResponse.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
