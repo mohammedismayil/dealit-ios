@@ -1,4 +1,4 @@
-// Copyright © 2017-2020 Trust Wallet.
+// Copyright © 2017-2022 Trust Wallet.
 //
 // This file is part of Trust. The full Trust copyright notice, including
 // terms governing use, modification, and redistribution, is contained in the
@@ -60,6 +60,7 @@ public enum CoinType: UInt32, CaseIterable {
     case ravencoin = 175
     case waves = 5741564
     case terra = 330
+    case terraV2 = 10000330
     case harmony = 1023
     case algorand = 283
     case kusama = 434
@@ -84,4 +85,17 @@ public enum CoinType: UInt32, CaseIterable {
     case ronin = 10002020
     case osmosis = 10000118
     case ecash = 899
+    case cronosChain = 10000025
+    case smartBitcoinCash = 10000145
+    case kuCoinCommunityChain = 10000321
+    case boba = 10000288
+    case metis = 1001088
+    case aurora = 1323161554
+    case evmos = 10009001
+    case nativeEvmos = 20009001
+    case moonriver = 10001285
+    case moonbeam = 10001284
+    case kavaEvm = 10002222
+    case klaytn = 10008217
+    case meter = 18000
 }

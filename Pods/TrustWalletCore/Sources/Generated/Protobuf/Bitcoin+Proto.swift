@@ -12,3 +12,5 @@ public typealias BitcoinUnspentTransaction = TW_Bitcoin_Proto_UnspentTransaction
 public typealias BitcoinSigningInput = TW_Bitcoin_Proto_SigningInput
 public typealias BitcoinTransactionPlan = TW_Bitcoin_Proto_TransactionPlan
 public typealias BitcoinSigningOutput = TW_Bitcoin_Proto_SigningOutput
+public typealias BitcoinHashPublicKey = TW_Bitcoin_Proto_HashPublicKey
+public typealias BitcoinPreSigningOutput = TW_Bitcoin_Proto_PreSigningOutput

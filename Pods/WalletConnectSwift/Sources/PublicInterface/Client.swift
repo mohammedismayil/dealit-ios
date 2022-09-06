@@ -12,11 +12,16 @@ public protocol ClientDelegate: AnyObject {
     func client(_ client: Client, didUpdate session: Session)
 }
 
+public protocol ClientDelegateV2: ClientDelegate {
+    func client(_ client: Client, dappInfoForUrl url: WCURL) -> Session.DAppInfo?
+    func client(_ client: Client, willReconnect session: Session)
+}
+
 public class Client: WalletConnect {
     public typealias RequestResponse = (Response) -> Void
 
     private(set) weak var delegate: ClientDelegate?
-    private let dAppInfo: Session.DAppInfo
+    private var commonDappInfo: Session.DAppInfo?
     private var responses: Responses
 
     public enum ClientError: Error {
@@ -24,9 +29,9 @@ public class Client: WalletConnect {
         case sessionNotFound
     }
 
-    public init(delegate: ClientDelegate, dAppInfo: Session.DAppInfo) {
+    public init(delegate: ClientDelegate, dAppInfo: Session.DAppInfo? = nil) {
         self.delegate = delegate
-        self.dAppInfo = dAppInfo
+        self.commonDappInfo = dAppInfo
         responses = Responses(queue: DispatchQueue(label: "org.walletconnect.swift.client.pending"))
         super.init()
     }
@@ -78,7 +83,7 @@ public class Client: WalletConnect {
                               message: String,
                               account: String,
                               completion: @escaping RequestResponse) throws {
-        let messageHex = message.data(using: .utf8)!.map { String(format: "%02x", $0) }.joined()
+        let messageHex = "0x" + message.data(using: .utf8)!.map { String(format: "%02x", $0) }.joined()
         try sign(url: url, method: "personal_sign", param1: messageHex, param2: account, completion: completion)
     }
 
@@ -185,9 +190,16 @@ public class Client: WalletConnect {
         if let existingSession = communicator.session(by: url) {
             communicator.subscribe(on: existingSession.dAppInfo.peerId, url: existingSession.url)
             delegate?.client(self, didConnect: existingSession)
-        } else { // establishing new connection, handshake in process
-            communicator.subscribe(on: dAppInfo.peerId, url: url)
-            let request = try! Request(url: url, method: "wc_sessionRequest", params: [dAppInfo], id: Request.payloadId())
+        } else {
+            // establishing new connection, handshake in process
+            guard let dappInfo = commonDappInfo ?? (delegate as? ClientDelegateV2)?.client(self, dappInfoForUrl: url) else {
+                LogService.shared.log("WC: dAppInfo not found for \(url)")
+                delegate?.client(self, didFailToConnect: url)
+                return
+            }
+
+            communicator.subscribe(on: dappInfo.peerId, url: url)
+            let request = try! Request(url: url, method: "wc_sessionRequest", params: [dappInfo], id: Request.payloadId())
             let requestID = request.internalID!
             responses.add(requestID: requestID) { [unowned self] response in
                 self.handleHandshakeResponse(response)
@@ -196,11 +208,16 @@ public class Client: WalletConnect {
         }
     }
 
-
     private func handleHandshakeResponse(_ response: Response) {
         do {
             let walletInfo = try response.result(as: Session.WalletInfo.self)
-            let session = Session(url: response.url, dAppInfo: dAppInfo, walletInfo: walletInfo)
+
+            guard let dappInfo = commonDappInfo ?? (delegate as? ClientDelegateV2)?.client(self, dappInfoForUrl: response.url) else {
+                LogService.shared.log("WC: dAppInfo not found for \(response.url)")
+                return
+            }
+
+            let session = Session(url: response.url, dAppInfo: dappInfo, walletInfo: walletInfo)
 
             guard walletInfo.approved else {
                 // TODO: handle Error
@@ -291,6 +308,12 @@ public class Client: WalletConnect {
         delegate?.client(self, didDisconnect: session)
     }
 
+    override func willReconnect(_ session: Session) {
+        if let delegate = delegate as? ClientDelegateV2 {
+            delegate.client(self, willReconnect: session)
+        }
+    }
+
     /// Thread-safe collection of client reponses
     private class Responses {
 
@@ -326,24 +349,29 @@ public class Client: WalletConnect {
     }
 
     /// https://docs.walletconnect.org/json-rpc-api-methods/ethereum#parameters-4
-    public struct Transaction: Encodable {
-        var from: String
-        var to: String?
-        var data: String
-        var gas: String?
-        var gasPrice: String?
-        var value: String?
-        var nonce: String?
-        var type: String?
-        var accessList: [AccessListItem]?
-        var chainId: String?
-        var maxPriorityFeePerGas: String?
-        var maxFeePerGas: String?
+    public struct Transaction: Codable {
+        public var from: String
+        public var to: String?
+        public var data: String
+        public var gas: String?
+        public var gasPrice: String?
+        public var value: String?
+        public var nonce: String?
+        public var type: String?
+        public var accessList: [AccessListItem]?
+        public var chainId: String?
+        public var maxPriorityFeePerGas: String?
+        public var maxFeePerGas: String?
 
         /// https://eips.ethereum.org/EIPS/eip-2930
-        public struct AccessListItem: Encodable {
-            var address: String
-            var storageKeys: [String]
+        public struct AccessListItem: Codable {
+            public var address: String
+            public var storageKeys: [String]
+
+            public init(address: String, storageKeys: [String]) {
+                self.address = address
+                self.storageKeys = storageKeys
+            }
         }
 
         public init(from: String,

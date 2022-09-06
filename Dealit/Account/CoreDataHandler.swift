@@ -128,7 +128,7 @@ class CoreDataHandler{
         
         
         //Now let’s create an entity and new user records.
-        let userEntity = NSEntityDescription.entity(forEntityName: "Response", in: managedContext)!
+        let userEntity = NSEntityDescription.entity(forEntityName: "ResponseJSON", in: managedContext)!
         
         let user = NSManagedObject(entity: userEntity, insertInto: managedContext)
         
@@ -152,7 +152,7 @@ class CoreDataHandler{
         
     
         //Prepare the request of type NSFetchRequest  for the entity
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Response")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "ResponseJSON")
         
         do {
             let result = try managedContext.fetch(fetchRequest)

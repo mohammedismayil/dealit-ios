@@ -1,4 +1,4 @@
-// Copyright © 2017-2020 Trust Wallet.
+// Copyright © 2017-2022 Trust Wallet.
 //
 // This file is part of Trust. The full Trust copyright notice, including
 // terms governing use, modification, and redistribution, is contained in the
@@ -34,6 +34,8 @@ public enum HRP: UInt32, CaseIterable, CustomStringConvertible  {
     case cardano = 23
     case qtum = 24
     case osmosis = 25
+    case terraV2 = 26
+    case nativeEvmos = 27
 
     public var description: String {
         switch self {
@@ -63,6 +65,8 @@ public enum HRP: UInt32, CaseIterable, CustomStringConvertible  {
         case .cardano: return "addr"
         case .qtum: return "qc"
         case .osmosis: return "osmo"
+        case .terraV2: return "terra"
+        case .nativeEvmos: return "evmos"
         }
     }
 }

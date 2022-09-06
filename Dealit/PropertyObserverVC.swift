@@ -20,11 +20,14 @@ class User{
 class PropertyObserverVC: UIViewController {
 
     @IBOutlet weak var propertyObserverTbl: UITableView!
-    var users = [User](){
+    var users = [Homeuser](){
         didSet{
             self.propertyObserverTbl.reloadData()
         }
     }
+    
+    
+    
     
     
 //    let constUsers = [User](){
@@ -42,7 +45,7 @@ class PropertyObserverVC: UIViewController {
         self.propertyObserverTbl.dataSource = self
         self.propertyObserverTbl.delegate = self
         
-        self.users = [User(name: "Johan", age: 19),User(name: "Johan", age: 25)]
+//        self.users = [User(name: "Johan", age: 19),User(name: "Johan", age: 25)]
         self.getUsers()
     
     }
@@ -51,7 +54,7 @@ class PropertyObserverVC: UIViewController {
         
         if let dict = notif.object as? User {
             print("i am triggered from vc2 \(dict.name)")
-            self.users.append(User(name: "Peter", age: 30))
+//            self.users.append(User(name: "Peter", age: 30))
             }
         
     }
@@ -84,15 +87,33 @@ class PropertyObserverVC: UIViewController {
     func getUsers(){
         
         let cacheData = CoreDataHandler.shared.getRawResponse(API: .users)
+        
+        var array = [JSON]()
+        
+//        array = cacheData["json"] as! [[String:Any]]
+       
+//        print("Type of \(type(of: cacheData))")
+//        print("Type of \(type(of: cacheData["json"].flatMap(<#T##transform: (Any) throws -> U?##(Any) throws -> U?#>)))")
+        
+//        do {
+//            var array = JSON()
+//            let dd =  cacheData["json"] as! String
+//
+//            let con = try JSONSerialization.jsonObject(with: dd.data(using: .utf8)!, options: []) as! [String:Any]
+//
+//        catch {
+//           print(error)
+//        }
+       
         NetworkManager.getRequestAPI(callBack: { (decoded) in
 //            print(decoded)
             
             
-            let respModel:HomeUsersResponse!
+            let respModel:HomeUsersModel!
 
             respModel = decoded
 
-            print(respModel.map({$0.name}))
+            print(respModel.homeusers.map({$0.name}))
           let encoder = JSONEncoder()
             encoder.outputFormatting = .prettyPrinted
             let data = try! encoder.encode(respModel)
@@ -101,7 +122,7 @@ class PropertyObserverVC: UIViewController {
 
             
             CoreDataHandler.shared.saveRawResponse(API: .users, response: jsonr)
-        }, model: HomeUsersResponse.self, url: "https://jsonplaceholder.typicode.com/users")
+        }, model: HomeUsersModel.self, url: "https://run.mocky.io/v3/e7e78ac5-b61d-4793-b565-bd71e7d2582e")
     }
    
 }

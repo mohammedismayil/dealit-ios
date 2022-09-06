@@ -58,10 +58,19 @@ open class WalletConnect {
     }
 
     private func listen(on url: WCURL) {
+        let onConnect: ((WCURL) -> Void) = { [weak self] url in
+            self?.onConnect(to: url)
+        }
+        let onDisconnect: ((WCURL, Error?) -> Void) = { [weak self] (url, error) in
+            self?.onDisconnect(from: url, error: error)
+        }
+        let onTextReceive: ((String, WCURL) -> Void) = { [weak self] (text, url) in
+            self?.onTextReceive(text, from: url)
+        }
         communicator.listen(on: url,
-                            onConnect: onConnect(to:),
-                            onDisconnect: onDisconnect(from:error:),
-                            onTextReceive: onTextReceive(_:from:))
+                            onConnect: onConnect,
+                            onDisconnect: onDisconnect,
+                            onTextReceive: onTextReceive)
     }
 
     /// Confirmation from Transport layer that connection was successfully established.
@@ -85,8 +94,8 @@ open class WalletConnect {
         }
         // if a session was not initiated by the wallet or the dApp to disconnect, try to reconnect it.
         guard communicator.pendingDisconnectSession(by: url) != nil else {
-            // TODO: should we notify delegate that we try to reconnect?
             LogService.shared.log("WC: trying to reconnect session by url: \(url.bridgeURL.absoluteString)")
+            willReconnect(session)
             try! reconnect(to: session)
             return
         }
@@ -116,13 +125,17 @@ open class WalletConnect {
         preconditionFailure("Should be implemented in subclasses")
     }
 
+    func willReconnect(_ session: Session) {
+        preconditionFailure("Should be implemented in subclasses")
+    }
+
     func log(_ request: Request) {
         guard let text = try? request.json().string else { return }
-        LogService.shared.log("WC: <== \(text)")
+        LogService.shared.log("WC: <== [request] \(text)")
     }
 
     func log(_ response: Response) {
         guard let text = try? response.json().string else { return }
-        LogService.shared.log("WC: <== \(text)")
+        LogService.shared.log("WC: <== [response] \(text)")
     }
 }

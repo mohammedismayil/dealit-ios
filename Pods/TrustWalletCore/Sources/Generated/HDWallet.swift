@@ -1,4 +1,4 @@
-// Copyright © 2017-2020 Trust Wallet.
+// Copyright © 2017-2022 Trust Wallet.
 //
 // This file is part of Trust. The full Trust copyright notice, including
 // terms governing use, modification, and redistribution, is contained in the
@@ -134,6 +134,22 @@ public final class HDWallet {
 
     public func getExtendedPublicKey(purpose: Purpose, coin: CoinType, version: HDVersion) -> String {
         return TWStringNSString(TWHDWalletGetExtendedPublicKey(rawValue, TWPurpose(rawValue: purpose.rawValue), TWCoinType(rawValue: coin.rawValue), TWHDVersion(rawValue: version.rawValue)))
+    }
+
+    public func getExtendedPrivateKeyAccount(purpose: Purpose, coin: CoinType, derivation: Derivation, version: HDVersion, account: UInt32) -> String {
+        return TWStringNSString(TWHDWalletGetExtendedPrivateKeyAccount(rawValue, TWPurpose(rawValue: purpose.rawValue), TWCoinType(rawValue: coin.rawValue), TWDerivation(rawValue: derivation.rawValue), TWHDVersion(rawValue: version.rawValue), account))
+    }
+
+    public func getExtendedPublicKeyAccount(purpose: Purpose, coin: CoinType, derivation: Derivation, version: HDVersion, account: UInt32) -> String {
+        return TWStringNSString(TWHDWalletGetExtendedPublicKeyAccount(rawValue, TWPurpose(rawValue: purpose.rawValue), TWCoinType(rawValue: coin.rawValue), TWDerivation(rawValue: derivation.rawValue), TWHDVersion(rawValue: version.rawValue), account))
+    }
+
+    public func getExtendedPrivateKeyDerivation(purpose: Purpose, coin: CoinType, derivation: Derivation, version: HDVersion) -> String {
+        return TWStringNSString(TWHDWalletGetExtendedPrivateKeyDerivation(rawValue, TWPurpose(rawValue: purpose.rawValue), TWCoinType(rawValue: coin.rawValue), TWDerivation(rawValue: derivation.rawValue), TWHDVersion(rawValue: version.rawValue)))
+    }
+
+    public func getExtendedPublicKeyDerivation(purpose: Purpose, coin: CoinType, derivation: Derivation, version: HDVersion) -> String {
+        return TWStringNSString(TWHDWalletGetExtendedPublicKeyDerivation(rawValue, TWPurpose(rawValue: purpose.rawValue), TWCoinType(rawValue: coin.rawValue), TWDerivation(rawValue: derivation.rawValue), TWHDVersion(rawValue: version.rawValue)))
     }
 
 }
