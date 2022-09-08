@@ -88,7 +88,14 @@ class PropertyObserverVC: UIViewController {
         
         let cacheData = CoreDataHandler.shared.getRawResponse(API: .users)
         
-        var array = [JSON]()
+        var datas = cacheData["json"] as? String
+        
+        
+        var final = datas!.toData()
+        let model = try? JSONDecoder().decode(HomeUsersModel.self, from: final as! Data)
+        
+        
+        print(model)
         
 //        array = cacheData["json"] as! [[String:Any]]
        
@@ -145,4 +152,15 @@ extension PropertyObserverVC : UITableViewDelegate,UITableViewDataSource{
 class PropertyObserverTVC:UITableViewCell{
     
     @IBOutlet weak var nameLbl: UILabel!
+}
+extension String {
+    func toJSON() -> Any? {
+        guard let data = self.data(using: .utf8, allowLossyConversion: false) else { return nil }
+        return try? JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+    }
+    
+    func toData() -> Any? {
+        guard let data = self.data(using: .utf8, allowLossyConversion: false) else { return nil }
+        return data
+    }
 }

@@ -34,6 +34,8 @@ class HomeUsersModel: Codable {
     init(homeusers: [Homeuser]) {
         self.homeusers = homeusers
     }
+    
+   
 }
 
 //
