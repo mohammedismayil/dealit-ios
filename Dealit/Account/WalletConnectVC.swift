@@ -69,7 +69,7 @@ class WalletConnectVC: UIViewController {
 //    https://example.walletconnect.org/ --use this url and get wcurl change below and check the every method called from the website(mentioned here) to update here-- for example eth_sendTransaction need approval from the app
         
         
-        guard let url = WCURL("wc:a2573afe-48e4-4086-9b94-0f4b6072d417@1?bridge=https%3A%2F%2Fr.bridge.walletconnect.org&key=5ab59a3a25135905177cba0d7c87614adfcd6f2300ff1e0ea990e5986e3abaef") else { return }
+        guard let url = WCURL("wc:441368c0-4601-41b8-80ba-237abf43d615@1?bridge=https%3A%2F%2Fs.bridge.walletconnect.org&key=49d096d430caf8fc0b0a1081f71c7e318b58d6b7e8e45f492ff0e8fc4cc5eef1") else { return }
        
         do {
             try self.server.connect(to: url)

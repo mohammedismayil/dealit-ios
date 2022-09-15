@@ -9,7 +9,7 @@ import Foundation
 
 import UIKit
 import WalletConnectSwift
-
+import WalletCore
 /// For testing we recommend to use Rainbow Wallet
 /// MetaMask does not support `eth_gasPrice` and `eth_getTransactionCount` at the moment of testing 01.09.2021
 class ActionsViewController: UIViewController {
@@ -218,15 +218,15 @@ fileprivate enum Stub {
     /// https://docs.walletconnect.org/json-rpc-api-methods/ethereum#example-parameters-1
     static func transaction(from address: String, nonce: String) -> Client.Transaction {
         return Client.Transaction(from: address,
-                                  to: "0xD565A55B83fD384894F1165A69B649fd9372Fc65",
-                                  data: "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675",
+                                  to: "0x907cCf3732AcA4ED271A9b71F679901AbfB8c1C9",
+                                  data: "0xa9059cbb000000000000000000000000d565a55b83fd384894f1165a69b649fd9372fc6500000000000000000000000000000000000000000000000ad78ebc5ac6200000",
                                   gas: "0x76c0", // 30400
                                   gasPrice: "0x9184e72a000", // 10000000000000
-                                  value: "0x9184e72a", // 2441406250
+                                  value: nil, // 2441406250
                                   nonce: nonce,
                                   type: nil,
                                   accessList: nil,
-                                  chainId: nil,
+                                  chainId: "3",
                                   maxPriorityFeePerGas: nil,
                                   maxFeePerGas: nil)
     }
