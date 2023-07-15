@@ -6,3 +6,6 @@ xcuserdata/
 build/
 DerivedData/
 books
+Pods/
+Pods/TrustWalletCore/
+Pods/TrustWalletCore/WalletCoreCommon.xcframework

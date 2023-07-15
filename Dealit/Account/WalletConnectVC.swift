@@ -164,11 +164,11 @@ class SignTransactionHandler: BaseHandler {
                 return
             }
 
-            askToSign(request: request, message: transaction.description) {
-                let signedTx = try! transaction.sign(with: self.privateKey, chainId: 3)
-                let (r, s, v) = (signedTx.r, signedTx.s, signedTx.v)
-                return r.hex() + s.hex().dropFirst(2) + String(v.quantity, radix: 16)
-            }
+//            askToSign(request: request, message: transaction.description) {
+//                let signedTx = try! transaction.sign(with: self.privateKey, chainId: 3)
+//                let (r, s, v) = (signedTx.r, signedTx.s, signedTx.v)
+//                return r.hex() + s.hex().dropFirst(2) + String(v.quantity, radix: 16)
+//            }
         } catch {
             self.sever.send(.invalid(request))
         }
@@ -288,14 +288,14 @@ extension UIAlertController {
 }
 
 extension EthereumTransaction {
-    var description: String {
-        return """
-        to: \(String(describing: to!.hex(eip55: true))),
-        value: \(String(describing: value!.hex())),
-        gasPrice: \(String(describing: gasPrice!.hex())),
-        gas: \(String(describing: gas!.hex())),
-        data: \(data.hex()),
-        nonce: \(String(describing: nonce!.hex()))
-        """
-    }
+//    var description: String {
+//        return """
+//        to: \(String(describing: to!.hex(eip55: true))),
+//        value: \(String(describing: value!.hex())),
+//        gasPrice: \(String(describing: gasPrice!.hex())),
+//        gas: \(String(describing: gas!.hex())),
+//        data: \(data.hex()),
+//        nonce: \(String(describing: nonce!.hex()))
+//        """
+//    }
 }
