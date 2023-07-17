@@ -9,14 +9,34 @@ import UIKit
 
 class InitialBlankViewController: UIViewController {
 
+    private let nextButton: UIButton = {
+        let button = UIButton()
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.gray
+        self.setupUI()
     }
     
 
+    
+    func setupUI() {
+        self.view.translatesAutoresizingMaskIntoConstraints = true
+        self.nextButton.translatesAutoresizingMaskIntoConstraints = true
+        self.nextButton.backgroundColor = .green
+        nextButton.setTitle("Next", for: .normal)
+        self.nextButton.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
+        self.view.addSubview(nextButton)
+        nextButton.addTarget(self, action: #selector(nextAction), for: .touchUpInside)
+    }
+    
+    @objc func nextAction() {
+        
+    }
     /*
     // MARK: - Navigation
 
