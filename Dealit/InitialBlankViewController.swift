@@ -36,6 +36,16 @@ class InitialBlankViewController: UIViewController {
     
     @objc func nextAction() {
         
+        let story = UIStoryboard(name: "Main", bundle:nil)
+        let vc = story.instantiateViewController(withIdentifier: "PresentCompletionDemoViewController") as! PresentCompletionDemoViewController
+        
+        let appdelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        appdelegate.window?.rootViewController = nil
+        
+        self.present(vc, animated: true) {
+            print("Completion after presenting VC")
+        }
     }
     /*
     // MARK: - Navigation
