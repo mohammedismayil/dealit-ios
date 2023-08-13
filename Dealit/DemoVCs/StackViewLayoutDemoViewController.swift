@@ -13,7 +13,7 @@ class StackViewLayoutDemoViewController: UIViewController {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.spacing = 20
-        stackView.distribution = .fillEqually
+        stackView.distribution = .fill
         stackView.backgroundColor = .gray
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
@@ -34,9 +34,16 @@ class StackViewLayoutDemoViewController: UIViewController {
         return view
     }()
     
+    private var thirdView: UIView  = {
+        let view = UIView()
+        view.backgroundColor = .red
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     private var tableView: UITableView  = {
         let tableView = UITableView()
-        tableView.backgroundColor = .cyan
+        tableView.backgroundColor = .blue
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
@@ -55,6 +62,7 @@ class StackViewLayoutDemoViewController: UIViewController {
         self.view.addSubview(stackView)
         stackView.addArrangedSubview(headerView)
         stackView.addArrangedSubview(subHeaderView)
+        stackView.addArrangedSubview(thirdView)
         stackView.addArrangedSubview(tableView)
         NSLayoutConstraint.activate([
             stackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 5),
@@ -63,6 +71,7 @@ class StackViewLayoutDemoViewController: UIViewController {
             stackView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -5),
             headerView.heightAnchor.constraint(equalToConstant: 50),
             subHeaderView.heightAnchor.constraint(equalToConstant: 50),
+            thirdView.heightAnchor.constraint(equalToConstant: 50),
             tableView.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
