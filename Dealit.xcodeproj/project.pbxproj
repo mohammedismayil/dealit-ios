@@ -50,6 +50,7 @@
 		39DD3FFB27BEB08C00BC2F8E /* ProductsCoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DD3FFA27BEB08C00BC2F8E /* ProductsCoreDataHandler.swift */; };
 		39E0458428C6589E004FB779 /* HomeUsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0458328C6589E004FB779 /* HomeUsersModel.swift */; };
 		39E0458728C65CCD004FB779 /* RawResponse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39E0458528C65CCD004FB779 /* RawResponse.xcdatamodeld */; };
+		6F0D7D0A2A88705E00E6D759 /* StackViewLayoutDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0D7D092A88705E00E6D759 /* StackViewLayoutDemoViewController.swift */; };
 		6FCF543E2A628D17008B4717 /* InitialBlankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF543D2A628D17008B4717 /* InitialBlankViewController.swift */; };
 		6FCF54422A65C07C008B4717 /* PresentCompletionDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF54412A65C07C008B4717 /* PresentCompletionDemoViewController.swift */; };
 		8423B1840EFB6D8006110D67 /* Pods_DealitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F57F91D8F6335D9BCB56552 /* Pods_DealitTests.framework */; };
@@ -126,6 +127,7 @@
 		39E0458328C6589E004FB779 /* HomeUsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUsersModel.swift; sourceTree = "<group>"; };
 		39E0458628C65CCD004FB779 /* RawResponse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RawResponse.xcdatamodel; sourceTree = "<group>"; };
 		3F57F91D8F6335D9BCB56552 /* Pods_DealitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DealitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0D7D092A88705E00E6D759 /* StackViewLayoutDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewLayoutDemoViewController.swift; sourceTree = "<group>"; };
 		6FCF543D2A628D17008B4717 /* InitialBlankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialBlankViewController.swift; sourceTree = "<group>"; };
 		6FCF54412A65C07C008B4717 /* PresentCompletionDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentCompletionDemoViewController.swift; sourceTree = "<group>"; };
 		7A476C7948DA53D3BCF9A7F5 /* Pods-DealitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DealitTests.debug.xcconfig"; path = "Target Support Files/Pods-DealitTests/Pods-DealitTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -198,14 +200,13 @@
 			children = (
 				39B686EF278B1EB0001B12E4 /* AppDelegate.swift */,
 				6FCF543D2A628D17008B4717 /* InitialBlankViewController.swift */,
-				6FCF54412A65C07C008B4717 /* PresentCompletionDemoViewController.swift */,
 				39B68731278B349C001B12E4 /* SampleVCS */,
 				39B686F5278B1EB0001B12E4 /* Main.storyboard */,
 				395AA79028BB24C8007371D9 /* Common.storyboard */,
-				395AA79228BB2533007371D9 /* CustomBottomSheetListVC.swift */,
 				396D847B278CA291006F87BD /* HomeTVC.xib */,
 				396D847D278CA67C006F87BD /* HomeTVC.swift */,
 				39379B0B28C126260032D885 /* PropertyObserverVC.swift */,
+				6F0D7D082A88702C00E6D759 /* DemoVCs */,
 				39B6872E278B3458001B12E4 /* Account */,
 				39B686FB278B1EB1001B12E4 /* Assets.xcassets */,
 				39B686FD278B1EB1001B12E4 /* LaunchScreen.storyboard */,
@@ -274,6 +275,16 @@
 				39B68734278B354D001B12E4 /* VC3.swift */,
 			);
 			path = SampleVCS;
+			sourceTree = "<group>";
+		};
+		6F0D7D082A88702C00E6D759 /* DemoVCs */ = {
+			isa = PBXGroup;
+			children = (
+				395AA79228BB2533007371D9 /* CustomBottomSheetListVC.swift */,
+				6FCF54412A65C07C008B4717 /* PresentCompletionDemoViewController.swift */,
+				6F0D7D092A88705E00E6D759 /* StackViewLayoutDemoViewController.swift */,
+			);
+			path = DemoVCs;
 			sourceTree = "<group>";
 		};
 		B4992A5C378C6C22944C0925 /* Frameworks */ = {
@@ -582,6 +593,7 @@
 				39B68730278B3494001B12E4 /* VC1.swift in Sources */,
 				39478C1027A0663D009652CB /* UserListCoreDataHandler.swift in Sources */,
 				39B686FA278B1EB0001B12E4 /* Dealit.xcdatamodeld in Sources */,
+				6F0D7D0A2A88705E00E6D759 /* StackViewLayoutDemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

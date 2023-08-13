@@ -15,17 +15,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window:UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-
+        setInitialVC()
+        return true
+    }
+    
+    
+    func setInitialVC() {
+        
         self.window = UIWindow(frame: UIScreen.main.bounds)
          // Create a MainViewController
         let story = UIStoryboard(name: "Main", bundle:nil)
-               let vc = story.instantiateViewController(withIdentifier: "InitialBlankViewController") as! InitialBlankViewController
+               let vc = story.instantiateViewController(withIdentifier: "StackViewLayoutDemoViewController") as! StackViewLayoutDemoViewController
          // Create a UINavigationController and set the mainView as rootViewController
          let navController = UINavigationController(rootViewController: vc)
          // Set navController as the rootViewController for window
          self.window?.rootViewController = navController
          self.window?.makeKeyAndVisible()
-        return true
     }
 
    
