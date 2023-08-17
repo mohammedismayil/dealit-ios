@@ -41,6 +41,13 @@ class StackViewLayoutDemoViewController: UIViewController {
         return view
     }()
     
+    private var fourthView: UIView  = {
+        let view = UIView()
+        view.backgroundColor = .systemPink
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     private var tableView: UITableView  = {
         let tableView = UITableView()
         tableView.backgroundColor = .blue
@@ -63,6 +70,7 @@ class StackViewLayoutDemoViewController: UIViewController {
         stackView.addArrangedSubview(headerView)
         stackView.addArrangedSubview(subHeaderView)
         stackView.addArrangedSubview(thirdView)
+        stackView.addArrangedSubview(fourthView)
         stackView.addArrangedSubview(tableView)
         NSLayoutConstraint.activate([
             stackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 5),
