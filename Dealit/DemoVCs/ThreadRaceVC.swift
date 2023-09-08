@@ -13,7 +13,7 @@ class ThreadRaceVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.checkConcurrenThread()
+        self.checkConcurrentAsynchronousWithSynchronousThread()
     }
     
 
@@ -28,7 +28,31 @@ class ThreadRaceVC: UIViewController {
         }
     }
     
-    func checkConcurrenThread() {
+    func checkConcurrentAsynchronousWithSynchronousThread() {
+        let concurrentQueue = DispatchQueue(label: "Concurrent", attributes: .concurrent)
+        concurrentQueue.async {
+            for i in 0..<10 {
+                print("Priting concurrentQueue \(i)")
+            }
+            concurrentQueue.sync {
+                for i in 0..<10 {
+                    print("Priting concurrentQueue sync \(i)")
+                }
+            }
+        }
+        concurrentQueue.async {
+            for i in 10..<20 {
+                print("Priting concurrentQueue \(i)")
+            }
+        }
+        concurrentQueue.async {
+            for i in 20..<30 {
+                print("Priting concurrentQueue \(i)")
+            }
+        }
+    }
+    
+    func checkConcurrenAsynchronousThread() {
         let concurrentQueue = DispatchQueue(label: "Concurrent", attributes: .concurrent)
         concurrentQueue.async {
             for i in 0..<10 {
