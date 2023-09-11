@@ -54,7 +54,6 @@
 		6F4278022AAC8C5600A7E7F8 /* ThreadRaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4278012AAC8C5600A7E7F8 /* ThreadRaceVC.swift */; };
 		6F4278082AB3842300A7E7F8 /* LanguageFileCleaningDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4278072AB3842300A7E7F8 /* LanguageFileCleaningDemoViewController.swift */; };
 		6F42780A2AB3852500A7E7F8 /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F4278092AB3852500A7E7F8 /* English.strings */; };
-		6F42780C2AB386B400A7E7F8 /* CleanedString.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F42780B2AB386B400A7E7F8 /* CleanedString.strings */; };
 		6F42780F2AB38A9000A7E7F8 /* French.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F42780E2AB38A9000A7E7F8 /* French.strings */; };
 		6FCF543E2A628D17008B4717 /* InitialBlankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF543D2A628D17008B4717 /* InitialBlankViewController.swift */; };
 		6FCF54422A65C07C008B4717 /* PresentCompletionDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF54412A65C07C008B4717 /* PresentCompletionDemoViewController.swift */; };
@@ -136,7 +135,6 @@
 		6F4278012AAC8C5600A7E7F8 /* ThreadRaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadRaceVC.swift; sourceTree = "<group>"; };
 		6F4278072AB3842300A7E7F8 /* LanguageFileCleaningDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageFileCleaningDemoViewController.swift; sourceTree = "<group>"; };
 		6F4278092AB3852500A7E7F8 /* English.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = English.strings; sourceTree = "<group>"; };
-		6F42780B2AB386B400A7E7F8 /* CleanedString.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = CleanedString.strings; sourceTree = "<group>"; };
 		6F42780E2AB38A9000A7E7F8 /* French.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = French.strings; sourceTree = "<group>"; };
 		6FCF543D2A628D17008B4717 /* InitialBlankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialBlankViewController.swift; sourceTree = "<group>"; };
 		6FCF54412A65C07C008B4717 /* PresentCompletionDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentCompletionDemoViewController.swift; sourceTree = "<group>"; };
@@ -293,7 +291,7 @@
 				395AA79228BB2533007371D9 /* CustomBottomSheetListVC.swift */,
 				6F4278072AB3842300A7E7F8 /* LanguageFileCleaningDemoViewController.swift */,
 				6F42780D2AB38A1C00A7E7F8 /* OriginalStringFiles */,
-				6F42780B2AB386B400A7E7F8 /* CleanedString.strings */,
+				6F4278102AB38EE500A7E7F8 /* CleanedStrings */,
 				6FCF54412A65C07C008B4717 /* PresentCompletionDemoViewController.swift */,
 				6F0D7D092A88705E00E6D759 /* StackViewLayoutDemoViewController.swift */,
 				6F4278012AAC8C5600A7E7F8 /* ThreadRaceVC.swift */,
@@ -308,6 +306,13 @@
 				6F42780E2AB38A9000A7E7F8 /* French.strings */,
 			);
 			path = OriginalStringFiles;
+			sourceTree = "<group>";
+		};
+		6F4278102AB38EE500A7E7F8 /* CleanedStrings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CleanedStrings;
 			sourceTree = "<group>";
 		};
 		B4992A5C378C6C22944C0925 /* Frameworks */ = {
@@ -449,7 +454,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F42780C2AB386B400A7E7F8 /* CleanedString.strings in Resources */,
 				39B686FF278B1EB1001B12E4 /* LaunchScreen.storyboard in Resources */,
 				6F42780A2AB3852500A7E7F8 /* English.strings in Resources */,
 				39B6872D278B344C001B12E4 /* SampleVCS.storyboard in Resources */,

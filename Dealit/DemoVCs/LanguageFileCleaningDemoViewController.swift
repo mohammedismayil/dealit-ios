@@ -71,9 +71,11 @@ class LanguageFileCleaningDemoViewController: UIViewController {
                     return enumStrings.contains(key)
                 }
                 
-                let destinationPath = "/Users/ismayil-16441/Documents/demoprojects/dealit-ios/Dealit/DemoVCs/CleanedString.strings"
+                let destinationDirectory = "/Users/ismayil-16441/Documents/demoprojects/dealit-ios/Dealit/DemoVCs/CleanedStrings"
                 
-                var updatedContents = lines.joined(separator: "\n")
+                let destinationPath = "\(destinationDirectory)/\(fileURL.lastPathComponent)"
+                
+                let updatedContents = lines.joined(separator: "\n")
                 
                 do {
                     try updatedContents.write(toFile: destinationPath, atomically: true, encoding: .utf8)
