@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 class LanguageFileCleaningDemoViewController: UIViewController {
 
@@ -19,57 +20,71 @@ class LanguageFileCleaningDemoViewController: UIViewController {
     
     func deleteUnUsedLines() {
         
-        let originalFilePath = "/Users/ismayil-16441/Documents/demoprojects/dealit-ios/Dealit/DemoVCs/OriginalString.strings"
-        guard let fileContents = try? String(contentsOfFile: originalFilePath, encoding: .utf8) else {
-            print("Failed to read file at path: \(originalFilePath)")
-            return
-        }
-        
-        var lines = fileContents.components(separatedBy: .newlines)
-        
-        var unUsedStrings : Set<String> = []
-        let fileContent = try! String(contentsOfFile: originalFilePath, encoding: .utf8)
-
-        let totalLines = fileContent.components(separatedBy: .newlines)
-
-        for (index,line) in totalLines.enumerated() {
-            let components = line.components(separatedBy: "=")
-            if components.count == 2 {
-                let key = components[0].trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: CharacterSet(charactersIn: "\""))
-                
-                unUsedStrings.insert(key)
-            }
-        }
-        
-        var enumStrings: Set<String> = []
-        
-        StatusContent.allCases.map { (content) in
-            enumStrings.insert(content.rawValue)
-        }
-        let finalStrings = unUsedStrings.subtracting(enumStrings)
-        
-        print(finalStrings.count)
-        lines = lines.filter { line in
-            guard let range = line.range(of: "\"(.+?)\"", options: .regularExpression) else {
-                return true
-            }
-            
-            let key = String(line[range].dropFirst().dropLast())
-            return enumStrings.contains(key)
-        }
-        
-        let destinationPath = "/Users/ismayil-16441/Documents/demoprojects/dealit-ios/Dealit/DemoVCs/CleanedString.strings"
-        
-        var updatedContents = lines.joined(separator: "\n")
-        
+        // Specify the directory path where your string files are located
+        let directoryPath = "Users/ismayil-16441/Documents/demoprojects/dealit-ios/Dealit/DemoVCs/OriginalStringFiles"
         do {
-            try updatedContents.write(toFile: destinationPath, atomically: true, encoding: .utf8)
+            let fileManager = FileManager.default
+            let fileURLs = try fileManager.contentsOfDirectory(at: URL(fileURLWithPath: directoryPath), includingPropertiesForKeys: nil)
+
+            for fileURL in fileURLs {
+                var originalFilePath = ""
+                if #available(iOS 16.0, *) {
+                     originalFilePath = fileURL.path(percentEncoded: true)
+                } else {
+                    // Fallback on earlier versions
+                }
+                guard let fileContents = try? String(contentsOfFile: originalFilePath, encoding: .utf8) else {
+                    print("Failed to read file at path: \(originalFilePath)")
+                    return
+                }
+                
+                var lines = fileContents.components(separatedBy: .newlines)
+                
+                var unUsedStrings : Set<String> = []
+                let fileContent = try! String(contentsOfFile: originalFilePath, encoding: .utf8)
+
+                let totalLines = fileContent.components(separatedBy: .newlines)
+
+                for (index,line) in totalLines.enumerated() {
+                    let components = line.components(separatedBy: "=")
+                    if components.count == 2 {
+                        let key = components[0].trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: CharacterSet(charactersIn: "\""))
+                        
+                        unUsedStrings.insert(key)
+                    }
+                }
+                
+                var enumStrings: Set<String> = []
+                
+                StatusContent.allCases.map { (content) in
+                    enumStrings.insert(content.rawValue)
+                }
+                let finalStrings = unUsedStrings.subtracting(enumStrings)
+                
+                print(finalStrings.count)
+                lines = lines.filter { line in
+                    guard let range = line.range(of: "\"(.+?)\"", options: .regularExpression) else {
+                        return true
+                    }
+                    
+                    let key = String(line[range].dropFirst().dropLast())
+                    return enumStrings.contains(key)
+                }
+                
+                let destinationPath = "/Users/ismayil-16441/Documents/demoprojects/dealit-ios/Dealit/DemoVCs/CleanedString.strings"
+                
+                var updatedContents = lines.joined(separator: "\n")
+                
+                do {
+                    try updatedContents.write(toFile: destinationPath, atomically: true, encoding: .utf8)
+                } catch {
+                    print("Could not write into the file")
+                }
+            }
         } catch {
-            print("Could not write into the file")
+            print("Error reading directory: \(error)")
         }
-        
-    
-        
+
         
     }
     
