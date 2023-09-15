@@ -63,6 +63,10 @@ class LanguageFileCleaningDemoViewController: UIViewController {
                 
                 print(finalStrings.count)
                 lines = lines.filter { line in
+                    print(line.isEmpty)
+                    if line.isEmpty {
+                        return false
+                    }
                     guard let range = line.range(of: "\"(.+?)\"", options: .regularExpression) else {
                         return true
                     }
