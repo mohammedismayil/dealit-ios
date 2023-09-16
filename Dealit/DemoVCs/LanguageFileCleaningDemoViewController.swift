@@ -61,9 +61,8 @@ class LanguageFileCleaningDemoViewController: UIViewController {
                 }
                 let finalStrings = unUsedStrings.subtracting(enumStrings)
                 
-                print(finalStrings.count)
+                print("Final Strings count -\(finalStrings.count)")
                 lines = lines.filter { line in
-                    print(line.isEmpty)
                     if line.isEmpty {
                         return false
                     }
