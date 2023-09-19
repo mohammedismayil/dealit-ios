@@ -30,7 +30,13 @@ class LanguageFileCleaningDemoViewController: UIViewController {
     func setupUI() {
         self.view.addSubview(button)
         button.frame = CGRect(x: (self.view.frame.width / 2) - 50, y: (self.view.frame.height / 2) - 50, width: 100, height: 50)
-        button.addTarget(self, action:  #selector(deleteUnUsedLines), for: .touchUpInside)
+        button.addTarget(self, action:  #selector(showOverHeadView), for: .touchUpInside)
+    }
+    
+    
+    @objc func showOverHeadView() {
+        let vc = OverHeadAlertViewController()
+        self.navigationController?.present(vc, animated: true)
     }
     
     
