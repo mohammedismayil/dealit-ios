@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
          // Create a MainViewController
         let story = UIStoryboard(name: "Main", bundle:nil)
-               let vc = story.instantiateViewController(withIdentifier: "LanguageFileCleaningDemoViewController") as! LanguageFileCleaningDemoViewController
+               let vc = story.instantiateViewController(withIdentifier: "NotificationRemovalDemoViewController") as! NotificationRemovalDemoViewController
          // Create a UINavigationController and set the mainView as rootViewController
          let navController = UINavigationController(rootViewController: vc)
          // Set navController as the rootViewController for window
