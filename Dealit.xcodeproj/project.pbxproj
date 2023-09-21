@@ -139,6 +139,7 @@
 		6F4278092AB3852500A7E7F8 /* English.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = English.strings; sourceTree = "<group>"; };
 		6F42780E2AB38A9000A7E7F8 /* French.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = French.strings; sourceTree = "<group>"; };
 		6F7DC2862AC1E9F50035CE96 /* NotificationRemovalDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRemovalDemoViewController.swift; sourceTree = "<group>"; };
+		6F7DC2882AC1EE050035CE96 /* DealitRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DealitRelease.entitlements; sourceTree = "<group>"; };
 		6FCF543D2A628D17008B4717 /* InitialBlankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialBlankViewController.swift; sourceTree = "<group>"; };
 		6FCF54412A65C07C008B4717 /* PresentCompletionDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentCompletionDemoViewController.swift; sourceTree = "<group>"; };
 		7A476C7948DA53D3BCF9A7F5 /* Pods-DealitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DealitTests.debug.xcconfig"; path = "Target Support Files/Pods-DealitTests/Pods-DealitTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +211,7 @@
 		39B686EE278B1EB0001B12E4 /* Dealit */ = {
 			isa = PBXGroup;
 			children = (
+				6F7DC2882AC1EE050035CE96 /* DealitRelease.entitlements */,
 				39B686EF278B1EB0001B12E4 /* AppDelegate.swift */,
 				6FCF543D2A628D17008B4717 /* InitialBlankViewController.swift */,
 				39B68731278B349C001B12E4 /* SampleVCS */,
@@ -827,7 +829,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ismayil.products.Dealit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.dealit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Dealit/Account/Dealit-Bridging-Header.h";
@@ -844,9 +846,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Dealit/DealitRelease.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T9YNGR22U4;
+				DEVELOPMENT_TEAM = F67CP85VVA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Dealit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -859,8 +863,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ismayil.products.Dealit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.dealit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Dealit/Account/Dealit-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -880,7 +885,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ismayil.products.DealitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.dealit.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -897,11 +902,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T9YNGR22U4;
+				DEVELOPMENT_TEAM = F67CP85VVA;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ismayil.products.DealitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.dealit.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -920,7 +925,7 @@
 				DEVELOPMENT_TEAM = T9YNGR22U4;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ismayil.products.DealitUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.dealit.uitests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -936,10 +941,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T9YNGR22U4;
+				DEVELOPMENT_TEAM = F67CP85VVA;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ismayil.products.DealitUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.dealit.uitests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
