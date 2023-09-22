@@ -1,0 +1,7 @@
+{
+  "aps": {
+    "alert": "Hello world",
+    "sound": "default",
+  }
+  "categoryId": "1234"
+}
