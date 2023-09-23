@@ -17,6 +17,13 @@ class NotificationRemovalDemoViewController: UIViewController {
         return button
     }()
     
+    private var removeNotificationButton: CustomAddButton  = {
+        let button = CustomAddButton()
+        button.backgroundColor = .purple
+        button.setTitle("Remove Notification", for: .normal)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
@@ -27,6 +34,10 @@ class NotificationRemovalDemoViewController: UIViewController {
         self.view.addSubview(sendNotificationButton)
         sendNotificationButton.frame = CGRect(x: (self.view.frame.width / 2) - 100, y: (self.view.frame.height / 2) - 100, width: 200, height: 50)
         sendNotificationButton.addTarget(self, action:  #selector(sendNotification), for: .touchUpInside)
+        
+        self.view.addSubview(removeNotificationButton)
+        removeNotificationButton.frame = CGRect(x: (self.view.frame.width / 2) - 100, y: (self.view.frame.height / 2), width: 200, height: 50)
+        removeNotificationButton.addTarget(self, action:  #selector(sendNotification), for: .touchUpInside)
     }
     
     @objc func sendNotification() {
