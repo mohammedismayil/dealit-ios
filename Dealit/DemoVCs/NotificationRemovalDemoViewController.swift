@@ -37,11 +37,16 @@ class NotificationRemovalDemoViewController: UIViewController {
         
         self.view.addSubview(removeNotificationButton)
         removeNotificationButton.frame = CGRect(x: (self.view.frame.width / 2) - 100, y: (self.view.frame.height / 2), width: 200, height: 50)
-        removeNotificationButton.addTarget(self, action:  #selector(sendNotification), for: .touchUpInside)
+        removeNotificationButton.addTarget(self, action:  #selector(removeNotification
+    ), for: .touchUpInside)
     }
     
     @objc func sendNotification() {
         print("Send notification")
+    }
+    
+    @objc func removeNotification() {
+        print("Remove notification")
     }
     /*
     // MARK: - Navigation
