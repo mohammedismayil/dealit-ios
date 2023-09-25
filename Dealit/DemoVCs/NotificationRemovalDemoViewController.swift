@@ -47,6 +47,7 @@ class NotificationRemovalDemoViewController: UIViewController {
     
     @objc func removeNotification() {
         print("Remove notification")
+        UNUserNotificationCenter.current().removeAllDeliveredNotifications()
     }
     /*
     // MARK: - Navigation
