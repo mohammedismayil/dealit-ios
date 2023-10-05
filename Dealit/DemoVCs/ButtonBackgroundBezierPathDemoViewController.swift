@@ -21,11 +21,35 @@ class ButtonBackgroundBezierPathDemoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.addSubview(continueButton)
-        continueButton.frame = CGRect(x: (self.view.frame.width / 2) - 100, y: (self.view.frame.height / 2) - 100, width: 200, height: 50)
+        
         // Do any additional setup after loading the view.
+        self.checkTwoViews()
+       
     }
     
+    
+    func checkTwoViews() {
+        let view1 = UIView()
+        view1.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
+        view1.backgroundColor = .green
+        
+        let view2 = UIView()
+        view2.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
+        view2.backgroundColor = .yellow
+        
+        self.view.addSubview(view1)
+        view1.addSubview(view2)
+    }
+    
+    func handleButtonDemo() {
+        let buttonBackGroundViewFromOutSide = UIButton()
+        buttonBackGroundViewFromOutSide.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
+        buttonBackGroundViewFromOutSide.backgroundColor = .yellow
+        continueButton.addSubview(buttonBackGroundViewFromOutSide)
+        
+        self.view.addSubview(continueButton)
+        continueButton.frame = CGRect(x: (self.view.frame.width / 2) - 100, y: (self.view.frame.height / 2) - 100, width: 200, height: 50)
+    }
 
     /*
     // MARK: - Navigation
@@ -53,14 +77,14 @@ class DemoContinueButton:UIButton {
         self.setTitle("Add", for: .normal)
         self.titleLabel?.font = UIFont.boldSystemFont(ofSize: CGFloat(titleFontSize))
         self.layer.cornerRadius = CGFloat(cornerRadius)
-        let buttonBackGroundView = UIView()
+        let buttonBackGroundView = UIButton()
         buttonBackGroundView.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
         buttonBackGroundView.backgroundColor = .green
         self.addSubview(buttonBackGroundView)
-        let buttonBackGroundView2 = UIView()
+        let buttonBackGroundView2 = UIButton()
         buttonBackGroundView.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
         buttonBackGroundView.backgroundColor = .red
-        self.addSubview(buttonBackGroundView2)
+        self.insertSubview(buttonBackGroundView2, at: 0)
 //        buttonBackGroundView.roundCorners(corners: [.topLeft, .topRight], radius: 0.5 * self.bounds.size.width)
     }
     
