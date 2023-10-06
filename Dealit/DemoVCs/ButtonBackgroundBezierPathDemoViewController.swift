@@ -34,11 +34,11 @@ class ButtonBackgroundBezierPathDemoViewController: UIViewController {
         view1.backgroundColor = .green
         
         let view2 = UIView()
-        view2.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
+        view2.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
         view2.backgroundColor = .yellow
         
         self.view.addSubview(view1)
-        view1.addSubview(view2)
+        self.view.insertSubview(view2, belowSubview: view1)
     }
     
     func handleButtonDemo() {
