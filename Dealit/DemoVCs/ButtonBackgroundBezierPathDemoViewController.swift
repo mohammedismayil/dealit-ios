@@ -38,7 +38,8 @@ class ButtonBackgroundBezierPathDemoViewController: UIViewController {
         view2.backgroundColor = .yellow
         
         self.view.addSubview(view1)
-        self.view.insertSubview(view2, belowSubview: view1)
+        
+        self.view.insertSubview(view2, at: 0)
     }
     
     func handleButtonDemo() {
