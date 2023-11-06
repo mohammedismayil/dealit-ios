@@ -16,32 +16,21 @@ class MemoryLeakDemoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
+        self.simpleClosureReference()
         
-        
+    }
+    
+    deinit {
+        print("MemoryLeakDemoViewController is being deallocated")
+    }
+    
+    func simpleClosureReference() {
         
         self.closure = {
-            // This closure retains a strong reference to the view controller
-            // It keeps the view controller in memory even after it's dismissed
             print("View controller is still in memory")
+            print(self.view.frame)
         }
-        
-    }
-    
-
-    func fetchData(completion: @escaping () -> Void) {
-        // Simulate a network request
-        DispatchQueue.global().async {
-            // Fake data retrieval
-            sleep(5)
-            DispatchQueue.main.async {
-                completion()
-            }
-        }
-    }
-    
-    func handleData() {
-        print("Data handled")
     }
     /*
     // MARK: - Navigation
