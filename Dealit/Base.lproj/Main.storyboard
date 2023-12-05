@@ -644,6 +644,21 @@
             </objects>
             <point key="canvasLocation" x="-1307" y="82"/>
         </scene>
+        <!--Demo Pagination View Controller-->
+        <scene sceneID="WDh-nM-luh">
+            <objects>
+                <viewController storyboardIdentifier="DemoPaginationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UHu-Ud-kUq" customClass="DemoPaginationViewController" customModule="Dealit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EN9-kN-hvL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rMj-i1-eP5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Nd-l0-JLd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1307" y="82"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

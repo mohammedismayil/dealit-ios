@@ -56,6 +56,7 @@
 		6F4278082AB3842300A7E7F8 /* LanguageFileCleaningDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4278072AB3842300A7E7F8 /* LanguageFileCleaningDemoViewController.swift */; };
 		6F42780A2AB3852500A7E7F8 /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F4278092AB3852500A7E7F8 /* English.strings */; };
 		6F42780F2AB38A9000A7E7F8 /* French.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F42780E2AB38A9000A7E7F8 /* French.strings */; };
+		6F646AEB2B1F8227007A5F8C /* DemoPaginationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F646AEA2B1F8227007A5F8C /* DemoPaginationViewController.swift */; };
 		6F73E56F2ABA184300F02DCF /* SimpleCustomUIComponentsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6F73E56E2ABA184300F02DCF /* SimpleCustomUIComponentsSwift */; };
 		6F7DC2872AC1E9F50035CE96 /* NotificationRemovalDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7DC2862AC1E9F50035CE96 /* NotificationRemovalDemoViewController.swift */; };
 		6FCF543E2A628D17008B4717 /* InitialBlankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF543D2A628D17008B4717 /* InitialBlankViewController.swift */; };
@@ -141,6 +142,7 @@
 		6F4278072AB3842300A7E7F8 /* LanguageFileCleaningDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageFileCleaningDemoViewController.swift; sourceTree = "<group>"; };
 		6F4278092AB3852500A7E7F8 /* English.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = English.strings; sourceTree = "<group>"; };
 		6F42780E2AB38A9000A7E7F8 /* French.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = French.strings; sourceTree = "<group>"; };
+		6F646AEA2B1F8227007A5F8C /* DemoPaginationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPaginationViewController.swift; sourceTree = "<group>"; };
 		6F7DC2862AC1E9F50035CE96 /* NotificationRemovalDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRemovalDemoViewController.swift; sourceTree = "<group>"; };
 		6F7DC2882AC1EE050035CE96 /* DealitRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DealitRelease.entitlements; sourceTree = "<group>"; };
 		6FCF543D2A628D17008B4717 /* InitialBlankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialBlankViewController.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				395AA79228BB2533007371D9 /* CustomBottomSheetListVC.swift */,
+				6F646AEA2B1F8227007A5F8C /* DemoPaginationViewController.swift */,
 				6F4278072AB3842300A7E7F8 /* LanguageFileCleaningDemoViewController.swift */,
 				6F7DC2862AC1E9F50035CE96 /* NotificationRemovalDemoViewController.swift */,
 				6FD75ADB2ACDD23400080E28 /* ButtonBackgroundBezierPathDemoViewController.swift */,
@@ -611,6 +614,7 @@
 				396D8480278CADF3006F87BD /* HomePageModels.swift in Sources */,
 				39379B0C28C126260032D885 /* PropertyObserverVC.swift in Sources */,
 				391C8D7B288DC49B007188EA /* HelloCpp.mm in Sources */,
+				6F646AEB2B1F8227007A5F8C /* DemoPaginationViewController.swift in Sources */,
 				6FCF54422A65C07C008B4717 /* PresentCompletionDemoViewController.swift in Sources */,
 				39B68727278B27A2001B12E4 /* InitialVC.swift in Sources */,
 				395A430D28829C4900FB8F6F /* WalletConnectClientVC.swift in Sources */,
