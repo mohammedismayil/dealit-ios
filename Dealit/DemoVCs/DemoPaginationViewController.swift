@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class DemoPaginationViewController: UIViewController {
     
@@ -16,12 +17,19 @@ class DemoPaginationViewController: UIViewController {
         tableView.backgroundColor = .purple
         return tableView
     }()
+    
+    var fetchController: NSFetchedResultsController<NSFetchRequestResult>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "DemoPaginationUser")
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: false)]
+        fetchController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: managedContext, sectionNameKeyPath: nil, cacheName: nil)
         self.view.addSubview(tableView)
-        tableView.backgroundColor = .lightGray
+        tableView.backgroundColor = .green
         NSLayoutConstraint.activate([
             tableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
@@ -51,12 +59,13 @@ class DemoPaginationViewController: UIViewController {
 extension DemoPaginationViewController :  UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return fetchController.sections?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell  = tableView.dequeueReusableCell(withIdentifier: "DemoPaginationListCell", for: indexPath) as! DemoPaginationListCell
-        cell.nameLabel.text = "Hello"
+//        let object = fetchController.object(at: indexPath)
+//        cell.nameLabel.text = object.entity.name
         return cell
     }
     
