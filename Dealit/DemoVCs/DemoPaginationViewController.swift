@@ -41,7 +41,56 @@ class DemoPaginationViewController: UIViewController {
         tableView.dataSource = self
         tableView.reloadData()
         // Do any additional setup after loading the view.
+        
+        fetchCalls()
     }
+    
+    
+    func fetchCalls() {
+        var callSummary: [CallSummary]? = []
+        
+        var initialCalls = [Call(id: "1", name: "A"),Call(id: "2", name: "B"),Call(id: "3", name: "B")]
+        
+        var nextSetOfCalls = [Call(id: "4", name: "A"),Call(id: "5", name: "B"),Call(id: "6", name: "C")]
+        
+        var syncData = [Call(id: "7", name: "B"),Call(id: "8", name: "B"),Call(id: "9", name: "A"),Call(id: "10", name: "A")]
+        
+        for call in initialCalls {
+             if call.name == callSummary?.last?.calls?.first?.name {
+                 callSummary?.last?.id = call.id
+                callSummary?.last?.calls?.append(call)
+            } else {
+                callSummary?.append(CallSummary(id: "s\(call.id.description))", calls: [call]))
+            }
+        }
+
+        for call in nextSetOfCalls {
+           if call.name == callSummary?.last?.calls?.first?.name {
+               callSummary?.last?.id = call.id
+                callSummary?.last?.calls?.append(call)
+            } else {
+                callSummary?.append(CallSummary(id: "s\(call.id.description))", calls: [call]))
+            }
+        }
+        
+        for call in syncData {
+            if call.name == callSummary?.first?.calls?.first?.name {
+                callSummary?.first?.id = call.id
+                callSummary?.first?.calls?.append(call)
+            } else {
+                callSummary?.insert(CallSummary(id: "s\(call.id.description))", calls: [call]), at: 0)
+            }
+        }
+//
+        let summaryStrings = callSummary?.map { summary in
+            return "ID: \(summary.id), Calls: [\(summary.calls.map { "\($0.id.description): \($0.name.description)" }.joined(separator: ", "))]"
+            }
+            
+        summaryStrings?.forEach { print($0) }
+        
+    }
+    
+    
     
 
     /*
@@ -104,5 +153,31 @@ class DemoPaginationListCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+    }
+}
+
+
+class CallSummary {
+    var id:String!
+    var calls:[Call]!
+    
+    var description: String {
+            return "CallSummary - ID: \(id), Calls: \(calls)"
+        }
+    init(id: String, calls: [Call]) {
+        self.id = id
+        self.calls = calls
+    }
+    
+}
+class Call {
+    var id:String!
+    var name:String!
+    var description: String {
+            return "Call - ID: \(id), Name: \(name)"
+        }
+    init(id: String, name: String) {
+        self.id = id
+        self.name = name
     }
 }
