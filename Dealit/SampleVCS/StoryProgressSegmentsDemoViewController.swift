@@ -9,11 +9,26 @@ import UIKit
 
 class StoryProgressSegmentsDemoViewController: UIViewController {
 
+    var segmentAView: UIView  = UIView()
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.backgroundColor = .gray
         // Do any additional setup after loading the view.
+        
+//        segmentAView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(segmentAView)
+       
+        segmentAView.frame = CGRect(x: 100, y: 250, width: 0, height: 20)
+        segmentAView.backgroundColor = .purple
+        segmentAView.layer.cornerRadius = 10
+        let animator = UIViewPropertyAnimator(duration: 2, curve: .linear)
+        
+        animator.addAnimations {
+            self.segmentAView.frame = CGRect(x: 100, y: 250, width: 200, height: 20)
+        }
+        
+        animator.startAnimation()
     }
     
 
