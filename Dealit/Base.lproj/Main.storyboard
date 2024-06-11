@@ -239,6 +239,21 @@
             </objects>
             <point key="canvasLocation" x="5934.7826086956529" y="88.392857142857139"/>
         </scene>
+        <!--Story Progress Segments Demo View Controller-->
+        <scene sceneID="kEc-Ep-hK9">
+            <objects>
+                <viewController storyboardIdentifier="StoryProgressSegmentsDemoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xM1-2m-CJd" customClass="StoryProgressSegmentsDemoViewController" customModule="Dealit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C8Q-xb-C66">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Bgi-Lf-VfE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hum-Kl-sbe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6591" y="139"/>
+        </scene>
         <!--Trust WalletVC-->
         <scene sceneID="ikf-1o-3lP">
             <objects>
