@@ -13,7 +13,48 @@ class StoryProgressSegmentsDemoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = .gray
+        self.view.backgroundColor = .yellow
+        addLetterAnimation()
+    }
+    
+    func addLetterAnimation() {
+        // Create the path for the letter "A"
+        let path = UIBezierPath()
+        path.move(to: CGPoint(x: 100, y: 100))
+        path.addLine(to: CGPoint(x: 200, y: 100))
+        path.addLine(to: CGPoint(x: 200, y: 200))
+        path.addLine(to: CGPoint(x: 100, y: 200))
+        path.addLine(to: CGPoint(x: 100, y: 150))
+        path.addLine(to: CGPoint(x: 250, y: 150))
+        path.addLine(to: CGPoint(x: 250, y: 100))
+        path.addLine(to: CGPoint(x: 250, y: 200))
+       
+       
+//        path.addLine(to: CGPoint(x: 200, y: 200))
+//        path.move(to: CGPoint(x: 125, y: 150))
+//        path.addLine(to: CGPoint(x: 175, y: 150))
+        
+        // Create a shape layer for the path
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.path = path.cgPath
+        shapeLayer.strokeColor = UIColor.black.cgColor
+        shapeLayer.lineWidth = 10
+        shapeLayer.fillColor = UIColor.clear.cgColor
+        
+        // Add the shape layer to the view
+        view.layer.addSublayer(shapeLayer)
+        
+        // Create the animation
+        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        animation.fromValue = 0
+        animation.toValue = 1
+        animation.duration = 2.0
+        
+        // Add the animation to the shape layer
+        shapeLayer.add(animation, forKey: "drawLetterA")
+    }
+    
+    func addSegmentAnimation() {
         // Do any additional setup after loading the view.
         
 //        segmentAView.translatesAutoresizingMaskIntoConstraints = false
