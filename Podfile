@@ -6,7 +6,6 @@ target 'Dealit' do
   use_frameworks!
 
   # Pods for Dealit
- pod 'Alamofire', '~> 5.5'
  
 # pod 'TrustWalletCore'
 # pod 'WalletConnectSwift'

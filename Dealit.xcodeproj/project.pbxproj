@@ -27,7 +27,6 @@
 		396D8480278CADF3006F87BD /* HomePageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396D847F278CADF3006F87BD /* HomePageModels.swift */; };
 		397CDC42278E840F005CA5F2 /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397CDC41278E840F005CA5F2 /* CoreDataHandler.swift */; };
 		39841AB728051EE200D10FA9 /* WalletConnectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39841AB628051EE200D10FA9 /* WalletConnectVC.swift */; };
-		39841ABA28052E0C00D10FA9 /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 39841AB928052E0C00D10FA9 /* Web3 */; };
 		3986487B2891AC5400A48C6D /* WeakReferenceExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3986487A2891AC5400A48C6D /* WeakReferenceExampleVC.swift */; };
 		39B686F0278B1EB0001B12E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B686EF278B1EB0001B12E4 /* AppDelegate.swift */; };
 		39B686F7278B1EB0001B12E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B686F5278B1EB0001B12E4 /* Main.storyboard */; };
@@ -165,7 +164,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39841ABA28052E0C00D10FA9 /* Web3 in Frameworks */,
 				6F73E56F2ABA184300F02DCF /* SimpleCustomUIComponentsSwift in Frameworks */,
 				97A3AA2D797F78180D3A4642 /* Pods_Dealit.framework in Frameworks */,
 			);
@@ -374,7 +372,6 @@
 				39B686E8278B1EB0001B12E4 /* Sources */,
 				39B686E9278B1EB0001B12E4 /* Frameworks */,
 				39B686EA278B1EB0001B12E4 /* Resources */,
-				A71649F0DC5616985C8725F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -382,7 +379,6 @@
 			);
 			name = Dealit;
 			packageProductDependencies = (
-				39841AB928052E0C00D10FA9 /* Web3 */,
 				6F73E56E2ABA184300F02DCF /* SimpleCustomUIComponentsSwift */,
 			);
 			productName = Dealit;
@@ -416,7 +412,6 @@
 				39B6870B278B1EB1001B12E4 /* Sources */,
 				39B6870C278B1EB1001B12E4 /* Frameworks */,
 				39B6870D278B1EB1001B12E4 /* Resources */,
-				DD6C09F1BAFAE8B90E5E8862 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -462,7 +457,6 @@
 			);
 			mainGroup = 39B686E3278B1EAF001B12E4;
 			packageReferences = (
-				39841AB828052E0C00D10FA9 /* XCRemoteSwiftPackageReference "Web3.swift" */,
 				6F73E56D2ABA184300F02DCF /* XCRemoteSwiftPackageReference "SimpleCustomUIComponentsSwift" */,
 			);
 			productRefGroup = 39B686ED278B1EB0001B12E4 /* Products */;
@@ -553,23 +547,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A71649F0DC5616985C8725F3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dealit/Pods-Dealit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dealit/Pods-Dealit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dealit/Pods-Dealit-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DAF11CF4669B5F903C57A90B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -590,23 +567,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DD6C09F1BAFAE8B90E5E8862 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1019,14 +979,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		39841AB828052E0C00D10FA9 /* XCRemoteSwiftPackageReference "Web3.swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Boilertalk/Web3.swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.5.3;
-			};
-		};
 		6F73E56D2ABA184300F02DCF /* XCRemoteSwiftPackageReference "SimpleCustomUIComponentsSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mohammedismayil/SimpleCustomUIComponentsSwift";
@@ -1038,11 +990,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		39841AB928052E0C00D10FA9 /* Web3 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 39841AB828052E0C00D10FA9 /* XCRemoteSwiftPackageReference "Web3.swift" */;
-			productName = Web3;
-		};
 		6F73E56E2ABA184300F02DCF /* SimpleCustomUIComponentsSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6F73E56D2ABA184300F02DCF /* XCRemoteSwiftPackageReference "SimpleCustomUIComponentsSwift" */;
