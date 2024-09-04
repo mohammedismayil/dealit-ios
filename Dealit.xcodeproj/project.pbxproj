@@ -16,6 +16,7 @@
 		393F1156278D1B8C00542B3B /* UIImageView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393F1155278D1B8C00542B3B /* UIImageView_Extensions.swift */; };
 		39478C1027A0663D009652CB /* UserListCoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */; };
 		394B9AD32C88CA3B00201B4E /* DoubleTapAnimationDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394B9AD22C88CA3B00201B4E /* DoubleTapAnimationDemoViewController.swift */; };
+		394B9AD52C88D44300201B4E /* thumbsup.gif in Resources */ = {isa = PBXBuildFile; fileRef = 394B9AD42C88D44300201B4E /* thumbsup.gif */; };
 		395A430D28829C4900FB8F6F /* WalletConnectClientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395A430C28829C4900FB8F6F /* WalletConnectClientVC.swift */; };
 		395A430F28829C7F00FB8F6F /* HandShakeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395A430E28829C7F00FB8F6F /* HandShakeVC.swift */; };
 		395A431128829CB400FB8F6F /* Walletconnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395A431028829CB400FB8F6F /* Walletconnect.swift */; };
@@ -101,6 +102,7 @@
 		393F1155278D1B8C00542B3B /* UIImageView_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView_Extensions.swift; sourceTree = "<group>"; };
 		39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCoreDataHandler.swift; sourceTree = "<group>"; };
 		394B9AD22C88CA3B00201B4E /* DoubleTapAnimationDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTapAnimationDemoViewController.swift; sourceTree = "<group>"; };
+		394B9AD42C88D44300201B4E /* thumbsup.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = thumbsup.gif; sourceTree = "<group>"; };
 		395A430C28829C4900FB8F6F /* WalletConnectClientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectClientVC.swift; sourceTree = "<group>"; };
 		395A430E28829C7F00FB8F6F /* HandShakeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeVC.swift; sourceTree = "<group>"; };
 		395A431028829CB400FB8F6F /* Walletconnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walletconnect.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				39B68731278B349C001B12E4 /* SampleVCS */,
 				39B686F5278B1EB0001B12E4 /* Main.storyboard */,
 				395AA79028BB24C8007371D9 /* Common.storyboard */,
+				394B9AD42C88D44300201B4E /* thumbsup.gif */,
 				396D847B278CA291006F87BD /* HomeTVC.xib */,
 				396D847D278CA67C006F87BD /* HomeTVC.swift */,
 				39379B0B28C126260032D885 /* PropertyObserverVC.swift */,
@@ -480,6 +483,7 @@
 			files = (
 				39B686FF278B1EB1001B12E4 /* LaunchScreen.storyboard in Resources */,
 				6F42780A2AB3852500A7E7F8 /* English.strings in Resources */,
+				394B9AD52C88D44300201B4E /* thumbsup.gif in Resources */,
 				39B6872D278B344C001B12E4 /* SampleVCS.storyboard in Resources */,
 				39B686FC278B1EB1001B12E4 /* Assets.xcassets in Resources */,
 				395AA79128BB24C8007371D9 /* Common.storyboard in Resources */,
