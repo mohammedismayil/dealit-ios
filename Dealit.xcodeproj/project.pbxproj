@@ -378,6 +378,7 @@
 				39B686E8278B1EB0001B12E4 /* Sources */,
 				39B686E9278B1EB0001B12E4 /* Frameworks */,
 				39B686EA278B1EB0001B12E4 /* Resources */,
+				2484C0F7C4EC6AFC0C2AA430 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -418,6 +419,7 @@
 				39B6870B278B1EB1001B12E4 /* Sources */,
 				39B6870C278B1EB1001B12E4 /* Frameworks */,
 				39B6870D278B1EB1001B12E4 /* Resources */,
+				7937CDFA6EA0B7749FD5C74B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -510,6 +512,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2484C0F7C4EC6AFC0C2AA430 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dealit/Pods-Dealit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dealit/Pods-Dealit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dealit/Pods-Dealit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7937CDFA6EA0B7749FD5C74B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		95EBD30119133E60D4CAE95E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

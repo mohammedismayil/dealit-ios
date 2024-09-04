@@ -9,6 +9,8 @@ target 'Dealit' do
  
 # pod 'TrustWalletCore'
 # pod 'WalletConnectSwift'
+pod 'FLAnimatedImage', '~> 1.0'
+
   target 'DealitTests' do
     inherit! :search_paths
     # Pods for testing

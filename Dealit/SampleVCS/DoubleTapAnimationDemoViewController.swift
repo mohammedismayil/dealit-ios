@@ -7,6 +7,8 @@
 
 import Foundation
 import UIKit
+import FLAnimatedImage
+
 class DoubleTapAnimationDemoViewController: UIViewController {
     
     let messageLabel: UILabel = {
@@ -35,6 +37,8 @@ class DoubleTapAnimationDemoViewController: UIViewController {
         return label
     }()
     
+    var animatedImageView: FLAnimatedImageView!
+    
     override func viewDidLoad() {
         print("DoubleTapAnimationDemoViewController loaded")
         self.view.addSubview(messageLabel)
@@ -44,6 +48,11 @@ class DoubleTapAnimationDemoViewController: UIViewController {
         
         emojiLabel.frame = CGRect(x: 60, y: 170, width: 30, height: 30)
         
+        animatedImageView = FLAnimatedImageView()
+        animatedImageView.frame = emojiLabel.frame
+        animatedImageView.contentMode = .scaleAspectFit
+        view.addSubview(animatedImageView)
+        animatedImageView.isHidden = true
         let gesture = UITapGestureRecognizer(target: self, action: #selector(doubleTapAction))
         gesture.numberOfTapsRequired = 2
         messageLabel.addGestureRecognizer(gesture)
@@ -51,8 +60,29 @@ class DoubleTapAnimationDemoViewController: UIViewController {
     
     @objc func doubleTapAction() {
         print("Double tap action")
-        if let gifFrames = loadGifFrames(gifName: "thumbsup") {
-            animateGifOnLabel(gifFrames: gifFrames)
+//        if let gifFrames = loadGifFrames(gifName: "thumbsup") {
+//            animateGifOnLabel(gifFrames: gifFrames)
+//        }
+        
+        if let gifUrl = Bundle.main.url(forResource: "thumbsup", withExtension: "gif") {
+            let gifData = try? Data(contentsOf: gifUrl)
+            let animatedImage = FLAnimatedImage(animatedGIFData: gifData)
+            animateGifOnLabel(animatedImage: animatedImage)
+        }
+    }
+    
+    func animateGifOnLabel(animatedImage: FLAnimatedImage?) {
+        // Hide the label and show the animated image view
+        self.emojiLabel.text = ""
+        animatedImageView.isHidden = false
+
+        // Set the FLAnimatedImage
+        animatedImageView.animatedImage = animatedImage
+        
+        // Automatically remove the GIF after it plays (assuming it’s a non-looping GIF)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { // Adjust duration based on the GIF length
+            self.animatedImageView.isHidden = true
+            self.emojiLabel.text = "👍"
         }
     }
  
