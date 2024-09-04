@@ -20,14 +20,17 @@ class StoryProgressSegmentsDemoViewController: UIViewController {
     func addLetterAnimation() {
         // Create the path for the letter "A"
         let path = UIBezierPath()
-        path.move(to: CGPoint(x: 100, y: 100))
-        path.addLine(to: CGPoint(x: 200, y: 100))
-        path.addLine(to: CGPoint(x: 200, y: 200))
-        path.addLine(to: CGPoint(x: 100, y: 200))
-        path.addLine(to: CGPoint(x: 100, y: 150))
-        path.addLine(to: CGPoint(x: 250, y: 150))
-        path.addLine(to: CGPoint(x: 250, y: 100))
-        path.addLine(to: CGPoint(x: 250, y: 200))
+        path.move(to: CGPoint(x: 100, y: 150))
+        path.addCurve(to: CGPoint(x: 150, y: 150), controlPoint1: CGPoint(x: 120, y: 110), controlPoint2: CGPoint(x: 140, y: 135))
+        path.addCurve(to: CGPoint(x: 100, y: 215), controlPoint1: CGPoint(x: 160, y: 170), controlPoint2: CGPoint(x: 150, y: 210))
+        path.addCurve(to: CGPoint(x: 100, y: 180), controlPoint1: CGPoint(x: 20, y: 195), controlPoint2: CGPoint(x: 50, y: 185))
+//        path.addLine(to: CGPoint(x: 200, y: 100))
+//        path.addLine(to: CGPoint(x: 200, y: 200))
+//        path.addLine(to: CGPoint(x: 100, y: 200))
+//        path.addLine(to: CGPoint(x: 100, y: 150))
+//        path.addLine(to: CGPoint(x: 250, y: 150))
+//        path.addLine(to: CGPoint(x: 250, y: 100))
+//        path.addLine(to: CGPoint(x: 250, y: 200))
        
        
 //        path.addLine(to: CGPoint(x: 200, y: 200))

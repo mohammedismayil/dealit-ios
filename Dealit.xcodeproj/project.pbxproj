@@ -15,6 +15,7 @@
 		393868A2278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 393868A0278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld */; };
 		393F1156278D1B8C00542B3B /* UIImageView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393F1155278D1B8C00542B3B /* UIImageView_Extensions.swift */; };
 		39478C1027A0663D009652CB /* UserListCoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */; };
+		394B9AD32C88CA3B00201B4E /* DoubleTapAnimationDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394B9AD22C88CA3B00201B4E /* DoubleTapAnimationDemoViewController.swift */; };
 		395A430D28829C4900FB8F6F /* WalletConnectClientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395A430C28829C4900FB8F6F /* WalletConnectClientVC.swift */; };
 		395A430F28829C7F00FB8F6F /* HandShakeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395A430E28829C7F00FB8F6F /* HandShakeVC.swift */; };
 		395A431128829CB400FB8F6F /* Walletconnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395A431028829CB400FB8F6F /* Walletconnect.swift */; };
@@ -99,6 +100,7 @@
 		393868A1278DF73B00FDDBB2 /* HomePageUsers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomePageUsers.xcdatamodel; sourceTree = "<group>"; };
 		393F1155278D1B8C00542B3B /* UIImageView_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView_Extensions.swift; sourceTree = "<group>"; };
 		39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCoreDataHandler.swift; sourceTree = "<group>"; };
+		394B9AD22C88CA3B00201B4E /* DoubleTapAnimationDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTapAnimationDemoViewController.swift; sourceTree = "<group>"; };
 		395A430C28829C4900FB8F6F /* WalletConnectClientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectClientVC.swift; sourceTree = "<group>"; };
 		395A430E28829C7F00FB8F6F /* HandShakeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShakeVC.swift; sourceTree = "<group>"; };
 		395A431028829CB400FB8F6F /* Walletconnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walletconnect.swift; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 				39B6872C278B344C001B12E4 /* SampleVCS.storyboard */,
 				39B6872F278B3494001B12E4 /* VC1.swift */,
 				6FAFF0BE2C18C8A70089DC4D /* StoryProgressSegmentsDemoViewController.swift */,
+				394B9AD22C88CA3B00201B4E /* DoubleTapAnimationDemoViewController.swift */,
 				39B68732278B3540001B12E4 /* VC2.swift */,
 				39B68734278B354D001B12E4 /* VC3.swift */,
 			);
@@ -576,6 +579,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394B9AD32C88CA3B00201B4E /* DoubleTapAnimationDemoViewController.swift in Sources */,
 				39DD3FFB27BEB08C00BC2F8E /* ProductsCoreDataHandler.swift in Sources */,
 				39B68733278B3540001B12E4 /* VC2.swift in Sources */,
 				397CDC42278E840F005CA5F2 /* CoreDataHandler.swift in Sources */,
