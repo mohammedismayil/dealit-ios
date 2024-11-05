@@ -27,6 +27,7 @@
 		396D847C278CA291006F87BD /* HomeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396D847B278CA291006F87BD /* HomeTVC.xib */; };
 		396D847E278CA67C006F87BD /* HomeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396D847D278CA67C006F87BD /* HomeTVC.swift */; };
 		396D8480278CADF3006F87BD /* HomePageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396D847F278CADF3006F87BD /* HomePageModels.swift */; };
+		3978D6CA2CDA8298000C777B /* DoubleTapAnimationDemoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3978D6C92CDA8298000C777B /* DoubleTapAnimationDemoScreen.swift */; };
 		397CDC42278E840F005CA5F2 /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397CDC41278E840F005CA5F2 /* CoreDataHandler.swift */; };
 		39841AB728051EE200D10FA9 /* WalletConnectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39841AB628051EE200D10FA9 /* WalletConnectVC.swift */; };
 		3986487B2891AC5400A48C6D /* WeakReferenceExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3986487A2891AC5400A48C6D /* WeakReferenceExampleVC.swift */; };
@@ -113,6 +114,7 @@
 		396D847B278CA291006F87BD /* HomeTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTVC.xib; sourceTree = "<group>"; };
 		396D847D278CA67C006F87BD /* HomeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVC.swift; sourceTree = "<group>"; };
 		396D847F278CADF3006F87BD /* HomePageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModels.swift; sourceTree = "<group>"; };
+		3978D6C92CDA8298000C777B /* DoubleTapAnimationDemoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTapAnimationDemoScreen.swift; sourceTree = "<group>"; };
 		397CDC41278E840F005CA5F2 /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
 		39841AB628051EE200D10FA9 /* WalletConnectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectVC.swift; sourceTree = "<group>"; };
 		3986487A2891AC5400A48C6D /* WeakReferenceExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakReferenceExampleVC.swift; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 				39B6872F278B3494001B12E4 /* VC1.swift */,
 				6FAFF0BE2C18C8A70089DC4D /* StoryProgressSegmentsDemoViewController.swift */,
 				394B9AD22C88CA3B00201B4E /* DoubleTapAnimationDemoViewController.swift */,
+				3978D6C92CDA8298000C777B /* DoubleTapAnimationDemoScreen.swift */,
 				39B68732278B3540001B12E4 /* VC2.swift */,
 				39B68734278B354D001B12E4 /* VC3.swift */,
 			);
@@ -645,6 +648,7 @@
 				396D847A278C9CA3006F87BD /* NetworkManager.swift in Sources */,
 				39B68725278B261E001B12E4 /* LocalAppData.swift in Sources */,
 				3913609F27DA723400D3B29B /* TrustWalletVC.swift in Sources */,
+				3978D6CA2CDA8298000C777B /* DoubleTapAnimationDemoScreen.swift in Sources */,
 				391C8D7E288DC812007188EA /* CppIntegratedVC.swift in Sources */,
 				396D847E278CA67C006F87BD /* HomeTVC.swift in Sources */,
 				393F1156278D1B8C00542B3B /* UIImageView_Extensions.swift in Sources */,

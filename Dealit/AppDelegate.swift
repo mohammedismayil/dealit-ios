@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 import UserNotifications
+import SwiftUI
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -30,8 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let story = UIStoryboard(name: "Main", bundle:nil)
 //        let vc = story.instantiateViewController(withIdentifier: "StoryProgressSegmentsDemoViewController") as! StoryProgressSegmentsDemoViewController
         
-        let vc = DoubleTapAnimationDemoViewController() // we can initialise view controller without giving the storyboard and all
+//        let vc = DoubleTapAnimationDemoViewController() // we can initialise view controller without giving the storyboard and all
         // Create a UINavigationController and set the mainView as rootViewController
+        let vc = UIHostingController(rootView: DoubleTapAnimationDemoScreen())
          let navController = UINavigationController(rootViewController: vc)
          // Set navController as the rootViewController for window
          self.window?.rootViewController = navController
