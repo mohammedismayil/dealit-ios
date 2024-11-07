@@ -33,11 +33,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        let vc = DoubleTapAnimationDemoViewController() // we can initialise view controller without giving the storyboard and all
         // Create a UINavigationController and set the mainView as rootViewController
-        let vc = UIHostingController(rootView: DoubleTapAnimationDemoScreen())
-         let navController = UINavigationController(rootViewController: vc)
-         // Set navController as the rootViewController for window
-         self.window?.rootViewController = navController
-         self.window?.makeKeyAndVisible()
+        if #available(iOS 16.0, *) {
+            let vc = UIHostingController(rootView: DoubleTapAnimationDemoScreen())
+            let navController = UINavigationController(rootViewController: vc)
+            // Set navController as the rootViewController for window
+            self.window?.rootViewController = navController
+            self.window?.makeKeyAndVisible()
+        } else {
+            // Fallback on earlier versions
+        }
+        
     }
 
    

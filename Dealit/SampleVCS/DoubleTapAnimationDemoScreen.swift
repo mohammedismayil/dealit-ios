@@ -7,12 +7,84 @@
 
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct DoubleTapAnimationDemoScreen: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    var body: some View  {
+        ScrollView(.vertical,showsIndicators: false) {
+            VStack(spacing: 0) {
+                HStack {
+                    Text("Stories").font(.largeTitle)
+                    Spacer()
+                    Button("Watch all") {
+                        print("Watch all action")
+                    }
+                }.padding([.leading,.trailing], 10)
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+                HorizontalFoodItemsView()
+            }
+        }
+        
     }
 }
 
-#Preview {
-    DoubleTapAnimationDemoScreen()
+
+@available(iOS 16.0, *)
+struct HorizontalFoodItemsView: View {
+    var body: some View {
+        ScrollView(.horizontal,showsIndicators: false) {
+            HStack {
+                VStack {
+                    Image(uiImage: UIImage(resource: ImageResource(name: "pizza", bundle: .main))).resizable().frame(height: 100).frame(width: 100).clipShape(.rect(cornerRadius: 10))
+                    Text("pizza")
+                }
+                VStack {
+                    Image(uiImage: UIImage(resource: ImageResource(name: "pizza", bundle: .main))).resizable().frame(height: 100).frame(width: 100).clipShape(.rect(cornerRadius: 10))
+                    Text("pizza")
+                }
+                VStack {
+                    Image(uiImage: UIImage(resource: ImageResource(name: "pizza", bundle: .main))).resizable().frame(height: 100).frame(width: 100).clipShape(.rect(cornerRadius: 10))
+                    Text("pizza")
+                }
+                VStack {
+                    Image(uiImage: UIImage(resource: ImageResource(name: "pizza", bundle: .main))).resizable().frame(height: 100).frame(width: 100).clipShape(.rect(cornerRadius: 10))
+                    Text("pizza")
+                }
+                VStack {
+                    Image(uiImage: UIImage(resource: ImageResource(name: "pizza", bundle: .main))).resizable().frame(height: 100).frame(width: 100).clipShape(.rect(cornerRadius: 10))
+                    Text("pizza")
+                }
+                VStack {
+                    Image(uiImage: UIImage(resource: ImageResource(name: "pizza", bundle: .main))).resizable().frame(height: 100).frame(width: 100).clipShape(.rect(cornerRadius: 10))
+                    Text("pizza")
+                }
+                VStack {
+                    Image(uiImage: UIImage(resource: ImageResource(name: "pizza", bundle: .main))).resizable().frame(height: 100).frame(width: 100).clipShape(.rect(cornerRadius: 10))
+                    Text("pizza")
+                }
+                VStack {
+                    Image(uiImage: UIImage(resource: ImageResource(name: "pizza", bundle: .main))).resizable().frame(height: 100).frame(width: 100).clipShape(.rect(cornerRadius: 10))
+                    Text("pizza")
+                }
+            }.padding(.horizontal,10)
+            
+        }.scrollContentBackground(.hidden)
+    }
 }
