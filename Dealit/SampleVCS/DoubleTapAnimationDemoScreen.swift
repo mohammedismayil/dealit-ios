@@ -10,37 +10,40 @@ import SwiftUI
 @available(iOS 16.0, *)
 struct DoubleTapAnimationDemoScreen: View {
     var body: some View  {
-        ScrollView(.vertical,showsIndicators: false) {
-            VStack(spacing: 0) {
-                HStack {
-                    Text("Stories").font(.largeTitle)
-                    Spacer()
-                    Button("Watch all") {
-                        print("Watch all action")
-                    }
-                }.padding([.leading,.trailing], 10)
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
-                HorizontalFoodItemsView()
+        GeometryReader { inset in
+            ScrollView(.vertical,showsIndicators: false) {
+                VStack(spacing: 0) {
+                    HStack {
+                        Text("Stories").font(.largeTitle)
+                        Spacer()
+                        Button("Watch all") {
+                            print("Watch all action")
+                        }
+                    }.padding([.leading,.trailing], 10)
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                    HorizontalFoodItemsView()
+                }
             }
         }
+        
         
     }
 }

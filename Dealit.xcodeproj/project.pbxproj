@@ -13,6 +13,8 @@
 		391C8D7E288DC812007188EA /* CppIntegratedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391C8D7D288DC812007188EA /* CppIntegratedVC.swift */; };
 		39379B0C28C126260032D885 /* PropertyObserverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39379B0B28C126260032D885 /* PropertyObserverVC.swift */; };
 		393868A2278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 393868A0278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld */; };
+		393977F52CE2729F003387CE /* ChatWindowScreenDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393977F42CE2729F003387CE /* ChatWindowScreenDemo.swift */; };
+		393977F82CE27955003387CE /* ChatWindowHeaderDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393977F72CE27955003387CE /* ChatWindowHeaderDemo.swift */; };
 		393F1156278D1B8C00542B3B /* UIImageView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393F1155278D1B8C00542B3B /* UIImageView_Extensions.swift */; };
 		39478C1027A0663D009652CB /* UserListCoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */; };
 		394B9AD32C88CA3B00201B4E /* DoubleTapAnimationDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394B9AD22C88CA3B00201B4E /* DoubleTapAnimationDemoViewController.swift */; };
@@ -100,6 +102,8 @@
 		391C8D7D288DC812007188EA /* CppIntegratedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CppIntegratedVC.swift; sourceTree = "<group>"; };
 		39379B0B28C126260032D885 /* PropertyObserverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyObserverVC.swift; sourceTree = "<group>"; };
 		393868A1278DF73B00FDDBB2 /* HomePageUsers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomePageUsers.xcdatamodel; sourceTree = "<group>"; };
+		393977F42CE2729F003387CE /* ChatWindowScreenDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWindowScreenDemo.swift; sourceTree = "<group>"; };
+		393977F72CE27955003387CE /* ChatWindowHeaderDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWindowHeaderDemo.swift; sourceTree = "<group>"; };
 		393F1155278D1B8C00542B3B /* UIImageView_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView_Extensions.swift; sourceTree = "<group>"; };
 		39478C0F27A0663D009652CB /* UserListCoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCoreDataHandler.swift; sourceTree = "<group>"; };
 		394B9AD22C88CA3B00201B4E /* DoubleTapAnimationDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTapAnimationDemoViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +198,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		393977F62CE2793A003387CE /* ChatWindowScreenDemo */ = {
+			isa = PBXGroup;
+			children = (
+				393977F42CE2729F003387CE /* ChatWindowScreenDemo.swift */,
+				393977F72CE27955003387CE /* ChatWindowHeaderDemo.swift */,
+			);
+			path = ChatWindowScreenDemo;
+			sourceTree = "<group>";
+		};
 		393F1157278D1B9F00542B3B /* UIHelpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +318,7 @@
 				6FAFF0BE2C18C8A70089DC4D /* StoryProgressSegmentsDemoViewController.swift */,
 				394B9AD22C88CA3B00201B4E /* DoubleTapAnimationDemoViewController.swift */,
 				3978D6C92CDA8298000C777B /* DoubleTapAnimationDemoScreen.swift */,
+				393977F62CE2793A003387CE /* ChatWindowScreenDemo */,
 				39B68732278B3540001B12E4 /* VC2.swift */,
 				39B68734278B354D001B12E4 /* VC3.swift */,
 			);
@@ -632,6 +646,8 @@
 				391C8D7B288DC49B007188EA /* HelloCpp.mm in Sources */,
 				6F646AEF2B1F9A53007A5F8C /* DemoPaginationViewController.swift in Sources */,
 				6FAFF0BF2C18C8A70089DC4D /* StoryProgressSegmentsDemoViewController.swift in Sources */,
+				393977F52CE2729F003387CE /* ChatWindowScreenDemo.swift in Sources */,
+				393977F82CE27955003387CE /* ChatWindowHeaderDemo.swift in Sources */,
 				6FCF54422A65C07C008B4717 /* PresentCompletionDemoViewController.swift in Sources */,
 				39B68727278B27A2001B12E4 /* InitialVC.swift in Sources */,
 				395A430D28829C4900FB8F6F /* WalletConnectClientVC.swift in Sources */,
