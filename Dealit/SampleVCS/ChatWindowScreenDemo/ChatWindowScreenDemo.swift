@@ -9,8 +9,17 @@ import SwiftUI
 
 struct ChatWindowScreenDemo: View {
     var body: some View {
-        ScrollView {
+        VStack {
             ChatWindowHeaderDemo().padding(.horizontal, 20)
+            ZStack {
+                Image("profilepicture")
+                    .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea()
+                ScrollView {
+                    Text("Hello")
+                }.ignoresSafeArea()
+            }.ignoresSafeArea()
         }
     }
 }
