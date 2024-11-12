@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		121EE51BC78348190CBECA00 /* Pods_Dealit_DealitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EEAB4B68A7C9ADA98D5047 /* Pods_Dealit_DealitUITests.framework */; };
 		3913609F27DA723400D3B29B /* TrustWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913609E27DA723400D3B29B /* TrustWalletVC.swift */; };
+		391AB00C2CE3D130005CED02 /* ChatWindowMessageListViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391AB00B2CE3D130005CED02 /* ChatWindowMessageListViewDemo.swift */; };
 		391C8D7B288DC49B007188EA /* HelloCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 391C8D7A288DC49B007188EA /* HelloCpp.mm */; };
 		391C8D7E288DC812007188EA /* CppIntegratedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391C8D7D288DC812007188EA /* CppIntegratedVC.swift */; };
 		39379B0C28C126260032D885 /* PropertyObserverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39379B0B28C126260032D885 /* PropertyObserverVC.swift */; };
@@ -96,6 +97,7 @@
 		13704C617572F4D1942D5399 /* Pods_Dealit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dealit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2030A970B7EA18323536B568 /* Pods-Dealit-DealitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dealit-DealitUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3913609E27DA723400D3B29B /* TrustWalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustWalletVC.swift; sourceTree = "<group>"; };
+		391AB00B2CE3D130005CED02 /* ChatWindowMessageListViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWindowMessageListViewDemo.swift; sourceTree = "<group>"; };
 		391C8D76288DC2CA007188EA /* Dealit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dealit-Bridging-Header.h"; sourceTree = "<group>"; };
 		391C8D7A288DC49B007188EA /* HelloCpp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloCpp.mm; sourceTree = "<group>"; };
 		391C8D7C288DC66A007188EA /* HelloCpp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloCpp.hpp; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			children = (
 				393977F42CE2729F003387CE /* ChatWindowScreenDemo.swift */,
 				393977F72CE27955003387CE /* ChatWindowHeaderDemo.swift */,
+				391AB00B2CE3D130005CED02 /* ChatWindowMessageListViewDemo.swift */,
 			);
 			path = ChatWindowScreenDemo;
 			sourceTree = "<group>";
@@ -663,6 +666,7 @@
 				39B6872B278B2A97001B12E4 /* HomeVC.swift in Sources */,
 				396D847A278C9CA3006F87BD /* NetworkManager.swift in Sources */,
 				39B68725278B261E001B12E4 /* LocalAppData.swift in Sources */,
+				391AB00C2CE3D130005CED02 /* ChatWindowMessageListViewDemo.swift in Sources */,
 				3913609F27DA723400D3B29B /* TrustWalletVC.swift in Sources */,
 				3978D6CA2CDA8298000C777B /* DoubleTapAnimationDemoScreen.swift in Sources */,
 				391C8D7E288DC812007188EA /* CppIntegratedVC.swift in Sources */,
