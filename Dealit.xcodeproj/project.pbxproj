@@ -13,6 +13,7 @@
 		391C8D7B288DC49B007188EA /* HelloCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 391C8D7A288DC49B007188EA /* HelloCpp.mm */; };
 		391C8D7E288DC812007188EA /* CppIntegratedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391C8D7D288DC812007188EA /* CppIntegratedVC.swift */; };
 		3929C1402D493DE70049B134 /* ScoreHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3929C13F2D493DE70049B134 /* ScoreHomeView.swift */; };
+		3929C1422D4940300049B134 /* PlayerScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3929C1412D4940300049B134 /* PlayerScoreView.swift */; };
 		39379B0C28C126260032D885 /* PropertyObserverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39379B0B28C126260032D885 /* PropertyObserverVC.swift */; };
 		393868A2278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 393868A0278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld */; };
 		393977F52CE2729F003387CE /* ChatWindowScreenDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393977F42CE2729F003387CE /* ChatWindowScreenDemo.swift */; };
@@ -104,6 +105,7 @@
 		391C8D7C288DC66A007188EA /* HelloCpp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloCpp.hpp; sourceTree = "<group>"; };
 		391C8D7D288DC812007188EA /* CppIntegratedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CppIntegratedVC.swift; sourceTree = "<group>"; };
 		3929C13F2D493DE70049B134 /* ScoreHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreHomeView.swift; sourceTree = "<group>"; };
+		3929C1412D4940300049B134 /* PlayerScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreView.swift; sourceTree = "<group>"; };
 		39379B0B28C126260032D885 /* PropertyObserverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyObserverVC.swift; sourceTree = "<group>"; };
 		393868A1278DF73B00FDDBB2 /* HomePageUsers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomePageUsers.xcdatamodel; sourceTree = "<group>"; };
 		393977F42CE2729F003387CE /* ChatWindowScreenDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWindowScreenDemo.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				3929C13F2D493DE70049B134 /* ScoreHomeView.swift */,
+				3929C1412D4940300049B134 /* PlayerScoreView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -700,6 +703,7 @@
 				39B686FA278B1EB0001B12E4 /* Dealit.xcdatamodeld in Sources */,
 				6F0D7D0A2A88705E00E6D759 /* StackViewLayoutDemoViewController.swift in Sources */,
 				6F7DC2872AC1E9F50035CE96 /* NotificationRemovalDemoViewController.swift in Sources */,
+				3929C1422D4940300049B134 /* PlayerScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

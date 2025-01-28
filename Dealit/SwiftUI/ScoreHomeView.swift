@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct ScoreHomeView: View {
-    var teamScore: Int = 0
+    @State var teamScore = 0
     var body: some View {
-        Text("Score Home")
-        Text("Team score \(teamScore)")
+        VStack {
+            Text("Score Home")
+            Text("Team score \(teamScore)")
+            Button("Team") {
+                teamScore = teamScore + 1
+            }
+            PlayerScoreView(teamScoreModel: TeamScoreModel())
+        }
+       
     }
 }
 
 #Preview {
     ScoreHomeView()
+}
+class TeamScoreModel: ObservableObject {
+    @Published var teamScore: Int = 0
+    @Published var playerAScore: Int = 0
 }
