@@ -12,6 +12,7 @@
 		391AB00C2CE3D130005CED02 /* ChatWindowMessageListViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391AB00B2CE3D130005CED02 /* ChatWindowMessageListViewDemo.swift */; };
 		391C8D7B288DC49B007188EA /* HelloCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 391C8D7A288DC49B007188EA /* HelloCpp.mm */; };
 		391C8D7E288DC812007188EA /* CppIntegratedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391C8D7D288DC812007188EA /* CppIntegratedVC.swift */; };
+		3929C1402D493DE70049B134 /* ScoreHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3929C13F2D493DE70049B134 /* ScoreHomeView.swift */; };
 		39379B0C28C126260032D885 /* PropertyObserverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39379B0B28C126260032D885 /* PropertyObserverVC.swift */; };
 		393868A2278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 393868A0278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld */; };
 		393977F52CE2729F003387CE /* ChatWindowScreenDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393977F42CE2729F003387CE /* ChatWindowScreenDemo.swift */; };
@@ -102,6 +103,7 @@
 		391C8D7A288DC49B007188EA /* HelloCpp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloCpp.mm; sourceTree = "<group>"; };
 		391C8D7C288DC66A007188EA /* HelloCpp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HelloCpp.hpp; sourceTree = "<group>"; };
 		391C8D7D288DC812007188EA /* CppIntegratedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CppIntegratedVC.swift; sourceTree = "<group>"; };
+		3929C13F2D493DE70049B134 /* ScoreHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreHomeView.swift; sourceTree = "<group>"; };
 		39379B0B28C126260032D885 /* PropertyObserverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyObserverVC.swift; sourceTree = "<group>"; };
 		393868A1278DF73B00FDDBB2 /* HomePageUsers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HomePageUsers.xcdatamodel; sourceTree = "<group>"; };
 		393977F42CE2729F003387CE /* ChatWindowScreenDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWindowScreenDemo.swift; sourceTree = "<group>"; };
@@ -200,6 +202,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3929C13E2D493DC20049B134 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				3929C13F2D493DE70049B134 /* ScoreHomeView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		393977F62CE2793A003387CE /* ChatWindowScreenDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +256,7 @@
 				6F7DC2882AC1EE050035CE96 /* DealitRelease.entitlements */,
 				39B686EF278B1EB0001B12E4 /* AppDelegate.swift */,
 				6FCF543D2A628D17008B4717 /* InitialBlankViewController.swift */,
+				3929C13E2D493DC20049B134 /* SwiftUI */,
 				39B68731278B349C001B12E4 /* SampleVCS */,
 				39B686F5278B1EB0001B12E4 /* Main.storyboard */,
 				395AA79028BB24C8007371D9 /* Common.storyboard */,
@@ -671,6 +682,7 @@
 				3978D6CA2CDA8298000C777B /* DoubleTapAnimationDemoScreen.swift in Sources */,
 				391C8D7E288DC812007188EA /* CppIntegratedVC.swift in Sources */,
 				396D847E278CA67C006F87BD /* HomeTVC.swift in Sources */,
+				3929C1402D493DE70049B134 /* ScoreHomeView.swift in Sources */,
 				393F1156278D1B8C00542B3B /* UIImageView_Extensions.swift in Sources */,
 				39B68723278B1EEE001B12E4 /* UserStatus.swift in Sources */,
 				39B68729278B28F0001B12E4 /* RegisterVC.swift in Sources */,
