@@ -16,7 +16,7 @@ struct ScoreHomeView: View {
             Button("Team") {
                 teamScore = teamScore + 1
             }
-            PlayerScoreView(teamScoreModel: TeamScoreModel())
+            PlayerScoreView(teamScoreModelA: TeamScoreModel(), teamScoreModelB: TeamScoreModel())
         }
        
     }

@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct PlayerScoreView: View {
-    @ObservedObject var teamScoreModel: TeamScoreModel
+    @ObservedObject var teamScoreModelA: TeamScoreModel
+    @StateObject var teamScoreModelB: TeamScoreModel
     var body: some View {
-        Text("Player A score \(teamScoreModel.playerAScore)")
+        Text("Player A score \(teamScoreModelA.playerAScore)")
         Button("Player A") {
-            teamScoreModel.playerAScore = teamScoreModel.playerAScore + 1
+            teamScoreModelA.playerAScore = teamScoreModelA.playerAScore + 1
+        }
+        Text("Player B score \(teamScoreModelB.playerAScore)")
+        Button("Player B") {
+            teamScoreModelB.playerAScore = teamScoreModelB.playerAScore + 1
         }
     }
 }
 
 #Preview {
-    PlayerScoreView(teamScoreModel: TeamScoreModel())
+    PlayerScoreView(teamScoreModelA: TeamScoreModel(), teamScoreModelB: TeamScoreModel())
 }
