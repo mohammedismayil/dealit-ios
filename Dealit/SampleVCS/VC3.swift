@@ -29,8 +29,8 @@ class VC3: UIViewController {
     
     @IBAction func nextAction(_ sender: Any) {
         
-        let nc = NotificationCenter.default
-        nc.post(name: Notification.Name("UserLoggedIn"), object: User(name: "Ricky", age: 25))
+//        let nc = NotificationCenter.default
+//        nc.post(name: Notification.Name("UserLoggedIn"), object: User(name: "Ricky", age: 25))
     }
 
 }

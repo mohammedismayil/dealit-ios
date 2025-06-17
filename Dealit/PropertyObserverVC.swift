@@ -7,15 +7,7 @@
 
 import UIKit
 
-class User{
-    var name:String
-    var age:Int
-    
-    init(name:String,age:Int){
-        self.name = name
-        self.age = age
-    }
-}
+
 
 class PropertyObserverVC: UIViewController {
 
@@ -52,10 +44,10 @@ class PropertyObserverVC: UIViewController {
     
     @objc func notificationTriggered(notif:Notification){
         
-        if let dict = notif.object as? User {
-            print("i am triggered from vc2 \(dict.name)")
-//            self.users.append(User(name: "Peter", age: 30))
-            }
+//        if let dict = notif.object as? User {
+//            print("i am triggered from vc2 \(dict.name)")
+////            self.users.append(User(name: "Peter", age: 30))
+//            }
         
     }
     override func viewWillAppear(_ animated: Bool) {
