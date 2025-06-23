@@ -60,6 +60,7 @@
 		39DD3FFB27BEB08C00BC2F8E /* ProductsCoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DD3FFA27BEB08C00BC2F8E /* ProductsCoreDataHandler.swift */; };
 		39E0458428C6589E004FB779 /* HomeUsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0458328C6589E004FB779 /* HomeUsersModel.swift */; };
 		39E0458728C65CCD004FB779 /* RawResponse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39E0458528C65CCD004FB779 /* RawResponse.xcdatamodeld */; };
+		39F59AE02E0997DC00535BF7 /* HomeScreenDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F59ADF2E0997DC00535BF7 /* HomeScreenDetailView.swift */; };
 		6F0D7D0A2A88705E00E6D759 /* StackViewLayoutDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0D7D092A88705E00E6D759 /* StackViewLayoutDemoViewController.swift */; };
 		6F361E0A2AE03840009F52B9 /* MemoryLeakDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F361E092AE03840009F52B9 /* MemoryLeakDemoViewController.swift */; };
 		6F4278022AAC8C5600A7E7F8 /* ThreadRaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4278012AAC8C5600A7E7F8 /* ThreadRaceVC.swift */; };
@@ -159,6 +160,7 @@
 		39DD3FFA27BEB08C00BC2F8E /* ProductsCoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCoreDataHandler.swift; sourceTree = "<group>"; };
 		39E0458328C6589E004FB779 /* HomeUsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUsersModel.swift; sourceTree = "<group>"; };
 		39E0458628C65CCD004FB779 /* RawResponse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RawResponse.xcdatamodel; sourceTree = "<group>"; };
+		39F59ADF2E0997DC00535BF7 /* HomeScreenDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenDetailView.swift; sourceTree = "<group>"; };
 		3F57F91D8F6335D9BCB56552 /* Pods_DealitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DealitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F0D7D092A88705E00E6D759 /* StackViewLayoutDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewLayoutDemoViewController.swift; sourceTree = "<group>"; };
 		6F361E092AE03840009F52B9 /* MemoryLeakDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLeakDemoViewController.swift; sourceTree = "<group>"; };
@@ -222,9 +224,9 @@
 		3929C13E2D493DC20049B134 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				3929C13F2D493DE70049B134 /* ScoreHomeView.swift */,
 				39283B8C2E01BC2C00FEAD5D /* HomeScreenView.swift */,
-				3929C1412D4940300049B134 /* PlayerScoreView.swift */,
+				39F59ADF2E0997DC00535BF7 /* HomeScreenDetailView.swift */,
+				39F59ADE2E09973400535BF7 /* ScoreComponents */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -357,6 +359,15 @@
 				39B68734278B354D001B12E4 /* VC3.swift */,
 			);
 			path = SampleVCS;
+			sourceTree = "<group>";
+		};
+		39F59ADE2E09973400535BF7 /* ScoreComponents */ = {
+			isa = PBXGroup;
+			children = (
+				3929C13F2D493DE70049B134 /* ScoreHomeView.swift */,
+				3929C1412D4940300049B134 /* PlayerScoreView.swift */,
+			);
+			path = ScoreComponents;
 			sourceTree = "<group>";
 		};
 		6F0D7D082A88702C00E6D759 /* DemoVCs */ = {
@@ -723,6 +734,7 @@
 				39B686FA278B1EB0001B12E4 /* Dealit.xcdatamodeld in Sources */,
 				6F0D7D0A2A88705E00E6D759 /* StackViewLayoutDemoViewController.swift in Sources */,
 				6F7DC2872AC1E9F50035CE96 /* NotificationRemovalDemoViewController.swift in Sources */,
+				39F59AE02E0997DC00535BF7 /* HomeScreenDetailView.swift in Sources */,
 				3929C1422D4940300049B134 /* PlayerScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

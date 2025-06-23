@@ -15,6 +15,7 @@ struct HomeScreenView: View {
             sortDescriptors: [NSSortDescriptor(keyPath: \UserEntity.name, ascending: true)]
         ) 
     var users: FetchedResults<UserEntity>
+    @State private var showingSheet = false
     var body: some View {
         HStack {
             Text("Home screen").padding(.leading)
@@ -28,7 +29,11 @@ struct HomeScreenView: View {
         
         List() {
             ForEach(users) { (user) in
-                Text(user.name ?? "")
+                Text(user.name ?? "").sheet(isPresented: $showingSheet, content: {
+                    HomeScreenDetailView()
+                }).onTapGesture {
+                    showingSheet.toggle()
+                }
             }.onDelete(perform: deleteUser)
         }.onAppear(perform: {
             print("re rendered")
