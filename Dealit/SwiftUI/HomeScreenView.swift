@@ -25,15 +25,21 @@ struct HomeScreenView: View {
                 addUser(name: "John doe")
             }.padding(.trailing)
             
-        }
+        }.onAppear(perform: {
+           getSampleUserDetailsFromAPI()
+        })
         
         List() {
             ForEach(users) { (user) in
-                Text(user.name ?? "").sheet(isPresented: $showingSheet, content: {
-                    HomeScreenDetailView()
-                }).onTapGesture {
-                    showingSheet.toggle()
+                if let user = user.userDetails?.decoded(as: UserDetailsAPIModel.self) as? UserDetailsAPIModel {
+                    let name = user.userDetails.personalDetails.name
+                    Text(name).sheet(isPresented: $showingSheet, content: {
+                        HomeScreenDetailView()
+                    }).onTapGesture {
+                        showingSheet.toggle()
+                    }
                 }
+                
             }.onDelete(perform: deleteUser)
         }.onAppear(perform: {
             print("re rendered")
@@ -61,6 +67,35 @@ struct HomeScreenView: View {
         } catch {
             print("Failed to delete user: \(error)")
         }
+    }
+
+    func getSampleUserDetailsFromAPI() {
+        guard let url = URL(string: "https://dummyjson.com/c/98f8-95ea-4014-8a23") else {
+            return
+        }
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data else {
+                return
+            }
+            do {
+                let decoder = JSONDecoder()
+                let userDetails = try decoder.decode(UserDetailsAPIModel.self, from: data)
+                
+                print(userDetails.userDetails.personalDetails.name)
+                
+                let newUser = UserEntity(context: context)
+                newUser.id = UUID()
+                newUser.name = userDetails.userDetails.personalDetails.name
+                newUser.userDetails = CodableWrapper(userDetails)
+                do {
+                    try context.save()
+                } catch {
+                    print("Failed to save user: \(error)")
+                }
+            } catch {
+                print(error)
+            }
+        }.resume()
     }
 }
 

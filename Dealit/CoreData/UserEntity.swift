@@ -15,7 +15,7 @@ public class UserEntity: NSManagedObject {
 extension UserEntity: Identifiable {
     @NSManaged public var name: String?
     @NSManaged public var id: UUID?
-    
+    @NSManaged public var userDetails: CodableWrapper?
     @nonobjc public class func fetchRequest() -> NSFetchRequest<UserEntity> {
             return NSFetchRequest<UserEntity>(entityName: "UserEntity")
         }

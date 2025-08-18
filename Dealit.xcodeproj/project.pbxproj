@@ -60,7 +60,9 @@
 		39DD3FFB27BEB08C00BC2F8E /* ProductsCoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DD3FFA27BEB08C00BC2F8E /* ProductsCoreDataHandler.swift */; };
 		39E0458428C6589E004FB779 /* HomeUsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E0458328C6589E004FB779 /* HomeUsersModel.swift */; };
 		39E0458728C65CCD004FB779 /* RawResponse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39E0458528C65CCD004FB779 /* RawResponse.xcdatamodeld */; };
+		39E828F22E5396DF009559A5 /* CodableTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E828F12E5396DF009559A5 /* CodableTransformer.swift */; };
 		39F59AE02E0997DC00535BF7 /* HomeScreenDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F59ADF2E0997DC00535BF7 /* HomeScreenDetailView.swift */; };
+		39FE29A52E5373A700333BB8 /* UserDetailsAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE29A42E5373A700333BB8 /* UserDetailsAPIModel.swift */; };
 		6F0D7D0A2A88705E00E6D759 /* StackViewLayoutDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0D7D092A88705E00E6D759 /* StackViewLayoutDemoViewController.swift */; };
 		6F361E0A2AE03840009F52B9 /* MemoryLeakDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F361E092AE03840009F52B9 /* MemoryLeakDemoViewController.swift */; };
 		6F4278022AAC8C5600A7E7F8 /* ThreadRaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4278012AAC8C5600A7E7F8 /* ThreadRaceVC.swift */; };
@@ -160,7 +162,9 @@
 		39DD3FFA27BEB08C00BC2F8E /* ProductsCoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCoreDataHandler.swift; sourceTree = "<group>"; };
 		39E0458328C6589E004FB779 /* HomeUsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUsersModel.swift; sourceTree = "<group>"; };
 		39E0458628C65CCD004FB779 /* RawResponse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RawResponse.xcdatamodel; sourceTree = "<group>"; };
+		39E828F12E5396DF009559A5 /* CodableTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableTransformer.swift; sourceTree = "<group>"; };
 		39F59ADF2E0997DC00535BF7 /* HomeScreenDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenDetailView.swift; sourceTree = "<group>"; };
+		39FE29A42E5373A700333BB8 /* UserDetailsAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsAPIModel.swift; sourceTree = "<group>"; };
 		3F57F91D8F6335D9BCB56552 /* Pods_DealitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DealitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F0D7D092A88705E00E6D759 /* StackViewLayoutDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewLayoutDemoViewController.swift; sourceTree = "<group>"; };
 		6F361E092AE03840009F52B9 /* MemoryLeakDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLeakDemoViewController.swift; sourceTree = "<group>"; };
@@ -216,6 +220,8 @@
 			isa = PBXGroup;
 			children = (
 				39283B8F2E01C65B00FEAD5D /* UserEntity.swift */,
+				39E828F12E5396DF009559A5 /* CodableTransformer.swift */,
+				39FE29A42E5373A700333BB8 /* UserDetailsAPIModel.swift */,
 				39283B912E01CD5C00FEAD5D /* PersistenceController.swift */,
 			);
 			path = CoreData;
@@ -689,7 +695,9 @@
 				396D8480278CADF3006F87BD /* HomePageModels.swift in Sources */,
 				39379B0C28C126260032D885 /* PropertyObserverVC.swift in Sources */,
 				391C8D7B288DC49B007188EA /* HelloCpp.mm in Sources */,
+				39E828F22E5396DF009559A5 /* CodableTransformer.swift in Sources */,
 				6F646AEF2B1F9A53007A5F8C /* DemoPaginationViewController.swift in Sources */,
+				39FE29A52E5373A700333BB8 /* UserDetailsAPIModel.swift in Sources */,
 				6FAFF0BF2C18C8A70089DC4D /* StoryProgressSegmentsDemoViewController.swift in Sources */,
 				393977F52CE2729F003387CE /* ChatWindowScreenDemo.swift in Sources */,
 				393977F82CE27955003387CE /* ChatWindowHeaderDemo.swift in Sources */,

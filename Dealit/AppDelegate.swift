@@ -19,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if (TARGET_OS_SIMULATOR != 1) {
             self.registerForPushNotifications()
         }
+        ValueTransformer.setValueTransformer(
+            NSSecureUnarchiveFromDataTransformer(),
+            forName: NSValueTransformerName("CodableWrapper")
+        )
         setInitialVC()
         return true
     }

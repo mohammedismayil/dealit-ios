@@ -6,5 +6,6 @@
     <entity name="UserEntity" representedClassName="UserEntity" syncable="YES">
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="userDetails" optional="YES" attributeType="Transformable" valueTransformerName="CodableWrapperTransformer" customClassName="CodableWrapper"/>
     </entity>
 </model>
