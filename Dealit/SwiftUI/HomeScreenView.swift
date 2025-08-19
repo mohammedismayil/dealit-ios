@@ -26,7 +26,7 @@ struct HomeScreenView: View {
             }.padding(.trailing)
             
         }.onAppear(perform: {
-           getSampleUserDetailsFromAPI()
+            testBlockOperations()
         })
         
         List() {
@@ -68,8 +68,25 @@ struct HomeScreenView: View {
             print("Failed to delete user: \(error)")
         }
     }
+    
+    func testBlockOperations() {
+        
+        let firstOp = BlockOperation {
+            print("👋 First operation started")
+            sleep(2) // <-- synchronous, blocks the operation
+            print("✅ First operation finished")
+        }
 
-    func getSampleUserDetailsFromAPI() {
+        let secondOp = BlockOperation {
+            print("🚀 Second operation started (after first finishes)")
+        }
+        let queue = OperationQueue()
+        secondOp.addDependency(firstOp)
+        queue.addOperation(firstOp)
+        queue.addOperation(secondOp)
+    }
+
+    func getSampleUserDetailsFromAPI(completion: @escaping () ->(Void)) {
         guard let url = URL(string: "https://dummyjson.com/c/98f8-95ea-4014-8a23") else {
             return
         }
@@ -81,7 +98,7 @@ struct HomeScreenView: View {
                 let decoder = JSONDecoder()
                 let userDetails = try decoder.decode(UserDetailsAPIModel.self, from: data)
                 
-                print(userDetails.userDetails.personalDetails.name)
+                print("response decoded \(userDetails.userDetails.personalDetails.name)")
                 
                 let newUser = UserEntity(context: context)
                 newUser.id = UUID()
@@ -89,6 +106,7 @@ struct HomeScreenView: View {
                 newUser.userDetails = CodableWrapper(userDetails)
                 do {
                     try context.save()
+                    completion()
                 } catch {
                     print("Failed to save user: \(error)")
                 }
