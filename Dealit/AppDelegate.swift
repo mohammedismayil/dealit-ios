@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.registerForPushNotifications()
         }
         ValueTransformer.setValueTransformer(
-            NSSecureUnarchiveFromDataTransformer(),
-            forName: NSValueTransformerName("CodableWrapper")
+            CodableWrapperTransformer(),
+            forName: .CodableWrapperTransformerName
         )
         setInitialVC()
         return true

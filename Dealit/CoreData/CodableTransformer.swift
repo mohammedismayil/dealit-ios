@@ -77,6 +77,10 @@ struct AnyCodable: Codable {
     }
 }
 
+extension NSValueTransformerName {
+    static let CodableWrapperTransformerName = NSValueTransformerName(rawValue: "CodableWrapperTransformer")
+}
+
 @objc(CodableWrapperTransformer)
 final class CodableWrapperTransformer: ValueTransformer {
     override class func transformedValueClass() -> AnyClass { NSData.self }
