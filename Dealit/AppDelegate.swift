@@ -16,9 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window:UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        if (TARGET_OS_SIMULATOR != 1) {
-            self.registerForPushNotifications()
-        }
+//        if (TARGET_OS_SIMULATOR != 1) {
+//            self.registerForPushNotifications()
+//        }
         ValueTransformer.setValueTransformer(
             CodableWrapperTransformer(),
             forName: .CodableWrapperTransformerName

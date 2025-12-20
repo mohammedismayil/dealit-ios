@@ -226,38 +226,6 @@
             endingLineNumber = "89"
             landmarkName = "transformedValue(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "AEFED06C-A460-42C2-BAB8-CAE291DF1A78 - 57967e7ce726cb76"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Dealit.CodableWrapperTransformer.transformedValue(Swift.Optional&lt;Any&gt;) -&gt; Swift.Optional&lt;Any&gt;"
-                  moduleName = "Dealit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mohammedismayil/ismayildemo/dealit-ios/Dealit/CoreData/CodableTransformer.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "91"
-                  endingLineNumber = "91"
-                  offsetFromSymbolStart = "540">
-               </Location>
-               <Location
-                  uuid = "AEFED06C-A460-42C2-BAB8-CAE291DF1A78 - 57967e7ce726cb08"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Dealit.CodableWrapperTransformer.transformedValue(Swift.Optional&lt;Any&gt;) -&gt; Swift.Optional&lt;Any&gt;"
-                  moduleName = "Dealit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mohammedismayil/ismayildemo/dealit-ios/Dealit/CoreData/CodableTransformer.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
-                  offsetFromSymbolStart = "80">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
