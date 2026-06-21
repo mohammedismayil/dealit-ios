@@ -6,23 +6,23 @@
 //
 
 import UIKit
-import SimpleCustomUIComponentsSwift
+//import SimpleCustomUIComponentsSwift
 
 class NotificationRemovalDemoViewController: UIViewController {
 
-    private var sendNotificationButton: CustomAddButton  = {
-        let button = CustomAddButton()
-        button.backgroundColor = .purple
-        button.setTitle("Send Notification", for: .normal)
-        return button
-    }()
-    
-    private var removeNotificationButton: CustomAddButton  = {
-        let button = CustomAddButton()
-        button.backgroundColor = .purple
-        button.setTitle("Remove Notification", for: .normal)
-        return button
-    }()
+//    private var sendNotificationButton: CustomAddButton  = {
+//        let button = CustomAddButton()
+//        button.backgroundColor = .purple
+//        button.setTitle("Send Notification", for: .normal)
+//        return button
+//    }()
+//    
+//    private var removeNotificationButton: CustomAddButton  = {
+//        let button = CustomAddButton()
+//        button.backgroundColor = .purple
+//        button.setTitle("Remove Notification", for: .normal)
+//        return button
+//    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,14 +31,14 @@ class NotificationRemovalDemoViewController: UIViewController {
     }
     
     func setupUI() {
-        self.view.addSubview(sendNotificationButton)
-        sendNotificationButton.frame = CGRect(x: (self.view.frame.width / 2) - 100, y: (self.view.frame.height / 2) - 100, width: 200, height: 50)
-        sendNotificationButton.addTarget(self, action:  #selector(sendNotification), for: .touchUpInside)
-        
-        self.view.addSubview(removeNotificationButton)
-        removeNotificationButton.frame = CGRect(x: (self.view.frame.width / 2) - 100, y: (self.view.frame.height / 2), width: 200, height: 50)
-        removeNotificationButton.addTarget(self, action:  #selector(removeNotification
-    ), for: .touchUpInside)
+//        self.view.addSubview(sendNotificationButton)
+//        sendNotificationButton.frame = CGRect(x: (self.view.frame.width / 2) - 100, y: (self.view.frame.height / 2) - 100, width: 200, height: 50)
+//        sendNotificationButton.addTarget(self, action:  #selector(sendNotification), for: .touchUpInside)
+//        
+//        self.view.addSubview(removeNotificationButton)
+//        removeNotificationButton.frame = CGRect(x: (self.view.frame.width / 2) - 100, y: (self.view.frame.height / 2), width: 200, height: 50)
+//        removeNotificationButton.addTarget(self, action:  #selector(removeNotification
+//    ), for: .touchUpInside)
     }
     
     @objc func sendNotification() {

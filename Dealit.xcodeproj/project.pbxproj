@@ -72,7 +72,6 @@
 		6F646AEF2B1F9A53007A5F8C /* DemoPaginationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F646AEE2B1F9A53007A5F8C /* DemoPaginationViewController.swift */; };
 		6F646AF22B1F9BCA007A5F8C /* DemoPaginationUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F646AF02B1F9BCA007A5F8C /* DemoPaginationUser+CoreDataClass.swift */; };
 		6F646AF32B1F9BCA007A5F8C /* DemoPaginationUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F646AF12B1F9BCA007A5F8C /* DemoPaginationUser+CoreDataProperties.swift */; };
-		6F73E56F2ABA184300F02DCF /* SimpleCustomUIComponentsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6F73E56E2ABA184300F02DCF /* SimpleCustomUIComponentsSwift */; };
 		6F7DC2872AC1E9F50035CE96 /* NotificationRemovalDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7DC2862AC1E9F50035CE96 /* NotificationRemovalDemoViewController.swift */; };
 		6FAFF0BF2C18C8A70089DC4D /* StoryProgressSegmentsDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAFF0BE2C18C8A70089DC4D /* StoryProgressSegmentsDemoViewController.swift */; };
 		6FCF543E2A628D17008B4717 /* InitialBlankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF543D2A628D17008B4717 /* InitialBlankViewController.swift */; };
@@ -192,7 +191,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F73E56F2ABA184300F02DCF /* SimpleCustomUIComponentsSwift in Frameworks */,
 				97A3AA2D797F78180D3A4642 /* Pods_Dealit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,9 +451,6 @@
 			dependencies = (
 			);
 			name = Dealit;
-			packageProductDependencies = (
-				6F73E56E2ABA184300F02DCF /* SimpleCustomUIComponentsSwift */,
-			);
 			productName = Dealit;
 			productReference = 39B686EC278B1EB0001B12E4 /* Dealit.app */;
 			productType = "com.apple.product-type.application";
@@ -532,9 +527,6 @@
 				Base,
 			);
 			mainGroup = 39B686E3278B1EAF001B12E4;
-			packageReferences = (
-				6F73E56D2ABA184300F02DCF /* XCRemoteSwiftPackageReference "SimpleCustomUIComponentsSwift" */,
-			);
 			productRefGroup = 39B686ED278B1EB0001B12E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -924,7 +916,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = F67CP85VVA;
+				DEVELOPMENT_TEAM = T9YNGR22U4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Dealit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -958,7 +950,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = F67CP85VVA;
+				DEVELOPMENT_TEAM = T9YNGR22U4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Dealit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1101,25 +1093,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		6F73E56D2ABA184300F02DCF /* XCRemoteSwiftPackageReference "SimpleCustomUIComponentsSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mohammedismayil/SimpleCustomUIComponentsSwift";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		6F73E56E2ABA184300F02DCF /* SimpleCustomUIComponentsSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6F73E56D2ABA184300F02DCF /* XCRemoteSwiftPackageReference "SimpleCustomUIComponentsSwift" */;
-			productName = SimpleCustomUIComponentsSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		393868A0278DF73B00FDDBB2 /* HomePageUsers.xcdatamodeld */ = {

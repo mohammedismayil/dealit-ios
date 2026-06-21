@@ -7,43 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F4A18ADCBE5DB841D4C290FF8D3BEE1 /* Pods-Dealit-DealitUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E91FA58C4EDE7DF2B8D8124FDFDD11C7 /* Pods-Dealit-DealitUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B507E9F301E6BC9F4D8EB8043B01CD3 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A9992360094B4F62EB10D5E1E0BFE2 /* FLAnimatedImage.m */; };
-		3635FFC49C82A914991BDC33AB8295F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BADAF97F77FC4003B3610E7ACA312E1 /* Foundation.framework */; };
-		42656EE69CA697C4F483ED44B688B529 /* FLAnimatedImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 745838E275BEB36156C4F29272235797 /* FLAnimatedImage-dummy.m */; };
-		42AFA04C22B28B1E20BEC1D2F408FFB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BADAF97F77FC4003B3610E7ACA312E1 /* Foundation.framework */; };
-		49EBF9F83154DE0C9D5502C152416BF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4219BA7CAED0202261970996230F11F /* CoreGraphics.framework */; };
-		56687ED88A5F09B81B2296B3FDD12F4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BADAF97F77FC4003B3610E7ACA312E1 /* Foundation.framework */; };
-		57FA9B961AC49A568B7D31BD272179AB /* Pods-Dealit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C807B7D493BF600EB58117F732ECE706 /* Pods-Dealit-dummy.m */; };
-		6E91C0E1F97D0DCA638585D647C0C075 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 453500D795302A5B71995FD970A38C5B /* FLAnimatedImageView.m */; };
-		6FB030E2BD6282AE5F8184C7908694C6 /* Pods-Dealit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8D5EB1EE95F81C6D6105B5726BA621 /* Pods-Dealit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F7158EF1A3E6E778AB1F8712A3AA86E /* FLAnimatedImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D94F19E1FE96AE26327A3DCB2C4222AD /* FLAnimatedImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A5ED4C383156955A2F12D05BC86ECC23 /* Pods-Dealit-DealitUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2ABB0BBF1E15D7830C63067CA40B057 /* Pods-Dealit-DealitUITests-dummy.m */; };
-		B0BA746AE3FABF65F54ACB4713E1A5B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BADAF97F77FC4003B3610E7ACA312E1 /* Foundation.framework */; };
-		C1051B66E8B37001ECD81D1291D9C2EF /* Pods-DealitTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E090E4EFBA7971ECFA21057CAD1E5FF7 /* Pods-DealitTests-dummy.m */; };
-		C685FAE975137344D1474AD7E4096DA8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EE3948404F12C5B6DA9AF99AB40738 /* QuartzCore.framework */; };
-		DB1D0708A4D56029D14636419B03F14C /* FLAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6975206C91B36A85890263B928AD47AA /* FLAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E113594EC32F9B04E66716925E7225C2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434BDB8968205C3B66ECCF4FCB2767A8 /* ImageIO.framework */; };
-		EA35339386CD1251FAD44A9E74A25D74 /* FLAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = B74E164070ACAF6DBF0A15ABA9AB785F /* FLAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBD0EAAB6A573FFE233AC79FC7335A92 /* Pods-DealitTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F5F91E60C07E17284CA7EBDB0C60E8 /* Pods-DealitTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01D2F1D0ABE13AAB2CDC0C25E378E964 /* FLAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6975206C91B36A85890263B928AD47AA /* FLAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BB896B7F6F852B6C6FB37AB29AA6DF4 /* Pods-Dealit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8D5EB1EE95F81C6D6105B5726BA621 /* Pods-Dealit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EC1750C894F036194B90CFD26072B0C /* FLAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = B74E164070ACAF6DBF0A15ABA9AB785F /* FLAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A47FAA054C440F62380A28A97FE9EB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520A88C9699CD24AA9020BC3A56CAB1F /* Foundation.framework */; };
+		65847D56B18A8AB8F940C18733A00AAD /* Pods-Dealit-DealitUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E91FA58C4EDE7DF2B8D8124FDFDD11C7 /* Pods-Dealit-DealitUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		824EBE8CFFEFFAF9DCA4BB810441377E /* Pods-DealitTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F5F91E60C07E17284CA7EBDB0C60E8 /* Pods-DealitTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D2CBEBF5F1DA6766A833CCD0BF02B5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5FF429C473323040D655CD2F4624F0 /* CoreGraphics.framework */; };
+		8E6622F5816BCCB1982AB616C331CBAC /* Pods-Dealit-DealitUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2ABB0BBF1E15D7830C63067CA40B057 /* Pods-Dealit-DealitUITests-dummy.m */; };
+		9B08A5776D585A3AE24E9D164824C3D7 /* Pods-Dealit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C807B7D493BF600EB58117F732ECE706 /* Pods-Dealit-dummy.m */; };
+		9C8A936700B2C6B8D946FBD4909B9BAF /* Pods-DealitTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E090E4EFBA7971ECFA21057CAD1E5FF7 /* Pods-DealitTests-dummy.m */; };
+		AD01931D200C49153984E27CBCEFE9D1 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A9992360094B4F62EB10D5E1E0BFE2 /* FLAnimatedImage.m */; };
+		C16483526F6C6287240A75EDCB7E2F2F /* FLAnimatedImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 745838E275BEB36156C4F29272235797 /* FLAnimatedImage-dummy.m */; };
+		DBB7D12AC159E50D059772E4B6CF1D2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520A88C9699CD24AA9020BC3A56CAB1F /* Foundation.framework */; };
+		E387463D5412F0666FC5505CD6373F1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520A88C9699CD24AA9020BC3A56CAB1F /* Foundation.framework */; };
+		E8A27C26EC23738CE7D9ACD28DD5C848 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520A88C9699CD24AA9020BC3A56CAB1F /* Foundation.framework */; };
+		F600BB873FD4764BAA9E02826F804486 /* FLAnimatedImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D94F19E1FE96AE26327A3DCB2C4222AD /* FLAnimatedImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB6E014B34F33B89E5060DA1F00168A5 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D11CD5D37842B93A46386969BB3C90 /* ImageIO.framework */; };
+		FD3AF10F8723DABEE406D25592B5F562 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 453500D795302A5B71995FD970A38C5B /* FLAnimatedImageView.m */; };
+		FDD4C4D4F03502D5CB0B8763009A0948 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13429761B8012E7BB3ABDDDAE600E63C /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		23F18DBE8AFBA96DA583AD48D6D33509 /* PBXContainerItemProxy */ = {
+		6DAF0A093228DC2EC61E81382E6DC8D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4A8E8992707D01510894596DB9BCCA00;
 			remoteInfo = FLAnimatedImage;
 		};
-		9E33002597F18065344146CE09121E27 /* PBXContainerItemProxy */ = {
+		A24E906776321B45357A8CBD1EECD572 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EA10E270DFB5D7575BC047839DD76BFB;
 			remoteInfo = "Pods-Dealit";
 		};
-		B2D7D0D234E0E53E9BF020DA76928BC2 /* PBXContainerItemProxy */ = {
+		D726A6892AD8F7E5B34D7D9D1B95A9DF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -54,10 +54,10 @@
 
 /* Begin PBXFileReference section */
 		02BEEFBA185EF94301CBBFC327E460FE /* Pods-Dealit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Dealit"; path = Pods_Dealit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BADAF97F77FC4003B3610E7ACA312E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		0C5D9B05D0418ADC656F0F1E7191F8FA /* FLAnimatedImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FLAnimatedImage.release.xcconfig; sourceTree = "<group>"; };
 		0EC3A912B2DC83E06881EEB404BE9E5F /* Pods-Dealit-DealitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dealit-DealitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		10C552D967EBD0B37BDDDEAFFD501D0D /* Pods-Dealit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Dealit.modulemap"; sourceTree = "<group>"; };
+		13429761B8012E7BB3ABDDDAE600E63C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		1690070A30CC521236D27B302F6EDF0A /* Pods-Dealit-DealitUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Dealit-DealitUITests.modulemap"; sourceTree = "<group>"; };
 		17EF7C2F270BB1AF169A4CC0A898151B /* Pods-Dealit-DealitUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Dealit-DealitUITests"; path = Pods_Dealit_DealitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE6D9D3E215C6CF8CD4A1503666AF95 /* Pods-Dealit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dealit.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,19 +68,21 @@
 		2AD96521CACC18BB774CEC8697157662 /* Pods-Dealit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dealit-acknowledgements.plist"; sourceTree = "<group>"; };
 		33CEECFE0F598314FE8B534874B71820 /* Pods-Dealit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dealit.debug.xcconfig"; sourceTree = "<group>"; };
 		3B433C7777BA2D00FE28E659BDE69738 /* Pods-Dealit-DealitUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dealit-DealitUITests-frameworks.sh"; sourceTree = "<group>"; };
-		434BDB8968205C3B66ECCF4FCB2767A8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		43A9992360094B4F62EB10D5E1E0BFE2 /* FLAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImage.m; path = FLAnimatedImage/FLAnimatedImage.m; sourceTree = "<group>"; };
 		453500D795302A5B71995FD970A38C5B /* FLAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImageView.m; path = FLAnimatedImage/FLAnimatedImageView.m; sourceTree = "<group>"; };
+		520A88C9699CD24AA9020BC3A56CAB1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		54F68A55139665500CF6766C2737A598 /* Pods-Dealit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Dealit-frameworks.sh"; sourceTree = "<group>"; };
 		656DEA290DE55A43668A65F00FE33A25 /* Pods-DealitTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DealitTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		670CD734A5B2185E6082F4563548FB5C /* Pods-Dealit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dealit-Info.plist"; sourceTree = "<group>"; };
 		6975206C91B36A85890263B928AD47AA /* FLAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLAnimatedImageView.h; path = FLAnimatedImage/include/FLAnimatedImageView.h; sourceTree = "<group>"; };
 		6C960407C7AD62F3A8D3EE53EF33AD2F /* Pods-Dealit-DealitUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dealit-DealitUITests-Info.plist"; sourceTree = "<group>"; };
 		745838E275BEB36156C4F29272235797 /* FLAnimatedImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FLAnimatedImage-dummy.m"; sourceTree = "<group>"; };
+		7B5FF429C473323040D655CD2F4624F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		7FC1965311962D8A87435496C4802E8B /* Pods-DealitTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DealitTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		97AC3FE89DD2A2851C601474C74E9896 /* Pods-Dealit-DealitUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dealit-DealitUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2420C3D383DCA20ED8C0D24EB9E296B /* Pods-DealitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DealitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3D11CD5D37842B93A46386969BB3C90 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		B74E164070ACAF6DBF0A15ABA9AB785F /* FLAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLAnimatedImage.h; path = FLAnimatedImage/include/FLAnimatedImage.h; sourceTree = "<group>"; };
 		B9022E6836E4C78A5DF6DAABEBD55B68 /* Pods-DealitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DealitTests.release.xcconfig"; sourceTree = "<group>"; };
 		BFDF86AF170B3543065C6A0E2BB479BB /* Pods-Dealit-DealitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dealit-DealitUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,45 +97,43 @@
 		D94F19E1FE96AE26327A3DCB2C4222AD /* FLAnimatedImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImage-umbrella.h"; sourceTree = "<group>"; };
 		E090E4EFBA7971ECFA21057CAD1E5FF7 /* Pods-DealitTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DealitTests-dummy.m"; sourceTree = "<group>"; };
 		E91FA58C4EDE7DF2B8D8124FDFDD11C7 /* Pods-Dealit-DealitUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Dealit-DealitUITests-umbrella.h"; sourceTree = "<group>"; };
-		F4219BA7CAED0202261970996230F11F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		F5EE3948404F12C5B6DA9AF99AB40738 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		F8D1318E94015BEA0A4CDF0FF3C1EF1B /* FLAnimatedImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FLAnimatedImage.modulemap; sourceTree = "<group>"; };
 		FAA5F2D71B90788C908800A94534AA92 /* FLAnimatedImage */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FLAnimatedImage; path = FLAnimatedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		66EA4FFEBC42A175F2F8F73A17C682A5 /* Frameworks */ = {
+		083060918D9B6E598F4EC035A717BA35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49EBF9F83154DE0C9D5502C152416BF8 /* CoreGraphics.framework in Frameworks */,
-				56687ED88A5F09B81B2296B3FDD12F4B /* Foundation.framework in Frameworks */,
-				E113594EC32F9B04E66716925E7225C2 /* ImageIO.framework in Frameworks */,
-				C685FAE975137344D1474AD7E4096DA8 /* QuartzCore.framework in Frameworks */,
+				E8A27C26EC23738CE7D9ACD28DD5C848 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6EC567B00F0C7AE3A9E8732DB92EEBC1 /* Frameworks */ = {
+		574CB889F7C38AA2FB8282DBB48D9F43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42AFA04C22B28B1E20BEC1D2F408FFB8 /* Foundation.framework in Frameworks */,
+				E387463D5412F0666FC5505CD6373F1E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9E863B1104B40F353189CE4CFA42BCF6 /* Frameworks */ = {
+		96F6D341AC12EC3D27FA06D4883D548E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3635FFC49C82A914991BDC33AB8295F0 /* Foundation.framework in Frameworks */,
+				4A47FAA054C440F62380A28A97FE9EB9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE5F896372B0610EF69FAE5D93F3D660 /* Frameworks */ = {
+		D267C6F8AD649543C397BCAAADB7F148 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0BA746AE3FABF65F54ACB4713E1A5B5 /* Foundation.framework in Frameworks */,
+				8D2CBEBF5F1DA6766A833CCD0BF02B5B /* CoreGraphics.framework in Frameworks */,
+				DBB7D12AC159E50D059772E4B6CF1D2F /* Foundation.framework in Frameworks */,
+				FB6E014B34F33B89E5060DA1F00168A5 /* ImageIO.framework in Frameworks */,
+				FDD4C4D4F03502D5CB0B8763009A0948 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +207,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8BDCF43868533CF5CD525A379320F261 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7B5FF429C473323040D655CD2F4624F0 /* CoreGraphics.framework */,
+				520A88C9699CD24AA9020BC3A56CAB1F /* Foundation.framework */,
+				B3D11CD5D37842B93A46386969BB3C90 /* ImageIO.framework */,
+				13429761B8012E7BB3ABDDDAE600E63C /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		90B73515681D751274C16E1ADFB122B6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,7 +231,7 @@
 		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FC5800BB3AAFD3E119788196BC84235B /* iOS */,
+				8BDCF43868533CF5CD525A379320F261 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -253,17 +264,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		FC5800BB3AAFD3E119788196BC84235B /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				F4219BA7CAED0202261970996230F11F /* CoreGraphics.framework */,
-				0BADAF97F77FC4003B3610E7ACA312E1 /* Foundation.framework */,
-				434BDB8968205C3B66ECCF4FCB2767A8 /* ImageIO.framework */,
-				F5EE3948404F12C5B6DA9AF99AB40738 /* QuartzCore.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		FDB06735842FB3FBE5AB3C4E35E664C4 /* FLAnimatedImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,37 +280,37 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B3AAFCF52CF23946B22693A0C2B2B9EB /* Headers */ = {
+		27F3B969E5D705ED8A5880D178AF5DA6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBD0EAAB6A573FFE233AC79FC7335A92 /* Pods-DealitTests-umbrella.h in Headers */,
+				1BB896B7F6F852B6C6FB37AB29AA6DF4 /* Pods-Dealit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE3373F71AF2BB04C511FA5A42C2058A /* Headers */ = {
+		43A0EA7C1558831CF54FE3A5941E6449 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA35339386CD1251FAD44A9E74A25D74 /* FLAnimatedImage.h in Headers */,
-				9F7158EF1A3E6E778AB1F8712A3AA86E /* FLAnimatedImage-umbrella.h in Headers */,
-				DB1D0708A4D56029D14636419B03F14C /* FLAnimatedImageView.h in Headers */,
+				65847D56B18A8AB8F940C18733A00AAD /* Pods-Dealit-DealitUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5F6ED13E893FB3E14F011E70B1128FB /* Headers */ = {
+		80AAB619EDBB0EBDBBC84368EED44AA3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FB030E2BD6282AE5F8184C7908694C6 /* Pods-Dealit-umbrella.h in Headers */,
+				2EC1750C894F036194B90CFD26072B0C /* FLAnimatedImage.h in Headers */,
+				F600BB873FD4764BAA9E02826F804486 /* FLAnimatedImage-umbrella.h in Headers */,
+				01D2F1D0ABE13AAB2CDC0C25E378E964 /* FLAnimatedImageView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAAFB7025354320C7283DAB3F86A0959 /* Headers */ = {
+		B18BFC96A818B557C315750B75DE283B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F4A18ADCBE5DB841D4C290FF8D3BEE1 /* Pods-Dealit-DealitUITests-umbrella.h in Headers */,
+				824EBE8CFFEFFAF9DCA4BB810441377E /* Pods-DealitTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,12 +319,12 @@
 /* Begin PBXNativeTarget section */
 		4A8E8992707D01510894596DB9BCCA00 /* FLAnimatedImage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C47E0D5D26BAF11FAF05112183104AB6 /* Build configuration list for PBXNativeTarget "FLAnimatedImage" */;
+			buildConfigurationList = F06E4A04DE8430EB36B85704972503A5 /* Build configuration list for PBXNativeTarget "FLAnimatedImage" */;
 			buildPhases = (
-				CE3373F71AF2BB04C511FA5A42C2058A /* Headers */,
-				1E8EC3E234C7C9360E20549F894EEE37 /* Sources */,
-				66EA4FFEBC42A175F2F8F73A17C682A5 /* Frameworks */,
-				6647735695BF982109ADB4F4B55B7017 /* Resources */,
+				80AAB619EDBB0EBDBBC84368EED44AA3 /* Headers */,
+				FCCB6EDD1337F2C5115636BA7E258EDF /* Sources */,
+				D267C6F8AD649543C397BCAAADB7F148 /* Frameworks */,
+				9EF83CC96C715675FF7A15F96027E83F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -337,17 +337,17 @@
 		};
 		B155DB3F68B320BE4B992B529D54E12E /* Pods-Dealit-DealitUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94D6218C6306F9621F0B31466920861A /* Build configuration list for PBXNativeTarget "Pods-Dealit-DealitUITests" */;
+			buildConfigurationList = AE9C3EF760EC799BE9F28A318CD5D754 /* Build configuration list for PBXNativeTarget "Pods-Dealit-DealitUITests" */;
 			buildPhases = (
-				FAAFB7025354320C7283DAB3F86A0959 /* Headers */,
-				CB7F7168FE05214A651220DFF97D4604 /* Sources */,
-				FE5F896372B0610EF69FAE5D93F3D660 /* Frameworks */,
-				7137C237A7F2FF9929EA259CB25BE66F /* Resources */,
+				43A0EA7C1558831CF54FE3A5941E6449 /* Headers */,
+				4161F3FAD4ED749DD87FCC734AE8F11C /* Sources */,
+				574CB889F7C38AA2FB8282DBB48D9F43 /* Frameworks */,
+				11CE777DFB7A606DBDE8D0BD5C285F21 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E1D9683646933CA5EB99EF6CC25FA7CC /* PBXTargetDependency */,
+				9F15A3BE1EB77CDB22BD73FD143F2124 /* PBXTargetDependency */,
 			);
 			name = "Pods-Dealit-DealitUITests";
 			productName = Pods_Dealit_DealitUITests;
@@ -356,17 +356,17 @@
 		};
 		C73D08135DA882E666682120A0A3666B /* Pods-DealitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F4B669881F130913AE7958F6B441C22D /* Build configuration list for PBXNativeTarget "Pods-DealitTests" */;
+			buildConfigurationList = 9600494ED2127D8CA35084C3E3DA6B96 /* Build configuration list for PBXNativeTarget "Pods-DealitTests" */;
 			buildPhases = (
-				B3AAFCF52CF23946B22693A0C2B2B9EB /* Headers */,
-				EC48629DA7582BDADA94AD88651882B9 /* Sources */,
-				6EC567B00F0C7AE3A9E8732DB92EEBC1 /* Frameworks */,
-				01C116FF5EAE7FD71BF4455909A4ED22 /* Resources */,
+				B18BFC96A818B557C315750B75DE283B /* Headers */,
+				61AA8D3DA6782B13D84F67EDD8E38B9D /* Sources */,
+				083060918D9B6E598F4EC035A717BA35 /* Frameworks */,
+				87523BC23550C40DB78019D694D04F93 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AF4C3BCED38D2C4CA3AE5FA99C6FEA7C /* PBXTargetDependency */,
+				9898A9E8AA50EDE8FCCB5AB0C1BE5349 /* PBXTargetDependency */,
 			);
 			name = "Pods-DealitTests";
 			productName = Pods_DealitTests;
@@ -375,17 +375,17 @@
 		};
 		EA10E270DFB5D7575BC047839DD76BFB /* Pods-Dealit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CEB5B8A6B8F85A1CA62E6015BF764E1 /* Build configuration list for PBXNativeTarget "Pods-Dealit" */;
+			buildConfigurationList = 75B3D60731D461BDC9F7F84FA048A245 /* Build configuration list for PBXNativeTarget "Pods-Dealit" */;
 			buildPhases = (
-				D5F6ED13E893FB3E14F011E70B1128FB /* Headers */,
-				6C491A84C5C0B060BA955D413214B1A5 /* Sources */,
-				9E863B1104B40F353189CE4CFA42BCF6 /* Frameworks */,
-				010C795FD371B88D81108A53CF00A517 /* Resources */,
+				27F3B969E5D705ED8A5880D178AF5DA6 /* Headers */,
+				884A578AD58123AAC1E4968C63630BC3 /* Sources */,
+				96F6D341AC12EC3D27FA06D4883D548E /* Frameworks */,
+				623536E114BCC8BB7C81AB2673E6C34E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				48356640A6B30668ACF21D151BABE30C /* PBXTargetDependency */,
+				DB545466A1E785C3EE4229DBA62A11C5 /* PBXTargetDependency */,
 			);
 			name = "Pods-Dealit";
 			productName = Pods_Dealit;
@@ -398,8 +398,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -410,6 +410,8 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 74278684B018F737A58075FFA17C8B10 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -423,28 +425,28 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		010C795FD371B88D81108A53CF00A517 /* Resources */ = {
+		11CE777DFB7A606DBDE8D0BD5C285F21 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		01C116FF5EAE7FD71BF4455909A4ED22 /* Resources */ = {
+		623536E114BCC8BB7C81AB2673E6C34E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6647735695BF982109ADB4F4B55B7017 /* Resources */ = {
+		87523BC23550C40DB78019D694D04F93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7137C237A7F2FF9929EA259CB25BE66F /* Resources */ = {
+		9EF83CC96C715675FF7A15F96027E83F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -454,67 +456,106 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1E8EC3E234C7C9360E20549F894EEE37 /* Sources */ = {
+		4161F3FAD4ED749DD87FCC734AE8F11C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B507E9F301E6BC9F4D8EB8043B01CD3 /* FLAnimatedImage.m in Sources */,
-				42656EE69CA697C4F483ED44B688B529 /* FLAnimatedImage-dummy.m in Sources */,
-				6E91C0E1F97D0DCA638585D647C0C075 /* FLAnimatedImageView.m in Sources */,
+				8E6622F5816BCCB1982AB616C331CBAC /* Pods-Dealit-DealitUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C491A84C5C0B060BA955D413214B1A5 /* Sources */ = {
+		61AA8D3DA6782B13D84F67EDD8E38B9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57FA9B961AC49A568B7D31BD272179AB /* Pods-Dealit-dummy.m in Sources */,
+				9C8A936700B2C6B8D946FBD4909B9BAF /* Pods-DealitTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB7F7168FE05214A651220DFF97D4604 /* Sources */ = {
+		884A578AD58123AAC1E4968C63630BC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5ED4C383156955A2F12D05BC86ECC23 /* Pods-Dealit-DealitUITests-dummy.m in Sources */,
+				9B08A5776D585A3AE24E9D164824C3D7 /* Pods-Dealit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC48629DA7582BDADA94AD88651882B9 /* Sources */ = {
+		FCCB6EDD1337F2C5115636BA7E258EDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1051B66E8B37001ECD81D1291D9C2EF /* Pods-DealitTests-dummy.m in Sources */,
+				AD01931D200C49153984E27CBCEFE9D1 /* FLAnimatedImage.m in Sources */,
+				C16483526F6C6287240A75EDCB7E2F2F /* FLAnimatedImage-dummy.m in Sources */,
+				FD3AF10F8723DABEE406D25592B5F562 /* FLAnimatedImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		48356640A6B30668ACF21D151BABE30C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FLAnimatedImage;
-			target = 4A8E8992707D01510894596DB9BCCA00 /* FLAnimatedImage */;
-			targetProxy = B2D7D0D234E0E53E9BF020DA76928BC2 /* PBXContainerItemProxy */;
-		};
-		AF4C3BCED38D2C4CA3AE5FA99C6FEA7C /* PBXTargetDependency */ = {
+		9898A9E8AA50EDE8FCCB5AB0C1BE5349 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Dealit";
 			target = EA10E270DFB5D7575BC047839DD76BFB /* Pods-Dealit */;
-			targetProxy = 9E33002597F18065344146CE09121E27 /* PBXContainerItemProxy */;
+			targetProxy = A24E906776321B45357A8CBD1EECD572 /* PBXContainerItemProxy */;
 		};
-		E1D9683646933CA5EB99EF6CC25FA7CC /* PBXTargetDependency */ = {
+		9F15A3BE1EB77CDB22BD73FD143F2124 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FLAnimatedImage;
 			target = 4A8E8992707D01510894596DB9BCCA00 /* FLAnimatedImage */;
-			targetProxy = 23F18DBE8AFBA96DA583AD48D6D33509 /* PBXContainerItemProxy */;
+			targetProxy = D726A6892AD8F7E5B34D7D9D1B95A9DF /* PBXContainerItemProxy */;
+		};
+		DB545466A1E785C3EE4229DBA62A11C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FLAnimatedImage;
+			target = 4A8E8992707D01510894596DB9BCCA00 /* FLAnimatedImage */;
+			targetProxy = 6DAF0A093228DC2EC61E81382E6DC8D7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		27B8B3DCD5178F92BD52144B780ACC30 /* Release */ = {
+		078D56D419262D8AA23ABF591D272AAB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C5D9B05D0418ADC656F0F1E7191F8FA /* FLAnimatedImage.release.xcconfig */;
+			baseConfigurationReference = BFDF86AF170B3543065C6A0E2BB479BB /* Pods-Dealit-DealitUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1AF9E004618088921685E733DBADC0AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC0E5F5A575C277B33D26BAA24135C1D /* FLAnimatedImage.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -524,7 +565,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/FLAnimatedImage/FLAnimatedImage-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/FLAnimatedImage/FLAnimatedImage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -539,17 +583,17 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		28C566FF6180188B0EC72D55FF09738D /* Debug */ = {
+		3C8943FD34645C46FFEB611134A20DC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFDF86AF170B3543065C6A0E2BB479BB /* Pods-Dealit-DealitUITests.debug.xcconfig */;
+			baseConfigurationReference = A2420C3D383DCA20ED8C0D24EB9E296B /* Pods-DealitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -561,7 +605,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests-Info.plist";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-DealitTests/Pods-DealitTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -570,7 +616,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-DealitTests/Pods-DealitTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -650,7 +696,7 @@
 			};
 			name = Debug;
 		};
-		63412B598B9F9FCC1824341E5051EDB3 /* Release */ = {
+		6633341F54C1DCC0F4209D6AC202941F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1CE6D9D3E215C6CF8CD4A1503666AF95 /* Pods-Dealit.release.xcconfig */;
 			buildSettings = {
@@ -664,6 +710,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-Dealit/Pods-Dealit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
@@ -688,44 +736,7 @@
 			};
 			name = Release;
 		};
-		7175B8132A62849BC809AAEF31FC7E0E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2420C3D383DCA20ED8C0D24EB9E296B /* Pods-DealitTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DealitTests/Pods-DealitTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DealitTests/Pods-DealitTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9DE4F97727542AA97533D56F6CFD03B5 /* Release */ = {
+		9AFED4C65F7D7BC3A39664E33168A912 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B9022E6836E4C78A5DF6DAABEBD55B68 /* Pods-DealitTests.release.xcconfig */;
 			buildSettings = {
@@ -739,6 +750,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-DealitTests/Pods-DealitTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
@@ -749,44 +762,6 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DealitTests/Pods-DealitTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C5918F40A9C7EB66EA05A9CC6693BBC5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0EC3A912B2DC83E06881EEB404BE9E5F /* Pods-Dealit-DealitUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -863,9 +838,9 @@
 			};
 			name = Release;
 		};
-		D601095F1A4ED71897812C817A0EF4C1 /* Debug */ = {
+		E31AEA186C8C78E16422B62F224F3E58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC0E5F5A575C277B33D26BAA24135C1D /* FLAnimatedImage.debug.xcconfig */;
+			baseConfigurationReference = 0C5D9B05D0418ADC656F0F1E7191F8FA /* FLAnimatedImage.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -875,7 +850,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/FLAnimatedImage/FLAnimatedImage-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/FLAnimatedImage/FLAnimatedImage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -890,14 +868,56 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		F85FFDCAFC51A4A821521C5AF73053A1 /* Debug */ = {
+		ECA0A52AE5E5A887497F42A1B6FCC090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EC3A912B2DC83E06881EEB404BE9E5F /* Pods-Dealit-DealitUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Dealit-DealitUITests/Pods-Dealit-DealitUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9A064319ECA17E63C69F8E7C9116C11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33CEECFE0F598314FE8B534874B71820 /* Pods-Dealit.debug.xcconfig */;
 			buildSettings = {
@@ -911,6 +931,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-Dealit/Pods-Dealit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
@@ -946,38 +968,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94D6218C6306F9621F0B31466920861A /* Build configuration list for PBXNativeTarget "Pods-Dealit-DealitUITests" */ = {
+		75B3D60731D461BDC9F7F84FA048A245 /* Build configuration list for PBXNativeTarget "Pods-Dealit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				28C566FF6180188B0EC72D55FF09738D /* Debug */,
-				C5918F40A9C7EB66EA05A9CC6693BBC5 /* Release */,
+				F9A064319ECA17E63C69F8E7C9116C11 /* Debug */,
+				6633341F54C1DCC0F4209D6AC202941F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CEB5B8A6B8F85A1CA62E6015BF764E1 /* Build configuration list for PBXNativeTarget "Pods-Dealit" */ = {
+		9600494ED2127D8CA35084C3E3DA6B96 /* Build configuration list for PBXNativeTarget "Pods-DealitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F85FFDCAFC51A4A821521C5AF73053A1 /* Debug */,
-				63412B598B9F9FCC1824341E5051EDB3 /* Release */,
+				3C8943FD34645C46FFEB611134A20DC2 /* Debug */,
+				9AFED4C65F7D7BC3A39664E33168A912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C47E0D5D26BAF11FAF05112183104AB6 /* Build configuration list for PBXNativeTarget "FLAnimatedImage" */ = {
+		AE9C3EF760EC799BE9F28A318CD5D754 /* Build configuration list for PBXNativeTarget "Pods-Dealit-DealitUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D601095F1A4ED71897812C817A0EF4C1 /* Debug */,
-				27B8B3DCD5178F92BD52144B780ACC30 /* Release */,
+				078D56D419262D8AA23ABF591D272AAB /* Debug */,
+				ECA0A52AE5E5A887497F42A1B6FCC090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F4B669881F130913AE7958F6B441C22D /* Build configuration list for PBXNativeTarget "Pods-DealitTests" */ = {
+		F06E4A04DE8430EB36B85704972503A5 /* Build configuration list for PBXNativeTarget "FLAnimatedImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7175B8132A62849BC809AAEF31FC7E0E /* Debug */,
-				9DE4F97727542AA97533D56F6CFD03B5 /* Release */,
+				1AF9E004618088921685E733DBADC0AF /* Debug */,
+				E31AEA186C8C78E16422B62F224F3E58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
