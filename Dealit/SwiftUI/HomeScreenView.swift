@@ -50,6 +50,7 @@ struct HomeScreenView: View {
         let newUser = UserEntity(context: context)
         newUser.id = UUID()
         newUser.name = name
+        newUser.userDetails = CodableWrapper(UserDetailsAPIModel(userDetails: UserData(personalDetails: PersonalDetails(name: "random", age: 39, education: EducationDetails(degree: "BE", degreePercentage: 8, sslcPercentage: 9)), professionalDetails: ProfessionalDetails(role: "dev", experience: 4, joinedYear: 1997)))) 
         do {
             try context.save()
         } catch {
